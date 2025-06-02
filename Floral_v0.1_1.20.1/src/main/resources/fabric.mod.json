@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "floral",
+	"version": "${version}",
+	"name": "Floral",
+	"description": "This mod adds a bunch of new flowers with corresponding dyes and new functions to new and old flowers",
+	"authors": [
+		"Mc Ace Junior"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/floral/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"mcacejr.floral.Floral"
+		],
+		"client": [
+			"mcacejr.floral.FloralClient"
+		],
+		"fabric-datagen": [
+			"mcacejr.floral.FloralDataGenerator"
+		]
+	},
+	"mixins": [
+		"floral.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
