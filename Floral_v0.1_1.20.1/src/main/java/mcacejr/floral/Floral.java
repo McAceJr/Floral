@@ -1,5 +1,9 @@
 package mcacejr.floral;
 
+import mcacejr.floral.block.ModBlocks;
+import mcacejr.floral.enchantment.FloralEnchantments;
+import mcacejr.floral.item.ModItemGroups;
+import mcacejr.floral.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,6 +16,13 @@ public class Floral implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
+
+		ModBlocks.registerModBlocks();
+
+		ModItemGroups.registerItemGroups();
+
+		FloralEnchantments.init();
+
 	}
 }

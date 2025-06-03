@@ -1,0 +1,23 @@
+{
+
+  "itemgroup.floral_tab": "Floral",
+
+  "item.floral.floral_crown": "Floral Crown",
+  "item.floral.petunia_lance": "Petunia Lance",
+  "item.floral.corpse_blossom": "Corpse Blossom",
+
+  "block.floral.black_petunia": "Black Petunia",
+  "block.floral.red_petunia": "Red Petunia",
+  "block.floral.purple_bellflower": "Bellflower",
+  "block.floral.purple_chimney_bellflower": "Chimney Bellflower",
+  "block.floral.green_coneflower": "Coneflower",
+
+  "enchantment.floral.ivy_roots": "Ivy Roots",
+  "enchantment.floral.hungry_fauna": "Hungry Fauna",
+  "enchantment.floral.withering_touch": "Withering Touch",
+
+  "enchantment.floral.ivy_roots.desc": "Applies poison to your target",
+  "enchantment.floral.hungry_fauna.desc": "Applies hunger to your target",
+  "enchantment.floral.withering_touch.desc": "Applies wither to your target"
+
+}
