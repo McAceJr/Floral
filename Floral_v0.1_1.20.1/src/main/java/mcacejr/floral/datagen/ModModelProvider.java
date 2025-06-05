@@ -31,6 +31,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoubleBlock(ModBlocks.PURPLE_CHIMNEY_BELLFLOWER, BlockStateModelGenerator.TintType.NOT_TINTED);
 
+        blockStateModelGenerator.registerFlowerbed(ModBlocks.BLUE_AUBRIETAS);
+
     }
 
     @Override
@@ -39,6 +41,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ModItems.FLORAL_CROWN);
 
         itemModelGenerator.register(ModItems.PETUNIA_LANCE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.FLOWER_BLEND, Models.GENERATED);
 
     }
 

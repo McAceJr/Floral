@@ -5,12 +5,16 @@
   "item.floral.floral_crown": "Floral Crown",
   "item.floral.petunia_lance": "Petunia Lance",
   "item.floral.corpse_blossom": "Corpse Blossom",
+  "item.floral.flower_blend": "Flower Blend",
 
   "block.floral.black_petunia": "Black Petunia",
   "block.floral.red_petunia": "Red Petunia",
   "block.floral.purple_bellflower": "Bellflower",
   "block.floral.purple_chimney_bellflower": "Chimney Bellflower",
   "block.floral.green_coneflower": "Coneflower",
+  "block.floral.blue_aubrietas": "Aubrietas",
+
+  "effect.floral.death_prick": "Death Prick",
 
   "enchantment.floral.ivy_roots": "Ivy Roots",
   "enchantment.floral.hungry_fauna": "Hungry Fauna",

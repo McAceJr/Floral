@@ -24,10 +24,12 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.RED_PETUNIA.asItem())
                 .add(ModBlocks.PURPLE_BELLFLOWER.asItem())
                 .add(ModBlocks.PURPLE_CHIMNEY_BELLFLOWER.asItem())
-                .add(ModBlocks.GREEN_CONEFLOWER.asItem());
+                .add(ModBlocks.GREEN_CONEFLOWER.asItem())
+                .add(ModBlocks.BLUE_AUBRIETAS.asItem());
 
         getOrCreateTagBuilder(ItemTags.SWORDS)
-                .add(ModItems.PETUNIA_LANCE);
+                .add(ModItems.PETUNIA_LANCE)
+                .add(ModItems.CORPSE_BLOSSOM);
 
     }
 

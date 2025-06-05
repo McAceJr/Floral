@@ -31,7 +31,7 @@ public class WitheringTouchFloralEnchantment extends Enchantment{
 
     @Override
     public boolean isAcceptableItem(ItemStack stack) {
-        return stack.getItem().equals(ModItems.CORPSE_BLOSSOM);
+        return stack.getItem() instanceof CorpseBlossomSword;
     }
 
 }

@@ -1,6 +1,7 @@
 package mcacejr.floral.enchantment;
 
 import mcacejr.floral.item.ModItems;
+import mcacejr.floral.item.custom.CorpseBlossomSword;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.EquipmentSlot;
@@ -29,7 +30,7 @@ public class HungryFaunaFloralEnchantment extends Enchantment{
 
     @Override
     public boolean isAcceptableItem(ItemStack stack) {
-        return stack.getItem().equals(ModItems.CORPSE_BLOSSOM);
+        return stack.getItem() instanceof CorpseBlossomSword;
     }
 
 }

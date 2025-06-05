@@ -44,6 +44,9 @@ public class ModBlocks {
     public static final Block PURPLE_CHIMNEY_BELLFLOWER = registerBlock("purple_chimney_bellflower",
             new TallFlowerBlock(FabricBlockSettings.copyOf(Blocks.ROSE_BUSH).nonOpaque().noCollision()));
 
+    public static final Block BLUE_AUBRIETAS = registerBlock("blue_aubrietas",
+            new FlowerbedBlock(FabricBlockSettings.copyOf(Blocks.PINK_PETALS).nonOpaque().noCollision()));
+
     private static Block registerBlock(String name, Block block) {
 
         registerBlockItem(name, block);

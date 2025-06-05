@@ -27,6 +27,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PURPLE_BELLFLOWER);
                         entries.add(ModBlocks.PURPLE_CHIMNEY_BELLFLOWER);
                         entries.add(ModBlocks.GREEN_CONEFLOWER);
+                        entries.add(ModBlocks.BLUE_AUBRIETAS);
+
+                        entries.add(ModItems.FLOWER_BLEND);
 
                         entries.add(ModItems.PETUNIA_LANCE);
                         entries.add(ModItems.CORPSE_BLOSSOM);

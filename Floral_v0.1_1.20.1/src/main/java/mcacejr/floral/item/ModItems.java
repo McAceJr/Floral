@@ -3,6 +3,7 @@ package mcacejr.floral.item;
 import mcacejr.floral.Floral;
 import mcacejr.floral.item.custom.ArmorWithEffect;
 import mcacejr.floral.item.custom.CorpseBlossomSword;
+import mcacejr.floral.item.custom.FlowerBlendItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
@@ -22,6 +23,9 @@ public class ModItems {
 
     public static final Item CORPSE_BLOSSOM = registerItem("corpse_blossom",
             new CorpseBlossomSword(ModToolMaterials.PETUNIA, 3, -1f, new FabricItemSettings()));
+
+    public static final Item FLOWER_BLEND = registerItem("flower_blend",
+            new FlowerBlendItem(new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item) {
 

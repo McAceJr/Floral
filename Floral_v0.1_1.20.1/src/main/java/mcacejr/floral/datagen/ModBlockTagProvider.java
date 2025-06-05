@@ -22,6 +22,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RED_PETUNIA)
                 .add(ModBlocks.PURPLE_BELLFLOWER)
                 .add(ModBlocks.GREEN_CONEFLOWER)
+                .add(ModBlocks.PURPLE_CHIMNEY_BELLFLOWER)
+                .add(ModBlocks.BLUE_AUBRIETAS);
+
+        getOrCreateTagBuilder(BlockTags.TALL_FLOWERS)
                 .add(ModBlocks.PURPLE_CHIMNEY_BELLFLOWER);
 
         getOrCreateTagBuilder(BlockTags.FLOWER_POTS)
