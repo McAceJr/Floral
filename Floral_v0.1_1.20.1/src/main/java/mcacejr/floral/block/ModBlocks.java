@@ -49,25 +49,19 @@ public class ModBlocks {
             new FlowerbedBlock(FabricBlockSettings.copyOf(Blocks.PINK_PETALS).nonOpaque().noCollision()));
 
     public static final Block THICK_STALK = registerBlock("thick_stalk",
-            new ThickStalkBlock(FabricBlockSettings.copyOf(Blocks.TWISTING_VINES).nonOpaque().noCollision(),
-                    ModBlocks.THICK_STALK_PLANT, false, 0.1f));
+            new ThickStalkBlock(FabricBlockSettings.copyOf(Blocks.TWISTING_VINES).nonOpaque().noCollision(), false, 0.1f));
     public static final Block THICK_STALK_PLANT = registerBlock("thick_stalk_plant",
-            new ThickStalkPlantBlock(FabricBlockSettings.copyOf(Blocks.TWISTING_VINES_PLANT).nonOpaque().noCollision(),
-                    ModBlocks.THICK_STALK, false));
+            new ThickStalkPlantBlock(FabricBlockSettings.copyOf(Blocks.TWISTING_VINES_PLANT).nonOpaque().noCollision()));
 
     public static final Block THICK_VINES = registerBlock("thick_vines",
-            new ThickVineBlock(FabricBlockSettings.copyOf(Blocks.WEEPING_VINES).nonOpaque().noCollision(),
-                    ModBlocks.THICK_VINES_PLANT, false, 0.1f));
+            new ThickVineBlock(FabricBlockSettings.copyOf(Blocks.WEEPING_VINES).nonOpaque().noCollision(), false, 0.1f));
     public static final Block THICK_VINES_PLANT = registerBlock("thick_vines_plant",
-            new ThickVinePlantBlock(FabricBlockSettings.copyOf(Blocks.WEEPING_VINES_PLANT).nonOpaque().noCollision(),
-                    ModBlocks.THICK_VINES, false));
+            new ThickVinePlantBlock(FabricBlockSettings.copyOf(Blocks.WEEPING_VINES_PLANT).nonOpaque().noCollision()));
 
     public static final Block PINK_ALCEA = registerBlock("pink_alcea",
-            new PinkAlceaBlock(FabricBlockSettings.copyOf(Blocks.TWISTING_VINES).nonOpaque().noCollision(),
-                    ModBlocks.PINK_ALCEA_PLANT, false, 0.1f));
+            new PinkAlceaBlock(FabricBlockSettings.copyOf(Blocks.TWISTING_VINES).nonOpaque().noCollision(), false, 0.1f));
     public static final Block PINK_ALCEA_PLANT = registerBlock("pink_alcea_plant",
-            new PinkAlceaPlantBlock(FabricBlockSettings.copyOf(Blocks.TWISTING_VINES_PLANT).nonOpaque().noCollision(),
-                    ModBlocks.PINK_ALCEA, false));
+            new PinkAlceaPlantBlock(FabricBlockSettings.copyOf(Blocks.TWISTING_VINES_PLANT).nonOpaque().noCollision()));
 
 
     private static Block registerBlock(String name, Block block) {

@@ -58,7 +58,26 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.PETUNIA_LANCE, Models.HANDHELD);
 
+        itemModelGenerator.register(ModItems.FLOWER_TRIMMER, Models.HANDHELD);
+
         itemModelGenerator.register(ModItems.FLOWER_BLEND, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.WHITE_PETAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LIGHT_GRAY_PETAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GRAY_PETAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BLACK_PETAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RED_PETAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ORANGE_PETAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BROWN_PETAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.YELLOW_PETAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LIME_PETAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GREEN_PETAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CYAN_PETAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LIGHT_BLUE_PETAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BLUE_PETAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PURPLE_PETAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MAGENTA_PETAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PINK_PETAL, Models.GENERATED);
 
     }
 

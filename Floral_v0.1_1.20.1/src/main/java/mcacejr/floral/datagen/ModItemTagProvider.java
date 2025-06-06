@@ -2,8 +2,11 @@ package mcacejr.floral.datagen;
 
 import mcacejr.floral.block.ModBlocks;
 import mcacejr.floral.item.ModItems;
+import mcacejr.floral.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.ItemTags;
@@ -22,6 +25,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.FLOWERS)
                 .add(ModBlocks.BLACK_PETUNIA.asItem())
                 .add(ModBlocks.RED_PETUNIA.asItem())
+                .add(Items.SPORE_BLOSSOM)
                 .add(ModBlocks.PURPLE_BELLFLOWER.asItem())
                 .add(ModBlocks.PURPLE_CHIMNEY_BELLFLOWER.asItem())
                 .add(ModBlocks.GREEN_CONEFLOWER.asItem())
@@ -41,7 +45,68 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.SWORDS)
                 .add(ModItems.PETUNIA_LANCE)
-                .add(ModItems.CORPSE_BLOSSOM);
+                .add(ModItems.CORPSE_BLOSSOM)
+                .add(ModItems.DEADHEADER);
+
+        getOrCreateTagBuilder(ModTags.Items.FLOWER_TRIMMERS)
+                .add(ModItems.FLOWER_TRIMMER)
+                .add(ModItems.DEADHEADER);
+
+        getOrCreateTagBuilder(ModTags.Items.WHITE_FLOWERS)
+                .add(Blocks.WHITE_TULIP.asItem())
+                .add(Blocks.LILY_OF_THE_VALLEY.asItem());
+        getOrCreateTagBuilder(ModTags.Items.LIGHT_GRAY_FLOWERS)
+                .add(Blocks.AZURE_BLUET.asItem())
+                .add(Blocks.OXEYE_DAISY.asItem());
+        getOrCreateTagBuilder(ModTags.Items.GRAY_FLOWERS);
+        getOrCreateTagBuilder(ModTags.Items.BLACK_FLOWERS)
+                .add(ModBlocks.BLACK_PETUNIA.asItem());
+        getOrCreateTagBuilder(ModTags.Items.RED_FLOWERS)
+                .add(ModBlocks.RED_PETUNIA.asItem())
+                .add(Blocks.POPPY.asItem())
+                .add(Blocks.RED_TULIP.asItem());
+        getOrCreateTagBuilder(ModTags.Items.ORANGE_FLOWERS)
+                .add(Blocks.ORANGE_TULIP.asItem())
+                .add(Blocks.TORCHFLOWER.asItem());
+        getOrCreateTagBuilder(ModTags.Items.BROWN_FLOWERS);
+        getOrCreateTagBuilder(ModTags.Items.YELLOW_FLOWERS)
+                .add(Blocks.DANDELION.asItem());
+        getOrCreateTagBuilder(ModTags.Items.LIME_FLOWERS);
+        getOrCreateTagBuilder(ModTags.Items.GREEN_FLOWERS)
+                .add(ModBlocks.GREEN_CONEFLOWER.asItem());
+        getOrCreateTagBuilder(ModTags.Items.CYAN_FLOWERS);
+        getOrCreateTagBuilder(ModTags.Items.LIGHT_BLUE_FLOWERS)
+                .add(Blocks.BLUE_ORCHID.asItem());
+        getOrCreateTagBuilder(ModTags.Items.BLUE_FLOWERS)
+                .add(Blocks.CORNFLOWER.asItem());
+        getOrCreateTagBuilder(ModTags.Items.PURPLE_FLOWERS)
+                .add(ModBlocks.PURPLE_BELLFLOWER.asItem());
+        getOrCreateTagBuilder(ModTags.Items.MAGENTA_FLOWERS)
+                .add(Blocks.ALLIUM.asItem());
+        getOrCreateTagBuilder(ModTags.Items.PINK_FLOWERS)
+                .add(Blocks.PINK_TULIP.asItem());
+
+        getOrCreateTagBuilder(ModTags.Items.TALL_WHITE_FLOWERS);
+        getOrCreateTagBuilder(ModTags.Items.TALL_LIGHT_GRAY_FLOWERS);
+        getOrCreateTagBuilder(ModTags.Items.TALL_GRAY_FLOWERS);
+        getOrCreateTagBuilder(ModTags.Items.TALL_BLACK_FLOWERS);
+        getOrCreateTagBuilder(ModTags.Items.TALL_RED_FLOWERS)
+                .add(Blocks.ROSE_BUSH.asItem());
+        getOrCreateTagBuilder(ModTags.Items.TALL_ORANGE_FLOWERS);
+        getOrCreateTagBuilder(ModTags.Items.TALL_BROWN_FLOWERS);
+        getOrCreateTagBuilder(ModTags.Items.TALL_YELLOW_FLOWERS)
+                .add(Blocks.SUNFLOWER.asItem());
+        getOrCreateTagBuilder(ModTags.Items.TALL_LIME_FLOWERS);
+        getOrCreateTagBuilder(ModTags.Items.TALL_GREEN_FLOWERS);
+        getOrCreateTagBuilder(ModTags.Items.TALL_CYAN_FLOWERS);
+        getOrCreateTagBuilder(ModTags.Items.TALL_LIGHT_BLUE_FLOWERS);
+        getOrCreateTagBuilder(ModTags.Items.TALL_BLUE_FLOWERS);
+        getOrCreateTagBuilder(ModTags.Items.TALL_PURPLE_FLOWERS)
+                .add(ModBlocks.PURPLE_CHIMNEY_BELLFLOWER.asItem());
+        getOrCreateTagBuilder(ModTags.Items.TALL_MAGENTA_FLOWERS)
+                .add(Blocks.LILAC.asItem());
+        getOrCreateTagBuilder(ModTags.Items.TALL_PINK_FLOWERS)
+                .add(Blocks.PEONY.asItem());
 
     }
 

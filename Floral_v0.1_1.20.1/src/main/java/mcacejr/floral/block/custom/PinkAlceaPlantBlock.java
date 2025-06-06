@@ -1,5 +1,6 @@
 package mcacejr.floral.block.custom;
 
+import mcacejr.floral.block.ModBlocks;
 import net.minecraft.block.AbstractPlantBlock;
 import net.minecraft.block.AbstractPlantStemBlock;
 import net.minecraft.block.Block;
@@ -10,18 +11,13 @@ public class PinkAlceaPlantBlock extends AbstractPlantBlock {
 
     public static final VoxelShape SHAPE = Block.createCuboidShape(4.0, 0.0, 4.0, 12.0, 16.0, 12.0);
 
-    private static Block PLANTSTEMBLOCK = null;
-
-    public PinkAlceaPlantBlock(Settings settings, Block plantStemBlock, boolean bl) {
-        super(settings, Direction.UP, SHAPE, bl);
-
-        PLANTSTEMBLOCK = plantStemBlock;
-
+    public PinkAlceaPlantBlock(Settings settings) {
+        super(settings, Direction.UP, SHAPE, false);
     }
 
     @Override
     protected AbstractPlantStemBlock getStem() {
-        return (AbstractPlantStemBlock) PLANTSTEMBLOCK;
+        return (AbstractPlantStemBlock) ModBlocks.PINK_ALCEA;
     }
 
 }

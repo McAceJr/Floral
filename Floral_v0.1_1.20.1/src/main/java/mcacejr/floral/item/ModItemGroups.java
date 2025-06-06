@@ -37,6 +37,25 @@ public class ModItemGroups {
 
                         entries.add(ModItems.PETUNIA_LANCE);
                         entries.add(ModItems.CORPSE_BLOSSOM);
+                        entries.add(ModItems.FLOWER_TRIMMER);
+                        entries.add(ModItems.DEADHEADER);
+
+                        entries.add(ModItems.WHITE_PETAL);
+                        entries.add(ModItems.LIGHT_GRAY_PETAL);
+                        entries.add(ModItems.GRAY_PETAL);
+                        entries.add(ModItems.BLACK_PETAL);
+                        entries.add(ModItems.RED_PETAL);
+                        entries.add(ModItems.ORANGE_PETAL);
+                        entries.add(ModItems.BROWN_PETAL);
+                        entries.add(ModItems.YELLOW_PETAL);
+                        entries.add(ModItems.LIME_PETAL);
+                        entries.add(ModItems.GREEN_PETAL);
+                        entries.add(ModItems.CYAN_PETAL);
+                        entries.add(ModItems.LIGHT_BLUE_PETAL);
+                        entries.add(ModItems.BLUE_PETAL);
+                        entries.add(ModItems.PURPLE_PETAL);
+                        entries.add(ModItems.MAGENTA_PETAL);
+                        entries.add(ModItems.PINK_PETAL);
 
                     }).build());
 
