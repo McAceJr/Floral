@@ -28,7 +28,15 @@ public class FloralClient implements ClientModInitializer {
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BLUE_AUBRIETAS, RenderLayer.getCutout());
 
-        ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex)-> GrassColors.getDefaultColor(), ModBlocks.BLUE_AUBRIETAS);
+        ColorProviderRegistry.BLOCK.register((state, view, pos,
+                                              tintIndex)-> GrassColors.getDefaultColor(), ModBlocks.BLUE_AUBRIETAS);
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PINK_ALCEA, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PINK_ALCEA_PLANT, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.THICK_STALK, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.THICK_STALK_PLANT, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.THICK_VINES, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.THICK_VINES_PLANT, RenderLayer.getCutout());
 
     }
 

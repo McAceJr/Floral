@@ -29,6 +29,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.GREEN_CONEFLOWER);
                         entries.add(ModBlocks.BLUE_AUBRIETAS);
 
+                        entries.add(ModBlocks.THICK_STALK);
+                        entries.add(ModBlocks.THICK_VINES);
+                        entries.add(ModBlocks.PINK_ALCEA);
+
                         entries.add(ModItems.FLOWER_BLEND);
 
                         entries.add(ModItems.PETUNIA_LANCE);

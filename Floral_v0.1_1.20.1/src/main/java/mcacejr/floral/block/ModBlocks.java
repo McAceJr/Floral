@@ -1,6 +1,7 @@
 package mcacejr.floral.block;
 
 import mcacejr.floral.Floral;
+import mcacejr.floral.block.custom.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -46,6 +47,28 @@ public class ModBlocks {
 
     public static final Block BLUE_AUBRIETAS = registerBlock("blue_aubrietas",
             new FlowerbedBlock(FabricBlockSettings.copyOf(Blocks.PINK_PETALS).nonOpaque().noCollision()));
+
+    public static final Block THICK_STALK = registerBlock("thick_stalk",
+            new ThickStalkBlock(FabricBlockSettings.copyOf(Blocks.TWISTING_VINES).nonOpaque().noCollision(),
+                    ModBlocks.THICK_STALK_PLANT, false, 0.1f));
+    public static final Block THICK_STALK_PLANT = registerBlock("thick_stalk_plant",
+            new ThickStalkPlantBlock(FabricBlockSettings.copyOf(Blocks.TWISTING_VINES_PLANT).nonOpaque().noCollision(),
+                    ModBlocks.THICK_STALK, false));
+
+    public static final Block THICK_VINES = registerBlock("thick_vines",
+            new ThickVineBlock(FabricBlockSettings.copyOf(Blocks.WEEPING_VINES).nonOpaque().noCollision(),
+                    ModBlocks.THICK_VINES_PLANT, false, 0.1f));
+    public static final Block THICK_VINES_PLANT = registerBlock("thick_vines_plant",
+            new ThickVinePlantBlock(FabricBlockSettings.copyOf(Blocks.WEEPING_VINES_PLANT).nonOpaque().noCollision(),
+                    ModBlocks.THICK_VINES, false));
+
+    public static final Block PINK_ALCEA = registerBlock("pink_alcea",
+            new PinkAlceaBlock(FabricBlockSettings.copyOf(Blocks.TWISTING_VINES).nonOpaque().noCollision(),
+                    ModBlocks.PINK_ALCEA_PLANT, false, 0.1f));
+    public static final Block PINK_ALCEA_PLANT = registerBlock("pink_alcea_plant",
+            new PinkAlceaPlantBlock(FabricBlockSettings.copyOf(Blocks.TWISTING_VINES_PLANT).nonOpaque().noCollision(),
+                    ModBlocks.PINK_ALCEA, false));
+
 
     private static Block registerBlock(String name, Block block) {
 

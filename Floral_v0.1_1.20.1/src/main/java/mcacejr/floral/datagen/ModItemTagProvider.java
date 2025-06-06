@@ -25,7 +25,19 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.PURPLE_BELLFLOWER.asItem())
                 .add(ModBlocks.PURPLE_CHIMNEY_BELLFLOWER.asItem())
                 .add(ModBlocks.GREEN_CONEFLOWER.asItem())
-                .add(ModBlocks.BLUE_AUBRIETAS.asItem());
+                .add(ModBlocks.BLUE_AUBRIETAS.asItem())
+                .add(ModBlocks.PINK_ALCEA.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SMALL_FLOWERS)
+                .add(ModBlocks.BLUE_AUBRIETAS.asItem())
+                .add(ModBlocks.GREEN_CONEFLOWER.asItem())
+                .add(ModBlocks.BLACK_PETUNIA.asItem())
+                .add(ModBlocks.RED_PETUNIA.asItem())
+                .add(ModBlocks.PURPLE_BELLFLOWER.asItem());
+
+        getOrCreateTagBuilder(ItemTags.TALL_FLOWERS)
+                .add(ModBlocks.PINK_ALCEA.asItem())
+                .add(ModBlocks.PURPLE_CHIMNEY_BELLFLOWER.asItem());
 
         getOrCreateTagBuilder(ItemTags.SWORDS)
                 .add(ModItems.PETUNIA_LANCE)

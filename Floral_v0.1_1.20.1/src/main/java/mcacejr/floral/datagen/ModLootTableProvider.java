@@ -30,6 +30,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.PURPLE_CHIMNEY_BELLFLOWER, block -> this.dropsWithProperty(block, TallPlantBlock.HALF, DoubleBlockHalf.LOWER));
 
         addDrop(ModBlocks.BLUE_AUBRIETAS);
+        addDrop(ModBlocks.THICK_STALK);
+        addDrop(ModBlocks.THICK_VINES);
+        addDrop(ModBlocks.PINK_ALCEA);
 
     }
 
