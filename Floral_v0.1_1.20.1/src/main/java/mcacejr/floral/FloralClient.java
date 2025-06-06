@@ -38,6 +38,42 @@ public class FloralClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.THICK_VINES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.THICK_VINES_PLANT, RenderLayer.getCutout());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LIGHT_GRAY_TULIP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_LIGHT_GRAY_TULIP, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GRAY_TULIP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_GRAY_TULIP, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BLACK_TULIP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_BLACK_TULIP, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BROWN_TULIP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_BROWN_TULIP, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.YELLOW_TULIP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_YELLOW_TULIP, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LIME_TULIP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_LIME_TULIP, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GREEN_TULIP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_GREEN_TULIP, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CYAN_TULIP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_CYAN_TULIP, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LIGHT_BLUE_TULIP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LIGHT_BLUE_TULIP, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BLUE_TULIP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_BLUE_TULIP, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PURPLE_TULIP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_PURPLE_TULIP, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MAGENTA_TULIP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_MAGENTA_TULIP, RenderLayer.getCutout());
+
     }
 
 }

@@ -1,5 +1,6 @@
 package mcacejr.floral.datagen;
 
+import mcacejr.floral.block.ModBlocks;
 import mcacejr.floral.item.ModItems;
 import mcacejr.floral.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -47,6 +48,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(petalItem)
                 .criterion(hasItem(petalItem), conditionsFromItem(petalItem))
                 .offerTo(exporter, dyeItem + "_from_" + petalItem);
+
+    }
+
+    public static void offerFlowerToDyeRecipe(Consumer<RecipeJsonProvider> exporter, Item flowerItem, Item dyeItem, int count) {
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, dyeItem, count)
+                .input(flowerItem)
+                .criterion(hasItem(flowerItem), conditionsFromItem(flowerItem))
+                .offerTo(exporter, dyeItem + "_from_" + flowerItem);
 
     }
 
@@ -143,6 +153,27 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerPetalToDyeRecipe(exporter, ModItems.PURPLE_PETAL, Items.PURPLE_DYE);
         offerPetalToDyeRecipe(exporter, ModItems.MAGENTA_PETAL, Items.MAGENTA_DYE);
         offerPetalToDyeRecipe(exporter, ModItems.PINK_PETAL, Items.PINK_DYE);
+
+        offerFlowerToDyeRecipe(exporter, ModBlocks.BLACK_PETUNIA.asItem(), Items.BLACK_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.RED_PETUNIA.asItem(), Items.RED_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.PURPLE_BELLFLOWER.asItem(), Items.PURPLE_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.PURPLE_CHIMNEY_BELLFLOWER.asItem(), Items.PURPLE_DYE, 2);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.GREEN_CONEFLOWER.asItem(), Items.GREEN_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.BLUE_AUBRIETAS.asItem(), Items.BLUE_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.PINK_ALCEA.asItem(), Items.PINK_DYE, 1);
+
+        offerFlowerToDyeRecipe(exporter, ModBlocks.LIGHT_GRAY_TULIP.asItem(), Items.LIGHT_GRAY_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.GRAY_TULIP.asItem(), Items.GRAY_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.BLACK_TULIP.asItem(), Items.BLACK_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.BROWN_TULIP.asItem(), Items.BROWN_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.YELLOW_TULIP.asItem(), Items.YELLOW_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.LIME_TULIP.asItem(), Items.LIME_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.GREEN_TULIP.asItem(), Items.GREEN_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.CYAN_TULIP.asItem(), Items.CYAN_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.LIGHT_BLUE_TULIP.asItem(), Items.LIGHT_BLUE_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.BLUE_TULIP.asItem(), Items.BLUE_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.PURPLE_TULIP.asItem(), Items.PURPLE_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.MAGENTA_TULIP.asItem(), Items.MAGENTA_DYE, 1);
 
     }
 

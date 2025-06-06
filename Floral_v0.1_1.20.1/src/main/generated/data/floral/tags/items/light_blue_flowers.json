@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "floral:light_blue_tulip",
     "minecraft:blue_orchid"
   ]
 }

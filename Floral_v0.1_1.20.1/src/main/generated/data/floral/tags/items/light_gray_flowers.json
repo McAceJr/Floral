@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "minecraft:azure_bluet",
-    "minecraft:oxeye_daisy"
+    "minecraft:oxeye_daisy",
+    "floral:light_gray_tulip"
   ]
 }

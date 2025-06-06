@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "floral:yellow_tulip",
     "minecraft:dandelion"
   ]
 }

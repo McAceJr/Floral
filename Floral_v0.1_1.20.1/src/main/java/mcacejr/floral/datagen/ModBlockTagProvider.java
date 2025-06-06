@@ -27,7 +27,19 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PURPLE_CHIMNEY_BELLFLOWER)
                 .add(ModBlocks.BLUE_AUBRIETAS)
                 .add(ModBlocks.PINK_ALCEA)
-                .add(ModBlocks.PINK_ALCEA_PLANT);
+                .add(ModBlocks.PINK_ALCEA_PLANT)
+                .add(ModBlocks.LIGHT_GRAY_TULIP)
+                .add(ModBlocks.GRAY_TULIP)
+                .add(ModBlocks.BLACK_TULIP)
+                .add(ModBlocks.BROWN_TULIP)
+                .add(ModBlocks.YELLOW_TULIP)
+                .add(ModBlocks.LIME_TULIP)
+                .add(ModBlocks.GREEN_TULIP)
+                .add(ModBlocks.CYAN_TULIP)
+                .add(ModBlocks.LIGHT_BLUE_TULIP)
+                .add(ModBlocks.BLUE_TULIP)
+                .add(ModBlocks.PURPLE_TULIP)
+                .add(ModBlocks.MAGENTA_TULIP);
 
         getOrCreateTagBuilder(BlockTags.TALL_FLOWERS)
                 .add(ModBlocks.PURPLE_CHIMNEY_BELLFLOWER)
@@ -41,7 +53,19 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.POTTED_BLACK_PETUNIA)
                 .add(ModBlocks.POTTED_RED_PETUNIA)
                 .add(ModBlocks.POTTED_PURPLE_BELLFLOWER)
-                .add(ModBlocks.POTTED_GREEN_CONEFLOWER);
+                .add(ModBlocks.POTTED_GREEN_CONEFLOWER)
+                .add(ModBlocks.POTTED_LIGHT_GRAY_TULIP)
+                .add(ModBlocks.POTTED_GRAY_TULIP)
+                .add(ModBlocks.POTTED_BLACK_TULIP)
+                .add(ModBlocks.POTTED_BROWN_TULIP)
+                .add(ModBlocks.POTTED_YELLOW_TULIP)
+                .add(ModBlocks.POTTED_LIME_TULIP)
+                .add(ModBlocks.POTTED_GREEN_TULIP)
+                .add(ModBlocks.POTTED_CYAN_TULIP)
+                .add(ModBlocks.POTTED_LIGHT_BLUE_TULIP)
+                .add(ModBlocks.POTTED_BLUE_TULIP)
+                .add(ModBlocks.POTTED_PURPLE_TULIP)
+                .add(ModBlocks.POTTED_MAGENTA_TULIP);
 
     }
 

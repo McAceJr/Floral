@@ -36,6 +36,19 @@
   "block.floral.thick_vines": "Thick Vine",
   "block.floral.pink_alcea": "Alcea",
 
+  "block.floral.light_gray_tulip": "Light Gray Tulip",
+  "block.floral.gray_tulip": "Gray Tulip",
+  "block.floral.black_tulip": "Black Tulip",
+  "block.floral.brown_tulip": "Brown Tulip",
+  "block.floral.yellow_tulip": "Yellow Tulip",
+  "block.floral.lime_tulip": "Lime Tulip",
+  "block.floral.green_tulip": "Green Tulip",
+  "block.floral.cyan_tulip": "Cyan Tulip",
+  "block.floral.light_blue_tulip": "Light Blue Tulip",
+  "block.floral.blue_tulip": "Blue Tulip",
+  "block.floral.purple_tulip": "Purple Tulip",
+  "block.floral.magenta_tulip": "Magenta Tulip",
+
   "effect.floral.death_prick": "Death Prick",
 
   "enchantment.floral.ivy_roots": "Ivy Roots",

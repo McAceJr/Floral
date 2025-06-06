@@ -35,6 +35,31 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addVinePlantDrop(ModBlocks.THICK_VINES, ModBlocks.THICK_VINES_PLANT);
         addVinePlantDrop(ModBlocks.PINK_ALCEA, ModBlocks.PINK_ALCEA_PLANT);
 
+        addDrop(ModBlocks.LIGHT_GRAY_TULIP);
+        addPottedPlantDrops(ModBlocks.POTTED_LIGHT_GRAY_TULIP);
+        addDrop(ModBlocks.GRAY_TULIP);
+        addPottedPlantDrops(ModBlocks.POTTED_GRAY_TULIP);
+        addDrop(ModBlocks.BLACK_TULIP);
+        addPottedPlantDrops(ModBlocks.POTTED_BLACK_TULIP);
+        addDrop(ModBlocks.BROWN_TULIP);
+        addPottedPlantDrops(ModBlocks.POTTED_BROWN_TULIP);
+        addDrop(ModBlocks.YELLOW_TULIP);
+        addPottedPlantDrops(ModBlocks.POTTED_YELLOW_TULIP);
+        addDrop(ModBlocks.LIME_TULIP);
+        addPottedPlantDrops(ModBlocks.POTTED_LIME_TULIP);
+        addDrop(ModBlocks.GREEN_TULIP);
+        addPottedPlantDrops(ModBlocks.POTTED_GREEN_TULIP);
+        addDrop(ModBlocks.CYAN_TULIP);
+        addPottedPlantDrops(ModBlocks.POTTED_CYAN_TULIP);
+        addDrop(ModBlocks.LIGHT_BLUE_TULIP);
+        addPottedPlantDrops(ModBlocks.POTTED_LIGHT_BLUE_TULIP);
+        addDrop(ModBlocks.BLUE_TULIP);
+        addPottedPlantDrops(ModBlocks.POTTED_BLUE_TULIP);
+        addDrop(ModBlocks.PURPLE_TULIP);
+        addPottedPlantDrops(ModBlocks.POTTED_PURPLE_TULIP);
+        addDrop(ModBlocks.MAGENTA_TULIP);
+        addPottedPlantDrops(ModBlocks.POTTED_MAGENTA_TULIP);
+
     }
 
 }
