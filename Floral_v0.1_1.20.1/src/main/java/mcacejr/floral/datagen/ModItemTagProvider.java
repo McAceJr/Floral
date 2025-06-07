@@ -42,7 +42,15 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.LIGHT_BLUE_TULIP.asItem())
                 .add(ModBlocks.BLUE_TULIP.asItem())
                 .add(ModBlocks.PURPLE_TULIP.asItem())
-                .add(ModBlocks.MAGENTA_TULIP.asItem());
+                .add(ModBlocks.MAGENTA_TULIP.asItem())
+                .add(ModBlocks.WEEPING_ROOTS.asItem())
+                .add(ModBlocks.TWISTING_ROOTS.asItem())
+                .add(ModBlocks.WARDEN_PRIMROSE.asItem())
+                .add(ModBlocks.ROCKY_SEDUM.asItem())
+                .add(ModBlocks.GREEN_DAHLIA.asItem())
+                .add(ModBlocks.MAGENTA_CABARET.asItem())
+                .add(ModBlocks.LIME_BELLFLOWER.asItem())
+                .add(ModBlocks.LIME_CHIMNEY_BELLFLOWER.asItem());
 
         getOrCreateTagBuilder(ItemTags.SMALL_FLOWERS)
                 .add(ModBlocks.BLUE_AUBRIETAS.asItem())
@@ -61,11 +69,19 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.LIGHT_BLUE_TULIP.asItem())
                 .add(ModBlocks.BLUE_TULIP.asItem())
                 .add(ModBlocks.PURPLE_TULIP.asItem())
-                .add(ModBlocks.MAGENTA_TULIP.asItem());
+                .add(ModBlocks.MAGENTA_TULIP.asItem())
+                .add(ModBlocks.WEEPING_ROOTS.asItem())
+                .add(ModBlocks.TWISTING_ROOTS.asItem())
+                .add(ModBlocks.WARDEN_PRIMROSE.asItem())
+                .add(ModBlocks.ROCKY_SEDUM.asItem())
+                .add(ModBlocks.GREEN_DAHLIA.asItem())
+                .add(ModBlocks.MAGENTA_CABARET.asItem())
+                .add(ModBlocks.LIME_BELLFLOWER.asItem());
 
         getOrCreateTagBuilder(ItemTags.TALL_FLOWERS)
                 .add(ModBlocks.PINK_ALCEA.asItem())
-                .add(ModBlocks.PURPLE_CHIMNEY_BELLFLOWER.asItem());
+                .add(ModBlocks.PURPLE_CHIMNEY_BELLFLOWER.asItem())
+                .add(ModBlocks.LIME_CHIMNEY_BELLFLOWER.asItem());
 
         getOrCreateTagBuilder(ItemTags.SWORDS)
                 .add(ModItems.PETUNIA_LANCE)
@@ -87,6 +103,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.GRAY_TULIP.asItem());
         getOrCreateTagBuilder(ModTags.Items.BLACK_FLOWERS)
                 .add(ModBlocks.BLACK_TULIP.asItem())
+                .add(ModBlocks.WARDEN_PRIMROSE.asItem())
                 .add(ModBlocks.BLACK_PETUNIA.asItem());
         getOrCreateTagBuilder(ModTags.Items.RED_FLOWERS)
                 .add(ModBlocks.RED_PETUNIA.asItem())
@@ -94,16 +111,21 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Blocks.RED_TULIP.asItem());
         getOrCreateTagBuilder(ModTags.Items.ORANGE_FLOWERS)
                 .add(Blocks.ORANGE_TULIP.asItem())
+                .add(ModBlocks.ROCKY_SEDUM.asItem())
                 .add(Blocks.TORCHFLOWER.asItem());
         getOrCreateTagBuilder(ModTags.Items.BROWN_FLOWERS)
+                .add(ModBlocks.WEEPING_ROOTS.asItem())
+                .add(ModBlocks.TWISTING_ROOTS.asItem())
                 .add(ModBlocks.BROWN_TULIP.asItem());
         getOrCreateTagBuilder(ModTags.Items.YELLOW_FLOWERS)
                 .add(ModBlocks.YELLOW_TULIP.asItem())
                 .add(Blocks.DANDELION.asItem());
         getOrCreateTagBuilder(ModTags.Items.LIME_FLOWERS)
-                .add(ModBlocks.LIME_TULIP.asItem());
+                .add(ModBlocks.LIME_TULIP.asItem())
+                .add(ModBlocks.LIME_BELLFLOWER.asItem());
         getOrCreateTagBuilder(ModTags.Items.GREEN_FLOWERS)
                 .add(ModBlocks.GREEN_TULIP.asItem())
+                .add(ModBlocks.GREEN_DAHLIA.asItem())
                 .add(ModBlocks.GREEN_CONEFLOWER.asItem());
         getOrCreateTagBuilder(ModTags.Items.CYAN_FLOWERS)
                 .add(ModBlocks.CYAN_TULIP.asItem());
@@ -118,6 +140,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.PURPLE_BELLFLOWER.asItem());
         getOrCreateTagBuilder(ModTags.Items.MAGENTA_FLOWERS)
                 .add(ModBlocks.MAGENTA_TULIP.asItem())
+                .add(ModBlocks.MAGENTA_CABARET.asItem())
                 .add(Blocks.ALLIUM.asItem());
         getOrCreateTagBuilder(ModTags.Items.PINK_FLOWERS)
                 .add(ModBlocks.PINK_ALCEA.asItem())
@@ -133,7 +156,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ModTags.Items.TALL_BROWN_FLOWERS);
         getOrCreateTagBuilder(ModTags.Items.TALL_YELLOW_FLOWERS)
                 .add(Blocks.SUNFLOWER.asItem());
-        getOrCreateTagBuilder(ModTags.Items.TALL_LIME_FLOWERS);
+        getOrCreateTagBuilder(ModTags.Items.TALL_LIME_FLOWERS)
+                .add(ModBlocks.LIME_CHIMNEY_BELLFLOWER.asItem());
         getOrCreateTagBuilder(ModTags.Items.TALL_GREEN_FLOWERS);
         getOrCreateTagBuilder(ModTags.Items.TALL_CYAN_FLOWERS);
         getOrCreateTagBuilder(ModTags.Items.TALL_LIGHT_BLUE_FLOWERS);

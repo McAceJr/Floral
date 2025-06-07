@@ -1,5 +1,6 @@
 package mcacejr.floral.item.custom;
 
+import mcacejr.floral.block.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -39,7 +40,16 @@ public class FlowerBlendItem extends Item {
             if (selectedBlockState.isIn(BlockTags.FLOWERS))
             {
 
-                Block.dropStack(context.getWorld(), context.getBlockPos(), new ItemStack(selectedBlockState.getBlock().asItem()));
+                if (selectedBlockState.isOf(ModBlocks.PINK_ALCEA_PLANT))
+                {
+
+                    Block.dropStack(context.getWorld(), context.getBlockPos(), new ItemStack(ModBlocks.PINK_ALCEA));
+
+                } else {
+
+                    Block.dropStack(context.getWorld(), context.getBlockPos(), new ItemStack(selectedBlockState.getBlock()));
+
+                }
 
                 world.syncWorldEvent(WorldEvents.BONE_MEAL_USED, context.getBlockPos(), 0);
 

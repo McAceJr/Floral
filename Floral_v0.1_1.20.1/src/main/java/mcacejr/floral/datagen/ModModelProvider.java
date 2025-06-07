@@ -20,8 +20,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     public void registerThreeStageFlower(BlockStateModelGenerator blockStateModelGenerator, Block flowerBlock) {
 
-        blockStateModelGenerator.modelCollector.accept(ModelIds.getItemModelId(flowerBlock.asItem()),
-                new SimpleModelSupplier(ModelIds.getBlockSubModelId(flowerBlock, "_stage2")));
+        blockStateModelGenerator.registerItemModel(flowerBlock.asItem());
 
         blockStateModelGenerator.createSubModel(flowerBlock, "_stage0", Models.CROSS, TextureMap::cross);
         blockStateModelGenerator.createSubModel(flowerBlock, "_stage1", Models.CROSS, TextureMap::cross);
@@ -91,7 +90,19 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.MAGENTA_TULIP, ModBlocks.POTTED_MAGENTA_TULIP,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
 
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.GREEN_DAHLIA, ModBlocks.POTTED_GREEN_DAHLIA,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.MAGENTA_CABARET, ModBlocks.POTTED_MAGENTA_CABARET,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.LIME_BELLFLOWER, ModBlocks.POTTED_LIME_BELLFLOWER,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        blockStateModelGenerator.registerDoubleBlock(ModBlocks.LIME_CHIMNEY_BELLFLOWER, BlockStateModelGenerator.TintType.NOT_TINTED);
+
         registerThreeStageFlower(blockStateModelGenerator, ModBlocks.WEEPING_ROOTS);
+        registerThreeStageFlower(blockStateModelGenerator, ModBlocks.TWISTING_ROOTS);
+        registerThreeStageFlower(blockStateModelGenerator, ModBlocks.WARDEN_PRIMROSE);
+        registerThreeStageFlower(blockStateModelGenerator, ModBlocks.ROCKY_SEDUM);
 
     }
 
@@ -122,6 +133,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PURPLE_PETAL, Models.GENERATED);
         itemModelGenerator.register(ModItems.MAGENTA_PETAL, Models.GENERATED);
         itemModelGenerator.register(ModItems.PINK_PETAL, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.TWISTED_WART, Models.GENERATED);
 
     }
 

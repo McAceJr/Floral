@@ -8,6 +8,7 @@
   "item.floral.flower_trimmer": "Flower Trimmer",
   "item.floral.deadheader": "Deadheader",
   "item.floral.flower_blend": "Flower Blend",
+  "item.floral.twisted_wart": "Twisted Wart",
 
   "item.floral.white_petal": "White Petal",
   "item.floral.light_gray_petal": "Light Gray Petal",
@@ -35,6 +36,14 @@
   "block.floral.thick_stalk": "Thick Stalk",
   "block.floral.thick_vines": "Thick Vine",
   "block.floral.pink_alcea": "Alcea",
+  "block.floral.green_dahlia": "Green Dahlia",
+  "block.floral.magenta_cabaret": "Magenta Cabaret",
+  "block.floral.lime_bellflower": "Lime Bellflower",
+  "block.floral.lime_chimney_bellflower": "Lime Chimney Bellflower",
+  "block.floral.weeping_roots": "Weeping Roots",
+  "block.floral.twisting_roots": "Twisting Roots",
+  "block.floral.warden_primrose": "Warden Primrose",
+  "block.floral.rocky_sedum": "Rocky Sedum",
 
   "block.floral.light_gray_tulip": "Light Gray Tulip",
   "block.floral.gray_tulip": "Gray Tulip",

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "floral:block/rocky_sedum_stage0"
+  }
+}

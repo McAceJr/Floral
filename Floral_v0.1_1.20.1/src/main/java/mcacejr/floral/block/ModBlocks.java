@@ -2,6 +2,7 @@ package mcacejr.floral.block;
 
 import mcacejr.floral.Floral;
 import mcacejr.floral.block.custom.*;
+import mcacejr.floral.item.ModItems;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -138,6 +139,33 @@ public class ModBlocks {
 
     public static final Block WEEPING_ROOTS = registerBlock("weeping_roots",
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.NETHER_WART));
+    public static final Block TWISTING_ROOTS = registerBlock("twisting_roots",
+            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), ModItems.TWISTED_WART));
+    public static final Block WARDEN_PRIMROSE = registerBlock("warden_primrose",
+            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.ECHO_SHARD));
+    public static final Block ROCKY_SEDUM = registerBlock("rocky_sedum",
+            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.COBBLESTONE));
+
+    public static final Block GREEN_DAHLIA = registerBlock("green_dahlia",
+            new FlowerBlock(StatusEffects.SATURATION, 7, FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
+    public static final Block POTTED_GREEN_DAHLIA = Registry.register(Registries.BLOCK,
+            new Identifier(Floral.MOD_ID, "potted_green_dahlia"),
+            new FlowerPotBlock(GREEN_DAHLIA, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
+
+    public static final Block MAGENTA_CABARET = registerBlock("magenta_cabaret",
+            new FlowerBlock(StatusEffects.SATURATION, 7, FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
+    public static final Block POTTED_MAGENTA_CABARET = Registry.register(Registries.BLOCK,
+            new Identifier(Floral.MOD_ID, "potted_magenta_cabaret"),
+            new FlowerPotBlock(MAGENTA_CABARET, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
+
+    public static final Block LIME_BELLFLOWER = registerBlock("lime_bellflower",
+            new FlowerBlock(StatusEffects.SATURATION, 7, FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
+    public static final Block POTTED_LIME_BELLFLOWER = Registry.register(Registries.BLOCK,
+            new Identifier(Floral.MOD_ID, "potted_lime_bellflower"),
+            new FlowerPotBlock(LIME_BELLFLOWER, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
+
+    public static final Block LIME_CHIMNEY_BELLFLOWER = registerBlock("lime_chimney_bellflower",
+            new TallFlowerBlock(FabricBlockSettings.copyOf(Blocks.ROSE_BUSH)));
 
 
 

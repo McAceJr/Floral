@@ -25,7 +25,7 @@ import net.minecraft.world.event.GameEvent;
 
 public class FloralHarvestableBlock extends PlantBlock implements Fertilizable {
 
-    public static Item HARVEST_RESULT = null;
+    public final Item HARVEST_RESULT;
     public static final int MAX_AGE = 2;
     public static final IntProperty AGE;
     private static final VoxelShape LARGE_SHAPE = Block.createCuboidShape(1.0, 0.0, 1.0, 15.0, 16.0, 15.0);
@@ -38,11 +38,6 @@ public class FloralHarvestableBlock extends PlantBlock implements Fertilizable {
 
         this.setDefaultState(this.stateManager.getDefaultState().with(AGE, 0));
 
-    }
-
-    @Override
-    public ItemStack getPickStack(BlockView world, BlockPos pos, BlockState state) {
-        return new ItemStack(Items.SWEET_BERRIES);
     }
 
     @Override

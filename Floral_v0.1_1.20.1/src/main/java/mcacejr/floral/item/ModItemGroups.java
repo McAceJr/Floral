@@ -42,6 +42,11 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PURPLE_TULIP);
                         entries.add(ModBlocks.MAGENTA_TULIP);
 
+                        entries.add(ModBlocks.GREEN_DAHLIA);
+                        entries.add(ModBlocks.MAGENTA_CABARET);
+                        entries.add(ModBlocks.LIME_BELLFLOWER);
+                        entries.add(ModBlocks.LIME_CHIMNEY_BELLFLOWER);
+
                         entries.add(ModBlocks.THICK_STALK);
                         entries.add(ModBlocks.THICK_VINES);
                         entries.add(ModBlocks.PINK_ALCEA);
@@ -71,6 +76,11 @@ public class ModItemGroups {
                         entries.add(ModItems.PINK_PETAL);
 
                         entries.add(ModBlocks.WEEPING_ROOTS);
+                        entries.add(ModBlocks.TWISTING_ROOTS);
+                        entries.add(ModBlocks.WARDEN_PRIMROSE);
+                        entries.add(ModBlocks.ROCKY_SEDUM);
+
+                        entries.add(ModItems.TWISTED_WART);
 
                     }).build());
 

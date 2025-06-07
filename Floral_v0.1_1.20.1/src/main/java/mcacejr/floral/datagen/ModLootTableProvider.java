@@ -60,6 +60,20 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MAGENTA_TULIP);
         addPottedPlantDrops(ModBlocks.POTTED_MAGENTA_TULIP);
 
+        addDrop(ModBlocks.GREEN_DAHLIA);
+        addPottedPlantDrops(ModBlocks.POTTED_GREEN_DAHLIA);
+        addDrop(ModBlocks.MAGENTA_TULIP);
+        addPottedPlantDrops(ModBlocks.POTTED_MAGENTA_TULIP);
+        addDrop(ModBlocks.LIME_BELLFLOWER);
+        addPottedPlantDrops(ModBlocks.POTTED_LIME_BELLFLOWER);
+
+        addDrop(ModBlocks.LIME_CHIMNEY_BELLFLOWER, block -> this.dropsWithProperty(block, TallPlantBlock.HALF, DoubleBlockHalf.LOWER));
+
+        addDrop(ModBlocks.WEEPING_ROOTS);
+        addDrop(ModBlocks.TWISTING_ROOTS);
+        addDrop(ModBlocks.WARDEN_PRIMROSE);
+        addDrop(ModBlocks.ROCKY_SEDUM);
+
     }
 
 }

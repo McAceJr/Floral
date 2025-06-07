@@ -66,6 +66,9 @@ public class ModItems {
     public static final Item WITHERED_PETAL = registerItem("withered_petal",
             new Item(new FabricItemSettings()));
 
+    public static final Item TWISTED_WART = registerItem("twisted_wart",
+            new Item(new FabricItemSettings()));
+
     private static Item registerItem(String name, Item item) {
 
         return Registry.register(Registries.ITEM, new Identifier(Floral.MOD_ID, name), item);
