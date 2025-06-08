@@ -137,15 +137,6 @@ public class ModBlocks {
             new Identifier(Floral.MOD_ID, "potted_magenta_tulip"),
             new FlowerPotBlock(MAGENTA_TULIP, FabricBlockSettings.copyOf(Blocks.POTTED_WHITE_TULIP).nonOpaque()));
 
-    public static final Block WEEPING_ROOTS = registerBlock("weeping_roots",
-            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.NETHER_WART));
-    public static final Block TWISTING_ROOTS = registerBlock("twisting_roots",
-            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), ModItems.TWISTED_WART));
-    public static final Block WARDEN_PRIMROSE = registerBlock("warden_primrose",
-            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.ECHO_SHARD));
-    public static final Block ROCKY_SEDUM = registerBlock("rocky_sedum",
-            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.COBBLESTONE));
-
     public static final Block GREEN_DAHLIA = registerBlock("green_dahlia",
             new FlowerBlock(StatusEffects.SATURATION, 7, FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
     public static final Block POTTED_GREEN_DAHLIA = Registry.register(Registries.BLOCK,
@@ -167,7 +158,42 @@ public class ModBlocks {
     public static final Block LIME_CHIMNEY_BELLFLOWER = registerBlock("lime_chimney_bellflower",
             new TallFlowerBlock(FabricBlockSettings.copyOf(Blocks.ROSE_BUSH)));
 
+    public static final Block FLORAL_STONE = registerBlock("floral_stone",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
+    public static final Block FLORAL_STONE_BRICKS = registerBlock("floral_stone_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS)));
+    public static final Block COBBLED_FLORAL_STONE = registerBlock("cobbled_floral_stone",
+            new Block(FabricBlockSettings.copyOf(Blocks.COBBLESTONE)));
 
+    public static final Block FLORAL_STONE_STAIRS = registerBlock("floral_stone_stairs",
+            new StairsBlock(ModBlocks.FLORAL_STONE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_STAIRS)));
+    public static final Block FLORAL_STONE_SLAB = registerBlock("floral_stone_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_SLAB)));
+    public static final Block FLORAL_STONE_WALL = registerBlock("floral_stone_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_WALL)));
+
+    public static final Block FLORAL_STONE_BRICK_STAIRS = registerBlock("floral_stone_brick_stairs",
+            new StairsBlock(ModBlocks.FLORAL_STONE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_BRICK_STAIRS)));
+    public static final Block FLORAL_STONE_BRICK_SLAB = registerBlock("floral_stone_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_SLAB)));
+    public static final Block FLORAL_STONE_BRICK_WALL = registerBlock("floral_stone_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_WALL)));
+
+    public static final Block COBBLED_FLORAL_STONE_STAIRS = registerBlock("cobbled_floral_stone_stairs",
+            new StairsBlock(ModBlocks.COBBLED_FLORAL_STONE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.COBBLESTONE_STAIRS)));
+    public static final Block COBBLED_FLORAL_STONE_SLAB = registerBlock("cobbled_floral_stone_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE_SLAB)));
+    public static final Block COBBLED_FLORAL_STONE_WALL = registerBlock("cobbled_floral_stone_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE_WALL)));
+
+    public static final Block WEEPING_ROOTS = registerBlock("weeping_roots",
+            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.NETHER_WART));
+    public static final Block TWISTING_ROOTS = registerBlock("twisting_roots",
+            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), ModItems.TWISTED_WART));
+    public static final Block WARDEN_PRIMROSE = registerBlock("warden_primrose",
+            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.ECHO_SHARD));
+    public static final Block ROCKY_SEDUM = registerBlock("rocky_sedum",
+            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), COBBLED_FLORAL_STONE.asItem()));
 
     private static Block registerBlock(String name, Block block) {
 

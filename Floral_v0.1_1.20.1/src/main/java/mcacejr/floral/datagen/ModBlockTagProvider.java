@@ -81,6 +81,19 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.POTTED_MAGENTA_CABARET)
                 .add(ModBlocks.POTTED_LIME_BELLFLOWER);
 
+        getOrCreateTagBuilder(BlockTags.STAIRS)
+                .add(ModBlocks.FLORAL_STONE_STAIRS)
+                .add(ModBlocks.FLORAL_STONE_BRICK_STAIRS)
+                .add(ModBlocks.COBBLED_FLORAL_STONE_STAIRS);
+        getOrCreateTagBuilder(BlockTags.SLABS)
+                .add(ModBlocks.FLORAL_STONE_SLAB)
+                .add(ModBlocks.FLORAL_STONE_BRICK_SLAB)
+                .add(ModBlocks.COBBLED_FLORAL_STONE_SLAB);
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.FLORAL_STONE_WALL)
+                .add(ModBlocks.FLORAL_STONE_BRICK_WALL)
+                .add(ModBlocks.COBBLED_FLORAL_STONE_WALL);
+
     }
 
 }

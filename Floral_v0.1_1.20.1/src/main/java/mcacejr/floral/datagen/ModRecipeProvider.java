@@ -6,11 +6,13 @@ import mcacejr.floral.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
+import net.minecraft.data.server.recipe.CookingRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.tag.TagKey;
 
@@ -174,6 +176,57 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerFlowerToDyeRecipe(exporter, ModBlocks.BLUE_TULIP.asItem(), Items.BLUE_DYE, 1);
         offerFlowerToDyeRecipe(exporter, ModBlocks.PURPLE_TULIP.asItem(), Items.PURPLE_DYE, 1);
         offerFlowerToDyeRecipe(exporter, ModBlocks.MAGENTA_TULIP.asItem(), Items.MAGENTA_DYE, 1);
+
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FLORAL_STONE_BRICKS, ModBlocks.FLORAL_STONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FLORAL_STONE_STAIRS, ModBlocks.FLORAL_STONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FLORAL_STONE_SLAB, ModBlocks.FLORAL_STONE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FLORAL_STONE_WALL, ModBlocks.FLORAL_STONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FLORAL_STONE_BRICK_STAIRS, ModBlocks.FLORAL_STONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FLORAL_STONE_BRICK_SLAB, ModBlocks.FLORAL_STONE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FLORAL_STONE_BRICK_WALL, ModBlocks.FLORAL_STONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FLORAL_STONE, ModBlocks.FLORAL_STONE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FLORAL_STONE_BRICK_STAIRS, ModBlocks.FLORAL_STONE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FLORAL_STONE_BRICK_SLAB, ModBlocks.FLORAL_STONE_BRICKS, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FLORAL_STONE_BRICK_WALL, ModBlocks.FLORAL_STONE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COBBLED_FLORAL_STONE_STAIRS, ModBlocks.COBBLED_FLORAL_STONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COBBLED_FLORAL_STONE_SLAB, ModBlocks.COBBLED_FLORAL_STONE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COBBLED_FLORAL_STONE_WALL, ModBlocks.COBBLED_FLORAL_STONE);
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FLORAL_STONE_SLAB, Ingredient.ofItems(ModBlocks.FLORAL_STONE))
+                .criterion(hasItem(ModBlocks.FLORAL_STONE), conditionsFromItem(ModBlocks.FLORAL_STONE))
+                .offerTo(exporter);
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FLORAL_STONE_BRICK_SLAB, Ingredient.ofItems(ModBlocks.FLORAL_STONE_BRICKS))
+                .criterion(hasItem(ModBlocks.FLORAL_STONE_BRICKS), conditionsFromItem(ModBlocks.FLORAL_STONE_BRICKS))
+                .offerTo(exporter);
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COBBLED_FLORAL_STONE_SLAB, Ingredient.ofItems(ModBlocks.COBBLED_FLORAL_STONE))
+                .criterion(hasItem(ModBlocks.COBBLED_FLORAL_STONE), conditionsFromItem(ModBlocks.COBBLED_FLORAL_STONE))
+                .offerTo(exporter);
+
+        createStairsRecipe(ModBlocks.FLORAL_STONE_STAIRS, Ingredient.ofItems(ModBlocks.FLORAL_STONE))
+                .criterion(hasItem(ModBlocks.FLORAL_STONE), conditionsFromItem(ModBlocks.FLORAL_STONE))
+                .offerTo(exporter);
+        createStairsRecipe(ModBlocks.FLORAL_STONE_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.FLORAL_STONE_BRICKS))
+                .criterion(hasItem(ModBlocks.FLORAL_STONE_BRICKS), conditionsFromItem(ModBlocks.FLORAL_STONE_BRICKS))
+                .offerTo(exporter);
+        createStairsRecipe(ModBlocks.COBBLED_FLORAL_STONE_STAIRS, Ingredient.ofItems(ModBlocks.COBBLED_FLORAL_STONE))
+                .criterion(hasItem(ModBlocks.COBBLED_FLORAL_STONE), conditionsFromItem(ModBlocks.COBBLED_FLORAL_STONE))
+                .offerTo(exporter);
+
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FLORAL_STONE_WALL, ModBlocks.FLORAL_STONE);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FLORAL_STONE_BRICK_WALL, ModBlocks.FLORAL_STONE_BRICKS);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COBBLED_FLORAL_STONE_WALL, ModBlocks.COBBLED_FLORAL_STONE);
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(ModBlocks.COBBLED_FLORAL_STONE), RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.FLORAL_STONE, 0.1f, 200)
+                .criterion(hasItem(ModBlocks.COBBLED_FLORAL_STONE), conditionsFromItem(ModBlocks.COBBLED_FLORAL_STONE))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FLORAL_STONE_BRICKS, 4)
+                .pattern("SS")
+                .pattern("SS")
+                .input('S', ModBlocks.FLORAL_STONE)
+                .criterion(hasItem(ModBlocks.FLORAL_STONE), conditionsFromItem(ModBlocks.FLORAL_STONE))
+                .offerTo(exporter);
 
     }
 

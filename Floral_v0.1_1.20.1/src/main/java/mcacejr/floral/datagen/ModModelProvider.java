@@ -104,6 +104,21 @@ public class ModModelProvider extends FabricModelProvider {
         registerThreeStageFlower(blockStateModelGenerator, ModBlocks.WARDEN_PRIMROSE);
         registerThreeStageFlower(blockStateModelGenerator, ModBlocks.ROCKY_SEDUM);
 
+        BlockStateModelGenerator.BlockTexturePool floralstonepool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FLORAL_STONE);
+        floralstonepool.stairs(ModBlocks.FLORAL_STONE_STAIRS);
+        floralstonepool.slab(ModBlocks.FLORAL_STONE_SLAB);
+        floralstonepool.wall(ModBlocks.FLORAL_STONE_WALL);
+
+        BlockStateModelGenerator.BlockTexturePool floralstonebrickpool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FLORAL_STONE_BRICKS);
+        floralstonebrickpool.stairs(ModBlocks.FLORAL_STONE_BRICK_STAIRS);
+        floralstonebrickpool.slab(ModBlocks.FLORAL_STONE_BRICK_SLAB);
+        floralstonebrickpool.wall(ModBlocks.FLORAL_STONE_BRICK_WALL);
+
+        BlockStateModelGenerator.BlockTexturePool cobbledfloralstonepool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COBBLED_FLORAL_STONE);
+        cobbledfloralstonepool.stairs(ModBlocks.COBBLED_FLORAL_STONE_STAIRS);
+        cobbledfloralstonepool.slab(ModBlocks.COBBLED_FLORAL_STONE_SLAB);
+        cobbledfloralstonepool.wall(ModBlocks.COBBLED_FLORAL_STONE_WALL);
+
     }
 
     @Override

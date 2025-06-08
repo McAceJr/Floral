@@ -169,6 +169,19 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ModTags.Items.TALL_PINK_FLOWERS)
                 .add(Blocks.PEONY.asItem());
 
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(ModBlocks.FLORAL_STONE_STAIRS.asItem())
+                .add(ModBlocks.FLORAL_STONE_BRICK_STAIRS.asItem())
+                .add(ModBlocks.COBBLED_FLORAL_STONE_STAIRS.asItem());
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(ModBlocks.FLORAL_STONE_SLAB.asItem())
+                .add(ModBlocks.FLORAL_STONE_BRICK_SLAB.asItem())
+                .add(ModBlocks.COBBLED_FLORAL_STONE_SLAB.asItem());
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(ModBlocks.FLORAL_STONE_WALL.asItem())
+                .add(ModBlocks.FLORAL_STONE_BRICK_WALL.asItem())
+                .add(ModBlocks.COBBLED_FLORAL_STONE_WALL.asItem());
+
     }
 
 }
