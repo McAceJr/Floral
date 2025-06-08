@@ -186,6 +186,35 @@ public class ModBlocks {
     public static final Block COBBLED_FLORAL_STONE_WALL = registerBlock("cobbled_floral_stone_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE_WALL)));
 
+    public static final Block STEM_LOG = registerBlock("stem_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_LOG)));
+    public static final Block STEM_WOOD = registerBlock("stem_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_WOOD)));
+    public static final Block STRIPPED_STEM_LOG = registerBlock("stripped_stem_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_CHERRY_LOG)));
+    public static final Block STRIPPED_STEM_WOOD = registerBlock("stripped_stem_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_CHERRY_WOOD)));
+    public static final Block STEM_PLANKS = registerBlock("stem_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.CHERRY_PLANKS)));
+    public static final Block STEM_STAIRS = registerBlock("stem_stairs",
+            new StairsBlock(ModBlocks.STEM_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.CHERRY_STAIRS)));
+    public static final Block STEM_SLAB = registerBlock("stem_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_SLAB)));
+    public static final Block STEM_FENCE = registerBlock("stem_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_FENCE)));
+    public static final Block STEM_FENCE_GATE = registerBlock("stem_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_FENCE_GATE), WoodType.CHERRY));
+    public static final Block STEM_TRAPDOOR = registerBlock("stem_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_TRAPDOOR), BlockSetType.CHERRY));
+    public static final Block STEM_DOOR = registerBlock("stem_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_DOOR), BlockSetType.CHERRY));
+    public static final Block STEM_BUTTON = registerBlock("stem_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_BUTTON),
+                    BlockSetType.CHERRY, 10, true));
+    public static final Block STEM_PRESSURE_PLATE = registerBlock("stem_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(Blocks.CHERRY_PRESSURE_PLATE), BlockSetType.CHERRY));
+
     public static final Block WEEPING_ROOTS = registerBlock("weeping_roots",
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.NETHER_WART));
     public static final Block TWISTING_ROOTS = registerBlock("twisting_roots",
@@ -194,6 +223,8 @@ public class ModBlocks {
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.ECHO_SHARD));
     public static final Block ROCKY_SEDUM = registerBlock("rocky_sedum",
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), COBBLED_FLORAL_STONE.asItem()));
+    public static final Block STEM_LILY = registerBlock("stem_lily",
+            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), STEM_LOG.asItem()));
 
     private static Block registerBlock(String name, Block block) {
 

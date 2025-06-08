@@ -73,19 +73,34 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.TWISTING_ROOTS);
         addDrop(ModBlocks.WARDEN_PRIMROSE);
         addDrop(ModBlocks.ROCKY_SEDUM);
+        addDrop(ModBlocks.STEM_LILY);
 
         addDrop(ModBlocks.FLORAL_STONE);
         addDrop(ModBlocks.FLORAL_STONE_STAIRS);
-        addDrop(ModBlocks.FLORAL_STONE_SLAB);
+        addDrop(ModBlocks.FLORAL_STONE_SLAB, slabDrops(ModBlocks.FLORAL_STONE_SLAB));
         addDrop(ModBlocks.FLORAL_STONE_WALL);
         addDrop(ModBlocks.FLORAL_STONE_BRICKS);
         addDrop(ModBlocks.FLORAL_STONE_BRICK_STAIRS);
-        addDrop(ModBlocks.FLORAL_STONE_BRICK_SLAB);
+        addDrop(ModBlocks.FLORAL_STONE_BRICK_SLAB, slabDrops(ModBlocks.FLORAL_STONE_BRICK_SLAB));
         addDrop(ModBlocks.FLORAL_STONE_BRICK_WALL);
         addDrop(ModBlocks.COBBLED_FLORAL_STONE);
         addDrop(ModBlocks.COBBLED_FLORAL_STONE_STAIRS);
-        addDrop(ModBlocks.COBBLED_FLORAL_STONE_SLAB);
+        addDrop(ModBlocks.COBBLED_FLORAL_STONE_SLAB, slabDrops(ModBlocks.COBBLED_FLORAL_STONE_SLAB));
         addDrop(ModBlocks.COBBLED_FLORAL_STONE_WALL);
+
+        addDrop(ModBlocks.STEM_LOG);
+        addDrop(ModBlocks.STEM_WOOD);
+        addDrop(ModBlocks.STRIPPED_STEM_LOG);
+        addDrop(ModBlocks.STRIPPED_STEM_WOOD);
+        addDrop(ModBlocks.STEM_PLANKS);
+        addDrop(ModBlocks.STEM_STAIRS);
+        addDrop(ModBlocks.STEM_SLAB, slabDrops(ModBlocks.STEM_SLAB));
+        addDrop(ModBlocks.STEM_FENCE);
+        addDrop(ModBlocks.STEM_FENCE_GATE);
+        addDrop(ModBlocks.STEM_BUTTON);
+        addDrop(ModBlocks.STEM_PRESSURE_PLATE);
+        addDrop(ModBlocks.STEM_TRAPDOOR);
+        addDrop(ModBlocks.STEM_DOOR, doorDrops(ModBlocks.STEM_DOOR));
 
     }
 

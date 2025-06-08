@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -44,6 +45,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.TWISTING_ROOTS)
                 .add(ModBlocks.WARDEN_PRIMROSE)
                 .add(ModBlocks.ROCKY_SEDUM)
+                .add(ModBlocks.STEM_LILY)
                 .add(ModBlocks.GREEN_DAHLIA)
                 .add(ModBlocks.MAGENTA_CABARET)
                 .add(ModBlocks.LIME_BELLFLOWER)
@@ -93,6 +95,18 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.FLORAL_STONE_WALL)
                 .add(ModBlocks.FLORAL_STONE_BRICK_WALL)
                 .add(ModBlocks.COBBLED_FLORAL_STONE_WALL);
+
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.STEM_LOG)
+                .add(ModBlocks.STEM_WOOD)
+                .add(ModBlocks.STRIPPED_STEM_LOG)
+                .add(ModBlocks.STRIPPED_STEM_WOOD);
+
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.STEM_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.STEM_FENCE_GATE);
 
     }
 

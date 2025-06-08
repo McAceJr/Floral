@@ -228,6 +228,36 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.FLORAL_STONE), conditionsFromItem(ModBlocks.FLORAL_STONE))
                 .offerTo(exporter);
 
+        offerBarkBlockRecipe(exporter, ModBlocks.STEM_WOOD, ModBlocks.STEM_LOG);
+
+        offerBarkBlockRecipe(exporter, ModBlocks.STRIPPED_STEM_WOOD, ModBlocks.STRIPPED_STEM_LOG);
+
+        offerPlanksRecipe(exporter, ModBlocks.STEM_PLANKS, ModTags.Items.STEM_LOGS, 4);
+
+        createStairsRecipe(ModBlocks.STEM_STAIRS, Ingredient.ofItems(ModBlocks.STEM_PLANKS))
+                .criterion(hasItem(ModBlocks.STEM_PLANKS), conditionsFromItem(ModBlocks.STEM_PLANKS))
+                .offerTo(exporter);
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STEM_SLAB, Ingredient.ofItems(ModBlocks.STEM_PLANKS))
+                .criterion(hasItem(ModBlocks.STEM_PLANKS), conditionsFromItem(ModBlocks.STEM_PLANKS))
+                .offerTo(exporter);
+
+        createFenceRecipe(ModBlocks.STEM_FENCE, Ingredient.ofItems(ModBlocks.STEM_PLANKS))
+                .criterion(hasItem(ModBlocks.STEM_PLANKS), conditionsFromItem(ModBlocks.STEM_PLANKS))
+                .offerTo(exporter);
+
+        createFenceGateRecipe(ModBlocks.STEM_FENCE_GATE, Ingredient.ofItems(ModBlocks.STEM_PLANKS))
+                .criterion(hasItem(ModBlocks.STEM_PLANKS), conditionsFromItem(ModBlocks.STEM_PLANKS))
+                .offerTo(exporter);
+
+        createDoorRecipe(ModBlocks.STEM_DOOR, Ingredient.ofItems(ModBlocks.STEM_PLANKS))
+                .criterion(hasItem(ModBlocks.STEM_PLANKS), conditionsFromItem(ModBlocks.STEM_PLANKS))
+                .offerTo(exporter);
+
+        createTrapdoorRecipe(ModBlocks.STEM_TRAPDOOR, Ingredient.ofItems(ModBlocks.STEM_PLANKS))
+                .criterion(hasItem(ModBlocks.STEM_PLANKS), conditionsFromItem(ModBlocks.STEM_PLANKS))
+                .offerTo(exporter);
+
     }
 
 }

@@ -79,6 +79,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.TWISTING_ROOTS);
                         entries.add(ModBlocks.WARDEN_PRIMROSE);
                         entries.add(ModBlocks.ROCKY_SEDUM);
+                        entries.add(ModBlocks.STEM_LILY);
 
                         entries.add(ModItems.TWISTED_WART);
 
@@ -94,6 +95,20 @@ public class ModItemGroups {
                         entries.add(ModBlocks.COBBLED_FLORAL_STONE_STAIRS);
                         entries.add(ModBlocks.COBBLED_FLORAL_STONE_SLAB);
                         entries.add(ModBlocks.COBBLED_FLORAL_STONE_WALL);
+
+                        entries.add(ModBlocks.STEM_LOG);
+                        entries.add(ModBlocks.STEM_WOOD);
+                        entries.add(ModBlocks.STRIPPED_STEM_LOG);
+                        entries.add(ModBlocks.STRIPPED_STEM_WOOD);
+                        entries.add(ModBlocks.STEM_PLANKS);
+                        entries.add(ModBlocks.STEM_STAIRS);
+                        entries.add(ModBlocks.STEM_SLAB);
+                        entries.add(ModBlocks.STEM_FENCE);
+                        entries.add(ModBlocks.STEM_FENCE_GATE);
+                        entries.add(ModBlocks.STEM_TRAPDOOR);
+                        entries.add(ModBlocks.STEM_DOOR);
+                        entries.add(ModBlocks.STEM_BUTTON);
+                        entries.add(ModBlocks.STEM_PRESSURE_PLATE);
 
                     }).build());
 

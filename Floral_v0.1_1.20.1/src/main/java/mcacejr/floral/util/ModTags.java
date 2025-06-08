@@ -20,6 +20,8 @@ public class ModTags {
 
     public static class Items {
 
+        public static final TagKey<Item> STEM_LOGS = createTag("stem_logs");
+
         public static final TagKey<Item> FLOWER_TRIMMERS = createTag("flower_trimmers");
 
         public static final TagKey<Item> WHITE_FLOWERS = createTag("white_flowers");

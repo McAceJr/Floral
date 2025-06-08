@@ -1,5 +1,6 @@
-// 1.20.1	2025-06-07T23:47:43.3920076	Floral/Tags for minecraft:item
+// 1.20.1	2025-06-08T14:55:07.9983865	Floral/Tags for minecraft:item
 0ad57219fec1f710952e19f2f4b0fba9e75d2318 data\floral\tags\items\flower_trimmers.json
+12b0a13aae5470edc84c23a310b011477445cd6c data\minecraft\tags\items\planks.json
 16125d2c4f9566f1e4959f954fc989490984d789 data\floral\tags\items\blue_flowers.json
 80abfaae3ae2feca0cf28c363051fb48b0d40641 data\minecraft\tags\items\stairs.json
 13482bf6e2f9b6d85e53e3874f83626f612e5d87 data\floral\tags\items\tall_purple_flowers.json
@@ -9,24 +10,27 @@
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\floral\tags\items\tall_brown_flowers.json
 f507730eaba6e133b7d8063c728152634a1e04dd data\minecraft\tags\items\slabs.json
 78540f91ccc5d407558a27d0f4d466e0ed1a1eca data\floral\tags\items\lime_flowers.json
+bc47173ee10b43c912558db3544c5811ab687e7d data\minecraft\tags\items\logs_that_burn.json
+bc47173ee10b43c912558db3544c5811ab687e7d data\minecraft\tags\items\logs.json
 64498d57bbcc6dd231773126a24f9d2bd9400608 data\minecraft\tags\items\tall_flowers.json
 d9a377363933a1edbc84e8282e778605797cc651 data\floral\tags\items\tall_pink_flowers.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\floral\tags\items\tall_green_flowers.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\floral\tags\items\tall_orange_flowers.json
+bc47173ee10b43c912558db3544c5811ab687e7d data\floral\tags\items\stem_logs.json
 293cbede949f43cfd4614e360a125da8916131ef data\floral\tags\items\brown_flowers.json
 c2d9e290fe39e08d717586c394638ed8ded3783a data\floral\tags\items\pink_flowers.json
 b0398335ca7c316c38effb656aaf12c47e3c7b44 data\minecraft\tags\items\walls.json
 309eb5c57bcc06639849aa4f242ebeaa0f67656c data\floral\tags\items\red_flowers.json
 d175395d50c46a1a396514fa6496cb70e69f8f50 data\floral\tags\items\tall_magenta_flowers.json
-f07bc7134d641b64eea639972e03a3e3a67a907d data\floral\tags\items\green_flowers.json
+350eeb31d6fe4fbac51eb044ac05688f95522c84 data\floral\tags\items\green_flowers.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\floral\tags\items\tall_light_blue_flowers.json
 510cc0cca4e777cbbb228acadc83fd5b52d138a9 data\floral\tags\items\cyan_flowers.json
 05fd3fc499246bf4852f631866b97612793c4ba3 data\floral\tags\items\white_flowers.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\floral\tags\items\tall_cyan_flowers.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\floral\tags\items\tall_black_flowers.json
 7e7910029aa94f291173f0c8e12c14f78af7972c data\floral\tags\items\yellow_flowers.json
-a3810fa4997231aa01651be7f9523f0bef1cd13a data\minecraft\tags\items\small_flowers.json
 9c1a994ce049a9e36c2caafaace086da1ab2fbbd data\floral\tags\items\light_gray_flowers.json
+7f697523347358d4ce49b35647af644bc35bd31c data\minecraft\tags\items\small_flowers.json
 cf72b201678afca08662894cbf0b3dc3c9216fc1 data\floral\tags\items\magenta_flowers.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\floral\tags\items\tall_white_flowers.json
 cf49ce5901d3dcfb715ca7387bea0661d386e336 data\floral\tags\items\black_flowers.json

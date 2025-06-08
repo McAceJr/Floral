@@ -74,6 +74,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.TWISTING_ROOTS.asItem())
                 .add(ModBlocks.WARDEN_PRIMROSE.asItem())
                 .add(ModBlocks.ROCKY_SEDUM.asItem())
+                .add(ModBlocks.STEM_LILY.asItem())
                 .add(ModBlocks.GREEN_DAHLIA.asItem())
                 .add(ModBlocks.MAGENTA_CABARET.asItem())
                 .add(ModBlocks.LIME_BELLFLOWER.asItem());
@@ -126,6 +127,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ModTags.Items.GREEN_FLOWERS)
                 .add(ModBlocks.GREEN_TULIP.asItem())
                 .add(ModBlocks.GREEN_DAHLIA.asItem())
+                .add(ModBlocks.STEM_LILY.asItem())
                 .add(ModBlocks.GREEN_CONEFLOWER.asItem());
         getOrCreateTagBuilder(ModTags.Items.CYAN_FLOWERS)
                 .add(ModBlocks.CYAN_TULIP.asItem());
@@ -181,6 +183,27 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.FLORAL_STONE_WALL.asItem())
                 .add(ModBlocks.FLORAL_STONE_BRICK_WALL.asItem())
                 .add(ModBlocks.COBBLED_FLORAL_STONE_WALL.asItem());
+
+        getOrCreateTagBuilder(ItemTags.PLANKS)
+                .add(ModBlocks.STEM_PLANKS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.STEM_LOG.asItem())
+                .add(ModBlocks.STEM_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_STEM_LOG.asItem())
+                .add(ModBlocks.STRIPPED_STEM_WOOD.asItem());
+
+        getOrCreateTagBuilder(ItemTags.LOGS)
+                .add(ModBlocks.STEM_LOG.asItem())
+                .add(ModBlocks.STEM_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_STEM_LOG.asItem())
+                .add(ModBlocks.STRIPPED_STEM_WOOD.asItem());
+
+        getOrCreateTagBuilder(ModTags.Items.STEM_LOGS)
+                .add(ModBlocks.STEM_LOG.asItem())
+                .add(ModBlocks.STEM_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_STEM_LOG.asItem())
+                .add(ModBlocks.STRIPPED_STEM_WOOD.asItem());
 
     }
 
