@@ -6,6 +6,8 @@ import mcacejr.floral.item.ModItems;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.data.family.BlockFamilies;
+import net.minecraft.data.family.BlockFamily;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -51,106 +53,124 @@ public class ModBlocks {
             new FlowerbedBlock(FabricBlockSettings.copyOf(Blocks.PINK_PETALS).nonOpaque().noCollision()));
 
     public static final Block THICK_STALK = registerBlock("thick_stalk",
-            new ThickStalkBlock(FabricBlockSettings.copyOf(Blocks.TWISTING_VINES).nonOpaque().noCollision(), false, 0.1f));
+            new ThickStalkBlock(FabricBlockSettings.copyOf(Blocks.TWISTING_VINES).nonOpaque().noCollision(),
+                    false, 0.1f));
     public static final Block THICK_STALK_PLANT = registerBlock("thick_stalk_plant",
             new ThickStalkPlantBlock(FabricBlockSettings.copyOf(Blocks.TWISTING_VINES_PLANT).nonOpaque().noCollision()));
 
     public static final Block THICK_VINES = registerBlock("thick_vines",
-            new ThickVineBlock(FabricBlockSettings.copyOf(Blocks.WEEPING_VINES).nonOpaque().noCollision(), false, 0.1f));
+            new ThickVineBlock(FabricBlockSettings.copyOf(Blocks.WEEPING_VINES).nonOpaque().noCollision(),
+                    false, 0.1f));
     public static final Block THICK_VINES_PLANT = registerBlock("thick_vines_plant",
             new ThickVinePlantBlock(FabricBlockSettings.copyOf(Blocks.WEEPING_VINES_PLANT).nonOpaque().noCollision()));
 
     public static final Block PINK_ALCEA = registerBlock("pink_alcea",
-            new PinkAlceaBlock(FabricBlockSettings.copyOf(Blocks.TWISTING_VINES).nonOpaque().noCollision(), false, 0.1f));
+            new PinkAlceaBlock(FabricBlockSettings.copyOf(Blocks.TWISTING_VINES).nonOpaque().noCollision(),
+                    false, 0.1f));
     public static final Block PINK_ALCEA_PLANT = registerBlock("pink_alcea_plant",
             new PinkAlceaPlantBlock(FabricBlockSettings.copyOf(Blocks.TWISTING_VINES_PLANT).nonOpaque().noCollision()));
 
     public static final Block LIGHT_GRAY_TULIP = registerBlock("light_gray_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 7, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP).nonOpaque().noCollision()));
+            new FlowerBlock(StatusEffects.WEAKNESS, 7, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP)
+                    .nonOpaque().noCollision()));
     public static final Block POTTED_LIGHT_GRAY_TULIP = Registry.register(Registries.BLOCK,
             new Identifier(Floral.MOD_ID, "potted_light_gray_tulip"),
             new FlowerPotBlock(LIGHT_GRAY_TULIP, FabricBlockSettings.copyOf(Blocks.POTTED_WHITE_TULIP).nonOpaque()));
 
     public static final Block GRAY_TULIP = registerBlock("gray_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 7, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP).nonOpaque().noCollision()));
+            new FlowerBlock(StatusEffects.WEAKNESS, 7, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP)
+                    .nonOpaque().noCollision()));
     public static final Block POTTED_GRAY_TULIP = Registry.register(Registries.BLOCK,
             new Identifier(Floral.MOD_ID, "potted_gray_tulip"),
             new FlowerPotBlock(GRAY_TULIP, FabricBlockSettings.copyOf(Blocks.POTTED_WHITE_TULIP).nonOpaque()));
 
     public static final Block BLACK_TULIP = registerBlock("black_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 7, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP).nonOpaque().noCollision()));
+            new FlowerBlock(StatusEffects.WEAKNESS, 7, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP)
+                    .nonOpaque().noCollision()));
     public static final Block POTTED_BLACK_TULIP = Registry.register(Registries.BLOCK,
             new Identifier(Floral.MOD_ID, "potted_black_tulip"),
             new FlowerPotBlock(BLACK_TULIP, FabricBlockSettings.copyOf(Blocks.POTTED_WHITE_TULIP).nonOpaque()));
 
     public static final Block BROWN_TULIP = registerBlock("brown_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 7, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP).nonOpaque().noCollision()));
+            new FlowerBlock(StatusEffects.WEAKNESS, 7, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP)
+                    .nonOpaque().noCollision()));
     public static final Block POTTED_BROWN_TULIP = Registry.register(Registries.BLOCK,
             new Identifier(Floral.MOD_ID, "potted_brown_tulip"),
             new FlowerPotBlock(BROWN_TULIP, FabricBlockSettings.copyOf(Blocks.POTTED_WHITE_TULIP).nonOpaque()));
 
     public static final Block YELLOW_TULIP = registerBlock("yellow_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 7, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP).nonOpaque().noCollision()));
+            new FlowerBlock(StatusEffects.WEAKNESS, 7, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP)
+                    .nonOpaque().noCollision()));
     public static final Block POTTED_YELLOW_TULIP = Registry.register(Registries.BLOCK,
             new Identifier(Floral.MOD_ID, "potted_yellow_tulip"),
             new FlowerPotBlock(YELLOW_TULIP, FabricBlockSettings.copyOf(Blocks.POTTED_WHITE_TULIP).nonOpaque()));
 
     public static final Block LIME_TULIP = registerBlock("lime_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 7, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP).nonOpaque().noCollision()));
+            new FlowerBlock(StatusEffects.WEAKNESS, 7, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP)
+                    .nonOpaque().noCollision()));
     public static final Block POTTED_LIME_TULIP = Registry.register(Registries.BLOCK,
             new Identifier(Floral.MOD_ID, "potted_lime_tulip"),
             new FlowerPotBlock(LIME_TULIP, FabricBlockSettings.copyOf(Blocks.POTTED_WHITE_TULIP).nonOpaque()));
 
     public static final Block GREEN_TULIP = registerBlock("green_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 7, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP).nonOpaque().noCollision()));
+            new FlowerBlock(StatusEffects.WEAKNESS, 7, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP)
+                    .nonOpaque().noCollision()));
     public static final Block POTTED_GREEN_TULIP = Registry.register(Registries.BLOCK,
             new Identifier(Floral.MOD_ID, "potted_green_tulip"),
             new FlowerPotBlock(GREEN_TULIP, FabricBlockSettings.copyOf(Blocks.POTTED_WHITE_TULIP).nonOpaque()));
 
     public static final Block CYAN_TULIP = registerBlock("cyan_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 7, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP).nonOpaque().noCollision()));
+            new FlowerBlock(StatusEffects.WEAKNESS, 7, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP)
+                    .nonOpaque().noCollision()));
     public static final Block POTTED_CYAN_TULIP = Registry.register(Registries.BLOCK,
             new Identifier(Floral.MOD_ID, "potted_cyan_tulip"),
             new FlowerPotBlock(CYAN_TULIP, FabricBlockSettings.copyOf(Blocks.POTTED_WHITE_TULIP).nonOpaque()));
 
     public static final Block LIGHT_BLUE_TULIP = registerBlock("light_blue_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 7, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP).nonOpaque().noCollision()));
+            new FlowerBlock(StatusEffects.WEAKNESS, 7, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP)
+                    .nonOpaque().noCollision()));
     public static final Block POTTED_LIGHT_BLUE_TULIP = Registry.register(Registries.BLOCK,
             new Identifier(Floral.MOD_ID, "potted_light_blue_tulip"),
             new FlowerPotBlock(LIGHT_BLUE_TULIP, FabricBlockSettings.copyOf(Blocks.POTTED_WHITE_TULIP).nonOpaque()));
 
     public static final Block BLUE_TULIP = registerBlock("blue_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 7, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP).nonOpaque().noCollision()));
+            new FlowerBlock(StatusEffects.WEAKNESS, 7, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP)
+                    .nonOpaque().noCollision()));
     public static final Block POTTED_BLUE_TULIP = Registry.register(Registries.BLOCK,
             new Identifier(Floral.MOD_ID, "potted_blue_tulip"),
             new FlowerPotBlock(BLUE_TULIP, FabricBlockSettings.copyOf(Blocks.POTTED_WHITE_TULIP).nonOpaque()));
 
     public static final Block PURPLE_TULIP = registerBlock("purple_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 7, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP).nonOpaque().noCollision()));
+            new FlowerBlock(StatusEffects.WEAKNESS, 7, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP)
+                    .nonOpaque().noCollision()));
     public static final Block POTTED_PURPLE_TULIP = Registry.register(Registries.BLOCK,
             new Identifier(Floral.MOD_ID, "potted_purple_tulip"),
             new FlowerPotBlock(PURPLE_TULIP, FabricBlockSettings.copyOf(Blocks.POTTED_WHITE_TULIP).nonOpaque()));
 
     public static final Block MAGENTA_TULIP = registerBlock("magenta_tulip",
-            new FlowerBlock(StatusEffects.WEAKNESS, 7, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP).nonOpaque().noCollision()));
+            new FlowerBlock(StatusEffects.WEAKNESS, 7, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP)
+                    .nonOpaque().noCollision()));
     public static final Block POTTED_MAGENTA_TULIP = Registry.register(Registries.BLOCK,
             new Identifier(Floral.MOD_ID, "potted_magenta_tulip"),
             new FlowerPotBlock(MAGENTA_TULIP, FabricBlockSettings.copyOf(Blocks.POTTED_WHITE_TULIP).nonOpaque()));
 
     public static final Block GREEN_DAHLIA = registerBlock("green_dahlia",
-            new FlowerBlock(StatusEffects.SATURATION, 7, FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
+            new FlowerBlock(StatusEffects.SATURATION, 7, FabricBlockSettings.copyOf(Blocks.ALLIUM)
+                    .nonOpaque().noCollision()));
     public static final Block POTTED_GREEN_DAHLIA = Registry.register(Registries.BLOCK,
             new Identifier(Floral.MOD_ID, "potted_green_dahlia"),
             new FlowerPotBlock(GREEN_DAHLIA, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
 
     public static final Block MAGENTA_CABARET = registerBlock("magenta_cabaret",
-            new FlowerBlock(StatusEffects.SATURATION, 7, FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
+            new FlowerBlock(StatusEffects.SATURATION, 7, FabricBlockSettings.copyOf(Blocks.ALLIUM)
+                    .nonOpaque().noCollision()));
     public static final Block POTTED_MAGENTA_CABARET = Registry.register(Registries.BLOCK,
             new Identifier(Floral.MOD_ID, "potted_magenta_cabaret"),
             new FlowerPotBlock(MAGENTA_CABARET, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
 
     public static final Block LIME_BELLFLOWER = registerBlock("lime_bellflower",
-            new FlowerBlock(StatusEffects.SATURATION, 7, FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
+            new FlowerBlock(StatusEffects.SATURATION, 7, FabricBlockSettings.copyOf(Blocks.ALLIUM)
+                    .nonOpaque().noCollision()));
     public static final Block POTTED_LIME_BELLFLOWER = Registry.register(Registries.BLOCK,
             new Identifier(Floral.MOD_ID, "potted_lime_bellflower"),
             new FlowerPotBlock(LIME_BELLFLOWER, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
@@ -173,14 +193,16 @@ public class ModBlocks {
             new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_WALL)));
 
     public static final Block FLORAL_STONE_BRICK_STAIRS = registerBlock("floral_stone_brick_stairs",
-            new StairsBlock(ModBlocks.FLORAL_STONE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_BRICK_STAIRS)));
+            new StairsBlock(ModBlocks.FLORAL_STONE_BRICKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.STONE_BRICK_STAIRS)));
     public static final Block FLORAL_STONE_BRICK_SLAB = registerBlock("floral_stone_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_SLAB)));
     public static final Block FLORAL_STONE_BRICK_WALL = registerBlock("floral_stone_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_WALL)));
 
     public static final Block COBBLED_FLORAL_STONE_STAIRS = registerBlock("cobbled_floral_stone_stairs",
-            new StairsBlock(ModBlocks.COBBLED_FLORAL_STONE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.COBBLESTONE_STAIRS)));
+            new StairsBlock(ModBlocks.COBBLED_FLORAL_STONE.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.COBBLESTONE_STAIRS)));
     public static final Block COBBLED_FLORAL_STONE_SLAB = registerBlock("cobbled_floral_stone_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE_SLAB)));
     public static final Block COBBLED_FLORAL_STONE_WALL = registerBlock("cobbled_floral_stone_wall",
@@ -214,6 +236,19 @@ public class ModBlocks {
     public static final Block STEM_PRESSURE_PLATE = registerBlock("stem_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(Blocks.CHERRY_PRESSURE_PLATE), BlockSetType.CHERRY));
+
+//    public static final Block STANDING_STEM_SIGN = registerBlock("standing_stem_sign",
+//            new SignBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_SIGN), WoodType.CHERRY));
+//    public static final Block WALL_STEM_SIGN = registerBlock("wall_stem_sign",
+//            new WallSignBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_WALL_SIGN), WoodType.CHERRY));
+//    public static final Block HANGING_STEM_SIGN = registerBlock("hanging_stem_sign",
+//            new HangingSignBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_HANGING_SIGN), WoodType.CHERRY));
+//    public static final Block WALL_HANGING_STEM_SIGN = registerBlock("wall_hanging_stem_sign",
+//            new WallHangingSignBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_WALL_HANGING_SIGN), WoodType.CHERRY));
+
+//    public static final BlockFamily STEM_FAMILY = BlockFamilies.register(ModBlocks.STEM_PLANKS)
+//            .sign(ModBlocks.STANDING_STEM_SIGN, ModBlocks.WALL_STEM_SIGN)
+//            .group("wooden").unlockCriterionName("has_planks").build();
 
     public static final Block WEEPING_ROOTS = registerBlock("weeping_roots",
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.NETHER_WART));

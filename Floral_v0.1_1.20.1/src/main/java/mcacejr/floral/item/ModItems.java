@@ -1,6 +1,7 @@
 package mcacejr.floral.item;
 
 import mcacejr.floral.Floral;
+import mcacejr.floral.block.ModBlocks;
 import mcacejr.floral.item.custom.ArmorWithEffect;
 import mcacejr.floral.item.custom.CorpseBlossomSword;
 import mcacejr.floral.item.custom.CraftingSword;
@@ -68,6 +69,13 @@ public class ModItems {
 
     public static final Item TWISTED_WART = registerItem("twisted_wart",
             new Item(new FabricItemSettings()));
+
+//    public static final Item STEM_SIGN = registerItem("stem_sign",
+//            new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.STANDING_STEM_SIGN,
+//                    ModBlocks.WALL_STEM_SIGN));
+//    public static final Item STEM_HANGING_SIGN = registerItem("stem_hanging_sign",
+//            new HangingSignItem(ModBlocks.HANGING_STEM_SIGN, ModBlocks.WALL_HANGING_STEM_SIGN,
+//                    new FabricItemSettings().maxCount(16)));
 
     private static Item registerItem(String name, Item item) {
 
