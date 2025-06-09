@@ -1,4 +1,4 @@
-// 1.20.1	2025-06-08T14:55:07.996392	Floral/Recipes
+// 1.20.1	2025-06-08T19:59:03.5260232	Floral/Recipes
 d0aca107310cf5c9ef4e1ccfc626b26857708cab data\floral\recipes\floral_stone.json
 00ccf9b7e541226dc29f22191d5bf81622747605 data\floral\recipes\stem_planks.json
 c01ef3d3440b2fc5d9584959ab44d926990522af data\floral\recipes\floral_stone_brick_wall_from_floral_stone_bricks_stonecutting.json
@@ -72,8 +72,8 @@ e9d6c05395da74cd9be2ea8088a0abb80b02a105 data\floral\advancements\recipes\buildi
 6b701a852a13786e944dc5dc792ab59a340081c9 data\floral\recipes\tall_cyan_flowers.json
 2cb74c1bee47c0ad90f3aeba94b9b1e69a587a97 data\floral\recipes\cyan_dye_from_cyan_petal.json
 80fc8cbe7d955282a9c98819597f2e62a9765a85 data\floral\recipes\cyan_dye_from_cyan_tulip.json
-c28da3f34b6e59f444364900217ca6102313b55d data\floral\advancements\recipes\misc\light_gray_flowers.json
 6e36fa9858f9a47737c71d196a0640b56916a42a data\floral\advancements\recipes\misc\tall_pink_flowers.json
+c28da3f34b6e59f444364900217ca6102313b55d data\floral\advancements\recipes\misc\light_gray_flowers.json
 d973d450d1e795dd999bf20385de551c5f22477c data\floral\advancements\recipes\tools\corpse_blossom.json
 080454ff542ef47a4bdd2745b6bf39a613299494 data\floral\advancements\recipes\misc\tall_purple_flowers.json
 f8d5155eb4b1313fff331f854c363e8be5c21c61 data\floral\recipes\tall_light_gray_flowers.json
