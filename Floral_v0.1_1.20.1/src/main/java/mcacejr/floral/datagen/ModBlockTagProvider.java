@@ -46,10 +46,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.WARDEN_PRIMROSE)
                 .add(ModBlocks.ROCKY_SEDUM)
                 .add(ModBlocks.STEM_LILY)
+                .add(ModBlocks.BONESBANE)
                 .add(ModBlocks.GREEN_DAHLIA)
                 .add(ModBlocks.MAGENTA_CABARET)
                 .add(ModBlocks.LIME_BELLFLOWER)
-                .add(ModBlocks.LIME_CHIMNEY_BELLFLOWER);
+                .add(ModBlocks.LIME_CHIMNEY_BELLFLOWER)
+                .add(ModBlocks.PURPLE_WOLFSBANE);
 
         getOrCreateTagBuilder(BlockTags.TALL_FLOWERS)
                 .add(ModBlocks.PURPLE_CHIMNEY_BELLFLOWER)
@@ -81,9 +83,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.POTTED_MAGENTA_TULIP)
                 .add(ModBlocks.POTTED_GREEN_DAHLIA)
                 .add(ModBlocks.POTTED_MAGENTA_CABARET)
-                .add(ModBlocks.POTTED_LIME_BELLFLOWER);
+                .add(ModBlocks.POTTED_LIME_BELLFLOWER)
+                .add(ModBlocks.POTTED_PURPLE_WOLFSBANE);
 
         getOrCreateTagBuilder(BlockTags.STAIRS)
+                .add(ModBlocks.STEM_STAIRS)
                 .add(ModBlocks.FLORAL_STONE_STAIRS)
                 .add(ModBlocks.FLORAL_STONE_BRICK_STAIRS)
                 .add(ModBlocks.COBBLED_FLORAL_STONE_STAIRS);

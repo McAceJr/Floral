@@ -101,6 +101,8 @@ public class ModModelProvider extends FabricModelProvider {
                 BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.LIME_BELLFLOWER, ModBlocks.POTTED_LIME_BELLFLOWER,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.PURPLE_WOLFSBANE, ModBlocks.POTTED_PURPLE_WOLFSBANE,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
 
         blockStateModelGenerator.registerDoubleBlock(ModBlocks.LIME_CHIMNEY_BELLFLOWER,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
@@ -110,6 +112,7 @@ public class ModModelProvider extends FabricModelProvider {
         registerThreeStageFlower(blockStateModelGenerator, ModBlocks.WARDEN_PRIMROSE);
         registerThreeStageFlower(blockStateModelGenerator, ModBlocks.ROCKY_SEDUM);
         registerThreeStageFlower(blockStateModelGenerator, ModBlocks.STEM_LILY);
+        registerThreeStageFlower(blockStateModelGenerator, ModBlocks.BONESBANE);
 
         BlockStateModelGenerator.BlockTexturePool floralstonepool = blockStateModelGenerator
                 .registerCubeAllModelTexturePool(ModBlocks.FLORAL_STONE);
@@ -157,6 +160,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.FLOWER_TRIMMER, Models.HANDHELD);
 
+        itemModelGenerator.register(ModItems.FLORAL_BANE, Models.HANDHELD);
+
         itemModelGenerator.register(ModItems.FLOWER_BLEND, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.WHITE_PETAL, Models.GENERATED);
@@ -175,6 +180,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PURPLE_PETAL, Models.GENERATED);
         itemModelGenerator.register(ModItems.MAGENTA_PETAL, Models.GENERATED);
         itemModelGenerator.register(ModItems.PINK_PETAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WITHERED_PETAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BONESBANE_PETAL, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.TWISTED_WART, Models.GENERATED);
 

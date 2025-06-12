@@ -46,6 +46,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MAGENTA_CABARET);
                         entries.add(ModBlocks.LIME_BELLFLOWER);
                         entries.add(ModBlocks.LIME_CHIMNEY_BELLFLOWER);
+                        entries.add(ModBlocks.PURPLE_WOLFSBANE);
 
                         entries.add(ModBlocks.THICK_STALK);
                         entries.add(ModBlocks.THICK_VINES);
@@ -57,6 +58,7 @@ public class ModItemGroups {
                         entries.add(ModItems.CORPSE_BLOSSOM);
                         entries.add(ModItems.FLOWER_TRIMMER);
                         entries.add(ModItems.DEADHEADER);
+                        entries.add(ModItems.FLORAL_BANE);
 
                         entries.add(ModItems.WHITE_PETAL);
                         entries.add(ModItems.LIGHT_GRAY_PETAL);
@@ -74,12 +76,15 @@ public class ModItemGroups {
                         entries.add(ModItems.PURPLE_PETAL);
                         entries.add(ModItems.MAGENTA_PETAL);
                         entries.add(ModItems.PINK_PETAL);
+                        entries.add(ModItems.WITHERED_PETAL);
+                        entries.add(ModItems.BONESBANE_PETAL);
 
                         entries.add(ModBlocks.WEEPING_ROOTS);
                         entries.add(ModBlocks.TWISTING_ROOTS);
                         entries.add(ModBlocks.WARDEN_PRIMROSE);
                         entries.add(ModBlocks.ROCKY_SEDUM);
                         entries.add(ModBlocks.STEM_LILY);
+                        entries.add(ModBlocks.BONESBANE);
 
                         entries.add(ModItems.TWISTED_WART);
 

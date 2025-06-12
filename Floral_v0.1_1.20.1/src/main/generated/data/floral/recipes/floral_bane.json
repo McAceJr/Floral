@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "minecraft:bone"
+    },
+    "P": {
+      "item": "floral:bonesbane_petal"
+    }
+  },
+  "pattern": [
+    " PP",
+    " PB",
+    "B  "
+  ],
+  "result": {
+    "item": "floral:floral_bane"
+  },
+  "show_notification": true
+}

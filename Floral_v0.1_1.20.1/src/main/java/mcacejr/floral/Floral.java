@@ -53,4 +53,5 @@ public class Floral implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STEM_DOOR, 5, 20);
 
 	}
+
 }

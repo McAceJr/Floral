@@ -2,10 +2,7 @@ package mcacejr.floral.item;
 
 import mcacejr.floral.Floral;
 import mcacejr.floral.block.ModBlocks;
-import mcacejr.floral.item.custom.ArmorWithEffect;
-import mcacejr.floral.item.custom.CorpseBlossomSword;
-import mcacejr.floral.item.custom.CraftingSword;
-import mcacejr.floral.item.custom.FlowerBlendItem;
+import mcacejr.floral.item.custom.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -31,6 +28,9 @@ public class ModItems {
             new CraftingSword(ToolMaterials.IRON, 0, -2.4f, new FabricItemSettings()));
     public static final Item DEADHEADER = registerItem("deadheader",
             new CraftingSword(ModToolMaterials.DEADHEADER, 7, -3.0f, new FabricItemSettings()));
+
+    public static final Item FLORAL_BANE = registerItem("floral_bane",
+            new FloralBaneSword(ModToolMaterials.PETUNIA, 2, -2.0f, new FabricItemSettings()));
 
     public static final Item WHITE_PETAL = registerItem("white_petal",
             new Item(new FabricItemSettings()));
@@ -65,6 +65,8 @@ public class ModItems {
     public static final Item PINK_PETAL = registerItem("pink_petal",
             new Item(new FabricItemSettings()));
     public static final Item WITHERED_PETAL = registerItem("withered_petal",
+            new Item(new FabricItemSettings()));
+    public static final Item BONESBANE_PETAL = registerItem("bonesbane_petal",
             new Item(new FabricItemSettings()));
 
     public static final Item TWISTED_WART = registerItem("twisted_wart",

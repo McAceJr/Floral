@@ -14,6 +14,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.registry.tag.TagKey;
 
 import java.util.function.Consumer;
@@ -105,6 +106,24 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.WITHERED_PETAL), conditionsFromItem(ModItems.WITHERED_PETAL))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FLORAL_BANE)
+                .pattern(" PP")
+                .pattern(" PB")
+                .pattern("B  ")
+                .input('P', ModItems.BONESBANE_PETAL)
+                .input('B', Items.BONE)
+                .criterion(hasItem(ModItems.BONESBANE_PETAL), conditionsFromItem(ModItems.BONESBANE_PETAL))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FLOWER_BLEND)
+                .pattern("FFF")
+                .pattern("FBF")
+                .pattern("FFF")
+                .input('F', ItemTags.FLOWERS)
+                .input('B', Items.BONE_MEAL)
+                .criterion(hasItem(Items.BONE_MEAL), conditionsFromItem(Items.BONE_MEAL))
+                .offerTo(exporter);
+
         offerPetalRecipe(exporter, ModTags.Items.WHITE_FLOWERS, ModItems.WHITE_PETAL);
         offerPetalRecipe(exporter, ModTags.Items.LIGHT_GRAY_FLOWERS, ModItems.LIGHT_GRAY_PETAL);
         offerPetalRecipe(exporter, ModTags.Items.GRAY_FLOWERS, ModItems.GRAY_PETAL);
@@ -155,6 +174,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerPetalToDyeRecipe(exporter, ModItems.PURPLE_PETAL, Items.PURPLE_DYE);
         offerPetalToDyeRecipe(exporter, ModItems.MAGENTA_PETAL, Items.MAGENTA_DYE);
         offerPetalToDyeRecipe(exporter, ModItems.PINK_PETAL, Items.PINK_DYE);
+        offerPetalToDyeRecipe(exporter, ModItems.WITHERED_PETAL, Items.BLACK_DYE);
+        offerPetalToDyeRecipe(exporter, ModItems.BONESBANE_PETAL, Items.PURPLE_DYE);
 
         offerFlowerToDyeRecipe(exporter, ModBlocks.BLACK_PETUNIA.asItem(), Items.BLACK_DYE, 1);
         offerFlowerToDyeRecipe(exporter, ModBlocks.RED_PETUNIA.asItem(), Items.RED_DYE, 1);
@@ -176,6 +197,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerFlowerToDyeRecipe(exporter, ModBlocks.BLUE_TULIP.asItem(), Items.BLUE_DYE, 1);
         offerFlowerToDyeRecipe(exporter, ModBlocks.PURPLE_TULIP.asItem(), Items.PURPLE_DYE, 1);
         offerFlowerToDyeRecipe(exporter, ModBlocks.MAGENTA_TULIP.asItem(), Items.MAGENTA_DYE, 1);
+
+        offerFlowerToDyeRecipe(exporter, ModBlocks.GREEN_DAHLIA.asItem(), Items.GREEN_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.MAGENTA_CABARET.asItem(), Items.MAGENTA_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.LIME_BELLFLOWER.asItem(), Items.LIME_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.LIME_CHIMNEY_BELLFLOWER.asItem(), Items.LIME_DYE, 2);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.PURPLE_WOLFSBANE.asItem(), Items.PURPLE_DYE, 1);
 
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FLORAL_STONE_BRICKS, ModBlocks.FLORAL_STONE);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FLORAL_STONE_STAIRS, ModBlocks.FLORAL_STONE);

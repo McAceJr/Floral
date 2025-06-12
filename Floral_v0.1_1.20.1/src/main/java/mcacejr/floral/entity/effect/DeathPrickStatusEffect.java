@@ -6,6 +6,8 @@ import net.minecraft.entity.effect.StatusEffectCategory;
 
 public class DeathPrickStatusEffect extends StatusEffect {
 
+    int cooldown = -1;
+
     public DeathPrickStatusEffect() {
         super(StatusEffectCategory.HARMFUL,0x47542d);
     }
@@ -20,7 +22,19 @@ public class DeathPrickStatusEffect extends StatusEffect {
     @Override
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
 
-        entity.damage(entity.getDamageSources().magic(), 1 << amplifier);
+        if (cooldown < 0) {
+
+            entity.damage(entity.getDamageSources().magic(), 1 << amplifier);
+
+            cooldown = 100;
+
+        } else {
+
+            cooldown--;
+
+        }
+
+
 
     }
 

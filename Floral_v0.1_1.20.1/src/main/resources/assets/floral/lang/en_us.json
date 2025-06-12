@@ -7,6 +7,8 @@
   "item.floral.corpse_blossom": "Corpse Blossom",
   "item.floral.flower_trimmer": "Flower Trimmer",
   "item.floral.deadheader": "Deadheader",
+  "item.floral.floral_bane": "Floral Bane",
+
   "item.floral.flower_blend": "Flower Blend",
   "item.floral.twisted_wart": "Twisted Wart",
 
@@ -26,6 +28,8 @@
   "item.floral.purple_petal": "Purple Petal",
   "item.floral.magenta_petal": "Magenta Petal",
   "item.floral.pink_petal": "Pink Petal",
+  "item.floral.withered_petal": "Withered Petal",
+  "item.floral.bonesbane_petal": "Bonesbane Petal",
 
   "block.floral.black_petunia": "Black Petunia",
   "block.floral.red_petunia": "Red Petunia",
@@ -40,11 +44,14 @@
   "block.floral.magenta_cabaret": "Magenta Cabaret",
   "block.floral.lime_bellflower": "Lime Bellflower",
   "block.floral.lime_chimney_bellflower": "Lime Chimney Bellflower",
+  "block.floral.purple_wolfsbane": "Wolfsbane",
+
   "block.floral.weeping_roots": "Weeping Roots",
   "block.floral.twisting_roots": "Twisting Roots",
   "block.floral.warden_primrose": "Warden Primrose",
   "block.floral.rocky_sedum": "Rocky Sedum",
   "block.floral.stem_lily": "Stem Lily",
+  "block.floral.bonesbane": "Bonesbane",
 
   "block.floral.floral_stone": "Floral Stone",
   "block.floral.floral_stone_stairs": "Floral Stone Stairs",

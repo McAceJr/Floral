@@ -237,18 +237,12 @@ public class ModBlocks {
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(Blocks.CHERRY_PRESSURE_PLATE), BlockSetType.CHERRY));
 
-//    public static final Block STANDING_STEM_SIGN = registerBlock("standing_stem_sign",
-//            new SignBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_SIGN), WoodType.CHERRY));
-//    public static final Block WALL_STEM_SIGN = registerBlock("wall_stem_sign",
-//            new WallSignBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_WALL_SIGN), WoodType.CHERRY));
-//    public static final Block HANGING_STEM_SIGN = registerBlock("hanging_stem_sign",
-//            new HangingSignBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_HANGING_SIGN), WoodType.CHERRY));
-//    public static final Block WALL_HANGING_STEM_SIGN = registerBlock("wall_hanging_stem_sign",
-//            new WallHangingSignBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_WALL_HANGING_SIGN), WoodType.CHERRY));
-
-//    public static final BlockFamily STEM_FAMILY = BlockFamilies.register(ModBlocks.STEM_PLANKS)
-//            .sign(ModBlocks.STANDING_STEM_SIGN, ModBlocks.WALL_STEM_SIGN)
-//            .group("wooden").unlockCriterionName("has_planks").build();
+    public static final Block PURPLE_WOLFSBANE = registerBlock("purple_wolfsbane",
+            new FlowerBlock(Floral.DEATH_PRICK, 100, FabricBlockSettings.copyOf(Blocks.ALLIUM)
+                    .nonOpaque().noCollision()));
+    public static final Block POTTED_PURPLE_WOLFSBANE = Registry.register(Registries.BLOCK,
+            new Identifier(Floral.MOD_ID, "potted_purple_wolfsbane"),
+            new FlowerPotBlock(PURPLE_WOLFSBANE, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
 
     public static final Block WEEPING_ROOTS = registerBlock("weeping_roots",
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.NETHER_WART));
@@ -260,6 +254,8 @@ public class ModBlocks {
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), COBBLED_FLORAL_STONE.asItem()));
     public static final Block STEM_LILY = registerBlock("stem_lily",
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), STEM_LOG.asItem()));
+    public static final Block BONESBANE = registerBlock("bonesbane",
+            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), ModItems.BONESBANE_PETAL));
 
     private static Block registerBlock(String name, Block block) {
 
