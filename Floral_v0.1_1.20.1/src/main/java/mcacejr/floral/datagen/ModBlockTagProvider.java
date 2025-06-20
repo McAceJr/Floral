@@ -6,7 +6,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -46,7 +45,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.WARDEN_PRIMROSE)
                 .add(ModBlocks.ROCKY_SEDUM)
                 .add(ModBlocks.STEM_LILY)
-                .add(ModBlocks.BONESBANE)
+                .add(ModBlocks.BONES_BANE)
                 .add(ModBlocks.GREEN_DAHLIA)
                 .add(ModBlocks.MAGENTA_CABARET)
                 .add(ModBlocks.LIME_BELLFLOWER)

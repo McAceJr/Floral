@@ -13,6 +13,7 @@ import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.recipe.ShapedRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.registry.tag.TagKey;
@@ -80,12 +81,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DEADHEADER)
                 .pattern("N N")
-                .pattern(" T ")
+                .pattern("BTB")
                 .pattern("LRL")
                 .input('N', Items.NETHERITE_INGOT)
                 .input('T', ModItems.FLOWER_TRIMMER)
                 .input('L', ModItems.RED_PETAL)
                 .input('R', Items.LEATHER)
+                .input('B', ModItems.FLORAL_BLOOM_TIER_2)
                 .criterion(hasItem(ModItems.FLOWER_TRIMMER), conditionsFromItem(ModItems.FLOWER_TRIMMER))
                 .criterion(hasItem(Items.NETHERITE_INGOT), conditionsFromItem(Items.NETHERITE_INGOT))
                 .offerTo(exporter);
@@ -98,21 +100,23 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.CORPSE_BLOSSOM)
-                .pattern("WWW")
+                .pattern("WBW")
                 .pattern("WOW")
-                .pattern("WWW")
+                .pattern("WBW")
                 .input('W', ModItems.WITHERED_PETAL)
                 .input('O', Items.OXEYE_DAISY)
+                .input('B', ModItems.FLORAL_BLOOM_TIER_1)
                 .criterion(hasItem(ModItems.WITHERED_PETAL), conditionsFromItem(ModItems.WITHERED_PETAL))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FLORAL_BANE)
                 .pattern(" PP")
-                .pattern(" PB")
-                .pattern("B  ")
-                .input('P', ModItems.BONESBANE_PETAL)
+                .pattern("FPB")
+                .pattern("BF ")
+                .input('P', ModItems.BONES_BANE_PETAL)
                 .input('B', Items.BONE)
-                .criterion(hasItem(ModItems.BONESBANE_PETAL), conditionsFromItem(ModItems.BONESBANE_PETAL))
+                .input('F', ModItems.FLORAL_BLOOM_TIER_2)
+                .criterion(hasItem(ModItems.BONES_BANE_PETAL), conditionsFromItem(ModItems.BONES_BANE_PETAL))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FLOWER_BLEND)
@@ -175,7 +179,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerPetalToDyeRecipe(exporter, ModItems.MAGENTA_PETAL, Items.MAGENTA_DYE);
         offerPetalToDyeRecipe(exporter, ModItems.PINK_PETAL, Items.PINK_DYE);
         offerPetalToDyeRecipe(exporter, ModItems.WITHERED_PETAL, Items.BLACK_DYE);
-        offerPetalToDyeRecipe(exporter, ModItems.BONESBANE_PETAL, Items.PURPLE_DYE);
+        offerPetalToDyeRecipe(exporter, ModItems.BONES_BANE_PETAL, Items.PURPLE_DYE);
+        offerPetalToDyeRecipe(exporter, ModItems.COLD_PETAL, Items.LIGHT_BLUE_DYE);
+        offerPetalToDyeRecipe(exporter, ModItems.DRIED_PETAL, Items.BROWN_DYE);
+        offerPetalToDyeRecipe(exporter, ModItems.BLAZING_PETAL, Items.RED_DYE);
 
         offerFlowerToDyeRecipe(exporter, ModBlocks.BLACK_PETUNIA.asItem(), Items.BLACK_DYE, 1);
         offerFlowerToDyeRecipe(exporter, ModBlocks.RED_PETUNIA.asItem(), Items.RED_DYE, 1);
@@ -203,6 +210,29 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerFlowerToDyeRecipe(exporter, ModBlocks.LIME_BELLFLOWER.asItem(), Items.LIME_DYE, 1);
         offerFlowerToDyeRecipe(exporter, ModBlocks.LIME_CHIMNEY_BELLFLOWER.asItem(), Items.LIME_DYE, 2);
         offerFlowerToDyeRecipe(exporter, ModBlocks.PURPLE_WOLFSBANE.asItem(), Items.PURPLE_DYE, 1);
+
+        offerFlowerToDyeRecipe(exporter, ModBlocks.ROCKY_SEDUM.asItem(), Items.ORANGE_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.STEM_LILY.asItem(), Items.GREEN_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.BONES_BANE.asItem(), Items.PURPLE_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.TWISTING_ROOTS.asItem(), Items.CYAN_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.SNOWY_CABARET.asItem(), Items.LIGHT_BLUE_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.DRIED_DAHLIA.asItem(), Items.BROWN_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.FROSTED_ROSE.asItem(), Items.LIGHT_BLUE_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.METALLIC_CONEFLOWER.asItem(), Items.GRAY_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.ENDER_CLAM_FLOWER.asItem(), Items.MAGENTA_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.SHINY_JASMINE.asItem(), Items.LIME_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.PUTTY_PETUNIA.asItem(), Items.LIGHT_GRAY_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.CRAFTING_FLOWER.asItem(), Items.BROWN_DYE, 1);
+
+        offerFlowerToDyeRecipe(exporter, ModBlocks.GLOWING_BELLFLOWER.asItem(), Items.YELLOW_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.WEEPING_ROOTS.asItem(), Items.RED_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.GLOWING_ROOTS.asItem(), Items.YELLOW_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.BLAZING_ROSE.asItem(), Items.ORANGE_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.SHARD_OXALIS.asItem(), Items.WHITE_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.GREEN_OVERFLOWING_BELLFLOWER.asItem(), Items.GREEN_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.WARDEN_PRIMROSE.asItem(), Items.BLACK_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.CHORUS_TULIP.asItem(), Items.PURPLE_DYE, 1);
+        offerFlowerToDyeRecipe(exporter, ModBlocks.WHITE_OVERFLOWING_BELLFLOWER.asItem(), Items.WHITE_DYE, 1);
 
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FLORAL_STONE_BRICKS, ModBlocks.FLORAL_STONE);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FLORAL_STONE_STAIRS, ModBlocks.FLORAL_STONE);
@@ -284,6 +314,49 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         createTrapdoorRecipe(ModBlocks.STEM_TRAPDOOR, Ingredient.ofItems(ModBlocks.STEM_PLANKS))
                 .criterion(hasItem(ModBlocks.STEM_PLANKS), conditionsFromItem(ModBlocks.STEM_PLANKS))
                 .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FLORAL_BLOOM_TIER_1)
+                .pattern("BSB")
+                .pattern("DFC")
+                .pattern("BRB")
+                .input('F', ItemTags.FLOWERS)
+                .input('B', ModItems.FLOWER_BLEND)
+                .input('S', ModBlocks.STEM_LOG)
+                .input('D', ModItems.DRIED_PETAL)
+                .input('R', ModBlocks.COBBLED_FLORAL_STONE)
+                .input('C', ModItems.COLD_PETAL)
+                .criterion(hasItem(ModItems.FLOWER_BLEND), conditionsFromItem(ModItems.FLOWER_BLEND))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FLORAL_BLOOM_TIER_2)
+                .pattern("FSF")
+                .pattern("DBC")
+                .pattern("FRF")
+                .input('F', ModItems.FLOWER_BLEND)
+                .input('B', ModItems.FLORAL_BLOOM_TIER_1)
+                .input('S', ModItems.TWISTED_WART)
+                .input('D', ModItems.BLAZING_PETAL)
+                .input('C', ModItems.FROZEN_DUST)
+                .input('R', ModItems.FLOWERING_INGOT)
+                .criterion(hasItem(ModItems.FLOWER_BLEND), conditionsFromItem(ModItems.FLOWER_BLEND))
+                .criterion(hasItem(ModItems.FLORAL_BLOOM_TIER_1), conditionsFromItem(ModItems.FLORAL_BLOOM_TIER_1))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FLORAL_BLOOM_TIER_3)
+                .pattern("FSF")
+                .pattern("DFC")
+                .pattern("FRF")
+                .input('F', ModItems.FLOWER_BLEND)
+                .input('B', ModItems.FLORAL_BLOOM_TIER_2)
+                .input('S', ModBlocks.STEM_LOG)
+                .input('D', ModItems.DRIED_PETAL)
+                .input('R', ModBlocks.COBBLED_FLORAL_STONE)
+                .input('C', ModItems.COLD_PETAL)
+                .criterion(hasItem(ModItems.FLOWER_BLEND), conditionsFromItem(ModItems.FLOWER_BLEND))
+                .criterion(hasItem(ModItems.FLORAL_BLOOM_TIER_2), conditionsFromItem(ModItems.FLORAL_BLOOM_TIER_2))
+                .offerTo(exporter);
+
+
 
     }
 

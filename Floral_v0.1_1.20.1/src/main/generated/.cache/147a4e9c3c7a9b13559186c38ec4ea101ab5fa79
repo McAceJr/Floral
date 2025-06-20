@@ -1,4 +1,4 @@
-// 1.20.1	2025-06-12T04:13:17.2326488	Floral/Block Loot Tables
+// 1.20.1	2025-06-20T00:01:02.1933433	Floral/Block Loot Tables
 942af1be156fa38ca2bcc1d2ef6eeebec13e395b data\floral\loot_tables\blocks\potted_light_gray_tulip.json
 c42b2de319d8babdab5293e61b0e52ff99a5da5a data\floral\loot_tables\blocks\green_tulip.json
 6356a9f717cb6f60b41504ced662a3c1d2ee7786 data\floral\loot_tables\blocks\potted_red_petunia.json
@@ -29,9 +29,9 @@ e3ed1c5133a479d123ee84f0c77c8ad26e782f48 data\floral\loot_tables\blocks\stem_fen
 a08ee389f6586a4999720c1816198b66e03c708c data\floral\loot_tables\blocks\floral_stone_wall.json
 9d5cf97f3f3ecd08abfbbc8eede43514eac83d50 data\floral\loot_tables\blocks\floral_stone_brick_slab.json
 ceb96f94960f860d28ab9c701bfc14abeab85c50 data\floral\loot_tables\blocks\light_blue_tulip.json
-e444397424ca8b2b2578cb85c797c6853b6f712d data\floral\loot_tables\blocks\stem_lily.json
 d9a688583df0b3bcd3119ca6d407af743101d9a2 data\floral\loot_tables\blocks\stem_door.json
 ceebf7a8bb0a775c380e2475a79129d6bade3626 data\floral\loot_tables\blocks\black_tulip.json
+e444397424ca8b2b2578cb85c797c6853b6f712d data\floral\loot_tables\blocks\stem_lily.json
 d1eedafbad40a849a67e5c4ab4fb56e5167dd015 data\floral\loot_tables\blocks\pink_alcea_plant.json
 1667234695c2a1270a5cecb4ca6f92b011b5b1dc data\floral\loot_tables\blocks\brown_tulip.json
 a32948d5efef305c1a9a8e62a71cf490d252b644 data\floral\loot_tables\blocks\rocky_sedum.json
@@ -70,8 +70,8 @@ da17e08c86b9dd4a04d543116c51a254c83a4849 data\floral\loot_tables\blocks\purple_b
 d5cbc42e3c102d22f9a8b105ea0ccbe81283e70f data\floral\loot_tables\blocks\potted_light_blue_tulip.json
 372352c3a962e9f2d384c1135581ac5625efa7ac data\floral\loot_tables\blocks\floral_stone_brick_wall.json
 38de70985f8d55e34ae0c33f8fc48ae2e3d010fc data\floral\loot_tables\blocks\magenta_tulip.json
-e1a87fb235a0057c3538f47791a2a39d7ce8aaf8 data\floral\loot_tables\blocks\potted_purple_tulip.json
 818900e1245b3e21fdec3418b137776d15951ce8 data\floral\loot_tables\blocks\red_petunia.json
+e1a87fb235a0057c3538f47791a2a39d7ce8aaf8 data\floral\loot_tables\blocks\potted_purple_tulip.json
 bfa3de809a672cd76c3407542fe6379f48ee6210 data\floral\loot_tables\blocks\potted_green_tulip.json
 431d58372c68b38db28013435d2cde2800dc5deb data\floral\loot_tables\blocks\cobbled_floral_stone_wall.json
 85c68ef1f4e1eea18ed7e5b6db253c5415e83fc1 data\floral\loot_tables\blocks\floral_stone_slab.json

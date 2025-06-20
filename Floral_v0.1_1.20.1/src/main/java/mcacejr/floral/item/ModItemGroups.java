@@ -2,12 +2,9 @@ package mcacejr.floral.item;
 
 import mcacejr.floral.Floral;
 import mcacejr.floral.block.ModBlocks;
-import mcacejr.floral.enchantment.FloralEnchantments;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -77,14 +74,14 @@ public class ModItemGroups {
                         entries.add(ModItems.MAGENTA_PETAL);
                         entries.add(ModItems.PINK_PETAL);
                         entries.add(ModItems.WITHERED_PETAL);
-                        entries.add(ModItems.BONESBANE_PETAL);
+                        entries.add(ModItems.BONES_BANE_PETAL);
 
                         entries.add(ModBlocks.WEEPING_ROOTS);
                         entries.add(ModBlocks.TWISTING_ROOTS);
                         entries.add(ModBlocks.WARDEN_PRIMROSE);
                         entries.add(ModBlocks.ROCKY_SEDUM);
                         entries.add(ModBlocks.STEM_LILY);
-                        entries.add(ModBlocks.BONESBANE);
+                        entries.add(ModBlocks.BONES_BANE);
 
                         entries.add(ModItems.TWISTED_WART);
 
@@ -114,6 +111,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STEM_DOOR);
                         entries.add(ModBlocks.STEM_BUTTON);
                         entries.add(ModBlocks.STEM_PRESSURE_PLATE);
+
+                        entries.add(ModItems.FLORAL_BLOOM_TIER_1);
+                        entries.add(ModItems.FLORAL_BLOOM_TIER_2);
+                        entries.add(ModItems.FLORAL_BLOOM_TIER_3);
 
                     }).build());
 

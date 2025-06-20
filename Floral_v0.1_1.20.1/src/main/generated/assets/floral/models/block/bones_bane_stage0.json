@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cross",
   "textures": {
-    "cross": "floral:block/bonesbane_stage2"
+    "cross": "floral:block/bones_bane_stage0"
   }
 }

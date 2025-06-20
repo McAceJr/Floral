@@ -29,7 +29,7 @@
   "item.floral.magenta_petal": "Magenta Petal",
   "item.floral.pink_petal": "Pink Petal",
   "item.floral.withered_petal": "Withered Petal",
-  "item.floral.bonesbane_petal": "Bonesbane Petal",
+  "item.floral.bones_bane_petal": "Bones bane Petal",
 
   "block.floral.black_petunia": "Black Petunia",
   "block.floral.red_petunia": "Red Petunia",
@@ -51,7 +51,7 @@
   "block.floral.warden_primrose": "Warden Primrose",
   "block.floral.rocky_sedum": "Rocky Sedum",
   "block.floral.stem_lily": "Stem Lily",
-  "block.floral.bonesbane": "Bonesbane",
+  "block.floral.bones_bane": "Bones bane",
 
   "block.floral.floral_stone": "Floral Stone",
   "block.floral.floral_stone_stairs": "Floral Stone Stairs",
@@ -101,6 +101,10 @@
 
   "enchantment.floral.ivy_roots.desc": "Applies poison to your target",
   "enchantment.floral.hungry_fauna.desc": "Applies hunger to your target",
-  "enchantment.floral.withering_touch.desc": "Applies wither to your target"
+  "enchantment.floral.withering_touch.desc": "Applies wither to your target",
+
+  "item.floral.floral_bloom_tier_1": "Mini Floral Bloom",
+  "item.floral.floral_bloom_tier_2": "Floral Bloom",
+  "item.floral.floral_bloom_tier_3": "Mega Floral Bloom"
 
 }
