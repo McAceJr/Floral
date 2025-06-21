@@ -296,15 +296,15 @@ public class ModBlocks {
 
     public static final Block GLOWING_BELLFLOWER = registerBlock("glowing_bellflower",
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.GLOW_BERRIES));
+    public static final Block WEEPING_ROOTS = registerBlock("weeping_roots",
+            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.NETHER_WART));
+    public static final Block BLAZING_ROSE = registerBlock("blazing_rose",
+            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.BLAZE_POWDER));
 
     // Tier 1 Harvestable Flowers
 
-    public static final Block WEEPING_ROOTS = registerBlock("weeping_roots",
-            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.NETHER_WART));
     public static final Block GLOWING_ROOTS = registerBlock("glowing_roots",
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.GLOWSTONE_DUST));
-    public static final Block BLAZING_ROSE = registerBlock("blazing_rose",
-            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.BLAZE_POWDER));
     public static final Block SHARD_OXALIS = registerBlock("blazing_rose",
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.QUARTZ));
 

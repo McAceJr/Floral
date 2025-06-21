@@ -356,6 +356,141 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.FLORAL_BLOOM_TIER_2), conditionsFromItem(ModItems.FLORAL_BLOOM_TIER_2))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ROCKY_SEDUM)
+                .pattern("FCF")
+                .pattern("DBD")
+                .pattern("FCF")
+                .input('F', Blocks.COBBLESTONE)
+                .input('B', ModItems.FLOWER_BLEND)
+                .input('D', ModItems.BROWN_PETAL)
+                .input('C', ModItems.ORANGE_PETAL)
+                .criterion(hasItem(ModItems.FLOWER_BLEND), conditionsFromItem(ModItems.FLOWER_BLEND))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.STEM_LILY)
+                .pattern("FCF")
+                .pattern("DBD")
+                .pattern("FCF")
+                .input('F', ItemTags.LOGS)
+                .input('B', ModItems.FLOWER_BLEND)
+                .input('D', ModItems.GREEN_PETAL)
+                .input('C', ModItems.LIME_PETAL)
+                .criterion(hasItem(ModItems.FLOWER_BLEND), conditionsFromItem(ModItems.FLOWER_BLEND))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SNOWY_CABARET)
+                .pattern("FCF")
+                .pattern("DBD")
+                .pattern("FCF")
+                .input('F', Blocks.SNOW_BLOCK)
+                .input('B', ModItems.FLOWER_BLEND)
+                .input('D', ModItems.BLUE_PETAL)
+                .input('C', ModItems.LIGHT_BLUE_PETAL)
+                .criterion(hasItem(ModItems.FLOWER_BLEND), conditionsFromItem(ModItems.FLOWER_BLEND))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.DRIED_DAHLIA)
+                .pattern("FCF")
+                .pattern("DBD")
+                .pattern("FCF")
+                .input('F', Blocks.DEAD_BUSH)
+                .input('B', ModItems.FLOWER_BLEND)
+                .input('D', ModItems.RED_PETAL)
+                .input('C', ModItems.YELLOW_PETAL)
+                .criterion(hasItem(ModItems.FLOWER_BLEND), conditionsFromItem(ModItems.FLOWER_BLEND))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ROCKY_SEDUM)
+                .pattern("FCF")
+                .pattern("DBD")
+                .pattern("FCF")
+                .input('F', Blocks.COBBLESTONE)
+                .input('B', ModItems.FLOWER_BLEND)
+                .input('D', ModItems.BROWN_PETAL)
+                .input('C', ModItems.ORANGE_PETAL)
+                .criterion(hasItem(ModItems.FLOWER_BLEND), conditionsFromItem(ModItems.FLOWER_BLEND))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.STEM_LILY)
+                .pattern("FCF")
+                .pattern("DBD")
+                .pattern("FCF")
+                .input('F', ItemTags.LOGS)
+                .input('B', ModItems.FLOWER_BLEND)
+                .input('D', ModItems.GREEN_PETAL)
+                .input('C', ModItems.LIME_PETAL)
+                .criterion(hasItem(ModItems.FLOWER_BLEND), conditionsFromItem(ModItems.FLOWER_BLEND))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SNOWY_CABARET)
+                .pattern("FCF")
+                .pattern("DBD")
+                .pattern("FCF")
+                .input('F', Blocks.SNOW_BLOCK)
+                .input('B', ModItems.FLOWER_BLEND)
+                .input('D', ModItems.WHITE_PETAL)
+                .input('C', ModItems.LIGHT_BLUE_PETAL)
+                .criterion(hasItem(ModItems.FLOWER_BLEND), conditionsFromItem(ModItems.FLOWER_BLEND))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.DRIED_DAHLIA)
+                .pattern("FCF")
+                .pattern("DBD")
+                .pattern("FCF")
+                .input('F', Blocks.DEAD_BUSH)
+                .input('B', ModItems.FLOWER_BLEND)
+                .input('D', ModItems.RED_PETAL)
+                .input('C', ModItems.YELLOW_PETAL)
+                .criterion(hasItem(ModItems.FLOWER_BLEND), conditionsFromItem(ModItems.FLOWER_BLEND))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.TWISTING_ROOTS)
+                .pattern("FCF")
+                .pattern("DND")
+                .pattern("FBF")
+                .input('F', Blocks.WARPED_WART_BLOCK)
+                .input('N', ModBlocks.WEEPING_ROOTS)
+                .input('B', ModItems.FLORAL_BLOOM_TIER_1)
+                .input('D', ModItems.CYAN_PETAL)
+                .input('C', ModItems.BLUE_PETAL)
+                .criterion(hasItem(ModItems.FLORAL_BLOOM_TIER_1), conditionsFromItem(ModItems.FLORAL_BLOOM_TIER_1))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.FROSTED_ROSE)
+                .pattern("FCF")
+                .pattern("DND")
+                .pattern("FBF")
+                .input('F', Blocks.BLUE_ICE)
+                .input('N', ModBlocks.BLAZING_ROSE)
+                .input('B', ModItems.FLORAL_BLOOM_TIER_1)
+                .input('D', ModItems.BLUE_PETAL)
+                .input('C', ModItems.LIGHT_BLUE_PETAL)
+                .criterion(hasItem(ModItems.FLORAL_BLOOM_TIER_1), conditionsFromItem(ModItems.FLORAL_BLOOM_TIER_1))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.METALLIC_CONEFLOWER)
+                .pattern("FCF")
+                .pattern("DBD")
+                .pattern("FCF")
+                .input('F', Blocks.IRON_BLOCK)
+                .input('B', ModItems.FLORAL_BLOOM_TIER_1)
+                .input('D', ModItems.GRAY_PETAL)
+                .input('C', ModItems.LIGHT_GRAY_PETAL)
+                .criterion(hasItem(ModItems.FLORAL_BLOOM_TIER_1), conditionsFromItem(ModItems.FLORAL_BLOOM_TIER_1))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.BURNING_PETUNIA)
+                .pattern("FCF")
+                .pattern("DBD")
+                .pattern("FCF")
+                .input('F', Items.BLAZE_ROD)
+                .input('B', ModItems.FLORAL_BLOOM_TIER_1)
+                .input('D', ModItems.ORANGE_PETAL)
+                .input('C', ModItems.RED_PETAL)
+                .criterion(hasItem(ModItems.FLORAL_BLOOM_TIER_1), conditionsFromItem(ModItems.FLORAL_BLOOM_TIER_1))
+                .offerTo(exporter);
+
+
 
 
     }
