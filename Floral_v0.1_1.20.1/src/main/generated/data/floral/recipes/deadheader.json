@@ -17,8 +17,8 @@
   },
   "pattern": [
     "N N",
-    " T ",
-    "LRL"
+    "LTL",
+    " R "
   ],
   "result": {
     "item": "floral:deadheader"

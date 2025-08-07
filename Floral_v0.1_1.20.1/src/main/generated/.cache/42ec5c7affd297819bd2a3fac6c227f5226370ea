@@ -1,4 +1,4 @@
-// 1.20.1	2025-06-20T00:01:02.1983299	Floral/Tags for minecraft:item
+// 1.20.1	2025-08-07T03:44:08.3385583	Floral/Tags for minecraft:item
 0ad57219fec1f710952e19f2f4b0fba9e75d2318 data\floral\tags\items\flower_trimmers.json
 12b0a13aae5470edc84c23a310b011477445cd6c data\minecraft\tags\items\planks.json
 16125d2c4f9566f1e4959f954fc989490984d789 data\floral\tags\items\blue_flowers.json
@@ -16,6 +16,7 @@ bc47173ee10b43c912558db3544c5811ab687e7d data\minecraft\tags\items\logs.json
 d9a377363933a1edbc84e8282e778605797cc651 data\floral\tags\items\tall_pink_flowers.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\floral\tags\items\tall_green_flowers.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\floral\tags\items\tall_orange_flowers.json
+030f6b41f50190671e81a0435bed80afb4134139 data\floral\tags\items\petals.json
 bc47173ee10b43c912558db3544c5811ab687e7d data\floral\tags\items\stem_logs.json
 293cbede949f43cfd4614e360a125da8916131ef data\floral\tags\items\brown_flowers.json
 c2d9e290fe39e08d717586c394638ed8ded3783a data\floral\tags\items\pink_flowers.json
@@ -33,13 +34,13 @@ f4cd853d8b96e0456a54443687f77bf843643350 data\minecraft\tags\items\small_flowers
 9c1a994ce049a9e36c2caafaace086da1ab2fbbd data\floral\tags\items\light_gray_flowers.json
 cf72b201678afca08662894cbf0b3dc3c9216fc1 data\floral\tags\items\magenta_flowers.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\floral\tags\items\tall_white_flowers.json
-a0d14d02c4615b41c075c2fe23ff067e201735a6 data\floral\tags\items\orange_flowers.json
 cf49ce5901d3dcfb715ca7387bea0661d386e336 data\floral\tags\items\black_flowers.json
+a0d14d02c4615b41c075c2fe23ff067e201735a6 data\floral\tags\items\orange_flowers.json
 ae4fd5e8bdba84ed71be6e3eb6ca63316dc2189b data\floral\tags\items\tall_red_flowers.json
 275018b19c0da3dd2dace7105512ff80b39c8cc4 data\floral\tags\items\tall_lime_flowers.json
 5673775ff7618baab24485a0c57d8329ad46fc5e data\floral\tags\items\gray_flowers.json
 a6974804ce179f40be02243a014cd7c66b6ec4d7 data\floral\tags\items\tall_yellow_flowers.json
+4ee94f807ee91f52bdf8cb113135632493530f15 data\minecraft\tags\items\swords.json
 f34374b2bb902c8fc8939482f2500ea17059feb1 data\floral\tags\items\purple_flowers.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\floral\tags\items\tall_blue_flowers.json
-4ee94f807ee91f52bdf8cb113135632493530f15 data\minecraft\tags\items\swords.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\floral\tags\items\tall_gray_flowers.json

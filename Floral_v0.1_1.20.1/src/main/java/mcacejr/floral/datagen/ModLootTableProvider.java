@@ -76,6 +76,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.WARDEN_PRIMROSE);
         addDrop(ModBlocks.ROCKY_SEDUM);
         addDrop(ModBlocks.STEM_LILY);
+        addDrop(ModBlocks.CHORUS_TULIP);
+        addDrop(ModBlocks.WHITE_OVERFLOWING_BELLFLOWER);
 
         addDrop(ModBlocks.FLORAL_STONE);
         addDrop(ModBlocks.FLORAL_STONE_STAIRS);

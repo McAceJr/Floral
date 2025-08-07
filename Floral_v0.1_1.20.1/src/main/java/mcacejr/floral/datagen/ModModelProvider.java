@@ -111,17 +111,9 @@ public class ModModelProvider extends FabricModelProvider {
         registerThreeStageFlower(blockStateModelGenerator, ModBlocks.WARDEN_PRIMROSE);
         registerThreeStageFlower(blockStateModelGenerator, ModBlocks.ROCKY_SEDUM);
         registerThreeStageFlower(blockStateModelGenerator, ModBlocks.STEM_LILY);
-        registerThreeStageFlower(blockStateModelGenerator, ModBlocks.SNOWY_CABARET);
-        registerThreeStageFlower(blockStateModelGenerator, ModBlocks.DRIED_DAHLIA);
-        registerThreeStageFlower(blockStateModelGenerator, ModBlocks.FROSTED_ROSE);
-        registerThreeStageFlower(blockStateModelGenerator, ModBlocks.METALLIC_CONEFLOWER);
-        registerThreeStageFlower(blockStateModelGenerator, ModBlocks.BURNING_PETUNIA);
-        registerThreeStageFlower(blockStateModelGenerator, ModBlocks.ENDER_CLAM_FLOWER);
-        registerThreeStageFlower(blockStateModelGenerator, ModBlocks.SHINY_JASMINE);
-        registerThreeStageFlower(blockStateModelGenerator, ModBlocks.PUTTY_PETUNIA);
-
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.CRAFTING_FLOWER, ModBlocks.POTTED_CRAFTING_FLOWER,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+        registerThreeStageFlower(blockStateModelGenerator, ModBlocks.BONES_BANE);
+        registerThreeStageFlower(blockStateModelGenerator, ModBlocks.CHORUS_TULIP);
+        registerThreeStageFlower(blockStateModelGenerator, ModBlocks.WHITE_OVERFLOWING_BELLFLOWER);
 
         BlockStateModelGenerator.BlockTexturePool floralstonepool = blockStateModelGenerator
                 .registerCubeAllModelTexturePool(ModBlocks.FLORAL_STONE);
@@ -191,23 +183,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PINK_PETAL, Models.GENERATED);
         itemModelGenerator.register(ModItems.WITHERED_PETAL, Models.GENERATED);
         itemModelGenerator.register(ModItems.BONES_BANE_PETAL, Models.GENERATED);
-        itemModelGenerator.register(ModItems.DRIED_PETAL, Models.GENERATED);
-        itemModelGenerator.register(ModItems.COLD_PETAL, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BLAZING_PETAL, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.TWISTED_WART, Models.GENERATED);
-        itemModelGenerator.register(ModItems.FROZEN_DUST, Models.GENERATED);
-        itemModelGenerator.register(ModItems.FLOWERING_INGOT, Models.GENERATED);
-        itemModelGenerator.register(ModItems.FLOWERING_GEM, Models.GENERATED);
-        itemModelGenerator.register(ModItems.FLOWER_PEARL, Models.GENERATED);
-        itemModelGenerator.register(ModItems.CLAY_MEAL, Models.GENERATED);
-
-        itemModelGenerator.register(ModItems.FLOWERING_ALLOY, Models.GENERATED);
-        itemModelGenerator.register(ModItems.POLISHED_FLOWERING_GEM, Models.GENERATED);
-
-        itemModelGenerator.register(ModItems.FLORAL_BLOOM_TIER_1, Models.GENERATED);
-        itemModelGenerator.register(ModItems.FLORAL_BLOOM_TIER_2, Models.GENERATED);
-        itemModelGenerator.register(ModItems.FLORAL_BLOOM_TIER_3, Models.GENERATED);
 
     }
 

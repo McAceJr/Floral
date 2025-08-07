@@ -18,7 +18,7 @@ public class ModItems {
             new SwordItem(ModToolMaterials.PETUNIA, 3, -1.8f, new FabricItemSettings()));
 
     public static final Item CORPSE_BLOSSOM = registerItem("corpse_blossom",
-            new CorpseBlossomSword(ModToolMaterials.PETUNIA, 3, -1f, new FabricItemSettings()));
+            new CorpseBlossomSword(ModToolMaterials.PETUNIA, 2, -1.8f, new FabricItemSettings()));
 
     public static final Item FLOWER_BLEND = registerItem("flower_blend",
             new FlowerBlendItem(new FabricItemSettings()));
@@ -26,7 +26,7 @@ public class ModItems {
     public static final Item FLOWER_TRIMMER = registerItem("flower_trimmer",
             new CraftingSword(ToolMaterials.IRON, 0, -2.4f, new FabricItemSettings()));
     public static final Item DEADHEADER = registerItem("deadheader",
-            new CraftingSword(ModToolMaterials.DEADHEADER, 7, -3.0f, new FabricItemSettings()));
+            new CraftingSword(ModToolMaterials.DEADHEADER, 7, -3.2f, new FabricItemSettings()));
 
     public static final Item FLORAL_BANE = registerItem("floral_bane",
             new FloralBaneSword(ModToolMaterials.PETUNIA, 2, -2.0f, new FabricItemSettings()));
@@ -67,36 +67,8 @@ public class ModItems {
             new Item(new FabricItemSettings()));
     public static final Item BONES_BANE_PETAL = registerItem("bones_bane_petal",
             new Item(new FabricItemSettings()));
-    public static final Item BLAZING_PETAL = registerItem("blazing_petal",
-            new Item(new FabricItemSettings()));
-    public static final Item COLD_PETAL = registerItem("cold_petal",
-            new Item(new FabricItemSettings()));
-    public static final Item DRIED_PETAL = registerItem("dried_petal",
-            new Item(new FabricItemSettings()));
 
     public static final Item TWISTED_WART = registerItem("twisted_wart",
-            new Item(new FabricItemSettings()));
-    public static final Item FROZEN_DUST = registerItem("frozen_dust",
-            new Item(new FabricItemSettings()));
-    public static final Item FLOWERING_INGOT = registerItem("flowering_ingot",
-            new Item(new FabricItemSettings()));
-    public static final Item FLOWER_PEARL = registerItem("flower_pearl",
-            new Item(new FabricItemSettings()));
-    public static final Item FLOWERING_GEM = registerItem("flowering_gem",
-            new Item(new FabricItemSettings()));
-    public static final Item CLAY_MEAL = registerItem("clay_meal",
-            new Item(new FabricItemSettings()));
-
-    public static final Item FLOWERING_ALLOY = registerItem("flowering_alloy",
-            new Item(new FabricItemSettings()));
-    public static final Item POLISHED_FLOWERING_GEM = registerItem("polished_flowering_gem",
-            new Item(new FabricItemSettings()));
-
-    public static final Item FLORAL_BLOOM_TIER_1 = registerItem("floral_bloom_tier_1",
-            new Item(new FabricItemSettings()));
-    public static final Item FLORAL_BLOOM_TIER_2 = registerItem("floral_bloom_tier_2",
-            new Item(new FabricItemSettings()));
-    public static final Item FLORAL_BLOOM_TIER_3 = registerItem("floral_bloom_tier_3",
             new Item(new FabricItemSettings()));
 
 //    public static final Item STEM_SIGN = registerItem("stem_sign",

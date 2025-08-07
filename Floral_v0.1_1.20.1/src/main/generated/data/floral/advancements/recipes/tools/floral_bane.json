@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bonesbane_petal": {
+    "has_bones_bane_petal": {
       "conditions": {
         "items": [
           {
             "items": [
-              "floral:bonesbane_petal"
+              "floral:bones_bane_petal"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_bonesbane_petal",
+      "has_bones_bane_petal",
       "has_the_recipe"
     ]
   ],

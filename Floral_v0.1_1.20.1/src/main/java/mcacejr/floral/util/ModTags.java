@@ -24,6 +24,8 @@ public class ModTags {
 
         public static final TagKey<Item> FLOWER_TRIMMERS = createTag("flower_trimmers");
 
+        public static final TagKey<Item> PETALS = createTag("petals");
+
         public static final TagKey<Item> WHITE_FLOWERS = createTag("white_flowers");
         public static final TagKey<Item> LIGHT_GRAY_FLOWERS = createTag("light_gray_flowers");
         public static final TagKey<Item> GRAY_FLOWERS = createTag("gray_flowers");

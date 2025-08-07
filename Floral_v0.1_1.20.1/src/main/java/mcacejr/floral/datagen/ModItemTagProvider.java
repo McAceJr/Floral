@@ -21,6 +21,26 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
 
+        getOrCreateTagBuilder(ModTags.Items.PETALS)
+                .add(ModItems.BLACK_PETAL)
+                .add(ModItems.GRAY_PETAL)
+                .add(ModItems.LIGHT_GRAY_PETAL)
+                .add(ModItems.WHITE_PETAL)
+                .add(ModItems.RED_PETAL)
+                .add(ModItems.ORANGE_PETAL)
+                .add(ModItems.BROWN_PETAL)
+                .add(ModItems.YELLOW_PETAL)
+                .add(ModItems.LIME_PETAL)
+                .add(ModItems.GREEN_PETAL)
+                .add(ModItems.CYAN_PETAL)
+                .add(ModItems.LIGHT_BLUE_PETAL)
+                .add(ModItems.BLUE_PETAL)
+                .add(ModItems.PURPLE_PETAL)
+                .add(ModItems.MAGENTA_PETAL)
+                .add(ModItems.PINK_PETAL)
+                .add(ModItems.WITHERED_PETAL)
+                .add(ModItems.BONES_BANE_PETAL);
+
         getOrCreateTagBuilder(ItemTags.FLOWERS)
                 .add(ModBlocks.BLACK_PETUNIA.asItem())
                 .add(ModBlocks.RED_PETUNIA.asItem())

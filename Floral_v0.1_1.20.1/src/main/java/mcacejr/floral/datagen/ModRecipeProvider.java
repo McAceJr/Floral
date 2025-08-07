@@ -81,13 +81,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DEADHEADER)
                 .pattern("N N")
-                .pattern("BTB")
-                .pattern("LRL")
+                .pattern("LTL")
+                .pattern(" R ")
                 .input('N', Items.NETHERITE_INGOT)
                 .input('T', ModItems.FLOWER_TRIMMER)
                 .input('L', ModItems.RED_PETAL)
                 .input('R', Items.LEATHER)
-                .input('B', ModItems.FLORAL_BLOOM_TIER_2)
                 .criterion(hasItem(ModItems.FLOWER_TRIMMER), conditionsFromItem(ModItems.FLOWER_TRIMMER))
                 .criterion(hasItem(Items.NETHERITE_INGOT), conditionsFromItem(Items.NETHERITE_INGOT))
                 .offerTo(exporter);
@@ -105,27 +104,37 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("WBW")
                 .input('W', ModItems.WITHERED_PETAL)
                 .input('O', Items.OXEYE_DAISY)
-                .input('B', ModItems.FLORAL_BLOOM_TIER_1)
+                .input('B', ModItems.FLOWER_BLEND)
                 .criterion(hasItem(ModItems.WITHERED_PETAL), conditionsFromItem(ModItems.WITHERED_PETAL))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FLORAL_BANE)
                 .pattern(" PP")
-                .pattern("FPB")
-                .pattern("BF ")
+                .pattern("MPB")
+                .pattern("BN ")
                 .input('P', ModItems.BONES_BANE_PETAL)
                 .input('B', Items.BONE)
-                .input('F', ModItems.FLORAL_BLOOM_TIER_2)
+                .input('M', Items.BONE_BLOCK)
+                .input('N', Items.NETHERITE_INGOT)
                 .criterion(hasItem(ModItems.BONES_BANE_PETAL), conditionsFromItem(ModItems.BONES_BANE_PETAL))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FLOWER_BLEND)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FLOWER_BLEND, 2)
                 .pattern("FFF")
                 .pattern("FBF")
                 .pattern("FFF")
                 .input('F', ItemTags.FLOWERS)
                 .input('B', Items.BONE_MEAL)
                 .criterion(hasItem(Items.BONE_MEAL), conditionsFromItem(Items.BONE_MEAL))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FLORAL_CROWN)
+                .pattern("FFF")
+                .pattern("FBF")
+                .pattern("FFF")
+                .input('F', ItemTags.FLOWERS)
+                .input('B', ModItems.FLOWER_BLEND)
+                .criterion(hasItem(ModItems.FLOWER_BLEND), conditionsFromItem(ModItems.FLOWER_BLEND))
                 .offerTo(exporter);
 
         offerPetalRecipe(exporter, ModTags.Items.WHITE_FLOWERS, ModItems.WHITE_PETAL);
@@ -180,9 +189,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerPetalToDyeRecipe(exporter, ModItems.PINK_PETAL, Items.PINK_DYE);
         offerPetalToDyeRecipe(exporter, ModItems.WITHERED_PETAL, Items.BLACK_DYE);
         offerPetalToDyeRecipe(exporter, ModItems.BONES_BANE_PETAL, Items.PURPLE_DYE);
-        offerPetalToDyeRecipe(exporter, ModItems.COLD_PETAL, Items.LIGHT_BLUE_DYE);
-        offerPetalToDyeRecipe(exporter, ModItems.DRIED_PETAL, Items.BROWN_DYE);
-        offerPetalToDyeRecipe(exporter, ModItems.BLAZING_PETAL, Items.RED_DYE);
 
         offerFlowerToDyeRecipe(exporter, ModBlocks.BLACK_PETUNIA.asItem(), Items.BLACK_DYE, 1);
         offerFlowerToDyeRecipe(exporter, ModBlocks.RED_PETUNIA.asItem(), Items.RED_DYE, 1);
@@ -215,21 +221,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerFlowerToDyeRecipe(exporter, ModBlocks.STEM_LILY.asItem(), Items.GREEN_DYE, 1);
         offerFlowerToDyeRecipe(exporter, ModBlocks.BONES_BANE.asItem(), Items.PURPLE_DYE, 1);
         offerFlowerToDyeRecipe(exporter, ModBlocks.TWISTING_ROOTS.asItem(), Items.CYAN_DYE, 1);
-        offerFlowerToDyeRecipe(exporter, ModBlocks.SNOWY_CABARET.asItem(), Items.LIGHT_BLUE_DYE, 1);
-        offerFlowerToDyeRecipe(exporter, ModBlocks.DRIED_DAHLIA.asItem(), Items.BROWN_DYE, 1);
-        offerFlowerToDyeRecipe(exporter, ModBlocks.FROSTED_ROSE.asItem(), Items.LIGHT_BLUE_DYE, 1);
-        offerFlowerToDyeRecipe(exporter, ModBlocks.METALLIC_CONEFLOWER.asItem(), Items.GRAY_DYE, 1);
-        offerFlowerToDyeRecipe(exporter, ModBlocks.ENDER_CLAM_FLOWER.asItem(), Items.MAGENTA_DYE, 1);
-        offerFlowerToDyeRecipe(exporter, ModBlocks.SHINY_JASMINE.asItem(), Items.LIME_DYE, 1);
-        offerFlowerToDyeRecipe(exporter, ModBlocks.PUTTY_PETUNIA.asItem(), Items.LIGHT_GRAY_DYE, 1);
-        offerFlowerToDyeRecipe(exporter, ModBlocks.CRAFTING_FLOWER.asItem(), Items.BROWN_DYE, 1);
-
-        offerFlowerToDyeRecipe(exporter, ModBlocks.GLOWING_BELLFLOWER.asItem(), Items.YELLOW_DYE, 1);
         offerFlowerToDyeRecipe(exporter, ModBlocks.WEEPING_ROOTS.asItem(), Items.RED_DYE, 1);
-        offerFlowerToDyeRecipe(exporter, ModBlocks.GLOWING_ROOTS.asItem(), Items.YELLOW_DYE, 1);
-        offerFlowerToDyeRecipe(exporter, ModBlocks.BLAZING_ROSE.asItem(), Items.ORANGE_DYE, 1);
-        offerFlowerToDyeRecipe(exporter, ModBlocks.SHARD_OXALIS.asItem(), Items.WHITE_DYE, 1);
-        offerFlowerToDyeRecipe(exporter, ModBlocks.GREEN_OVERFLOWING_BELLFLOWER.asItem(), Items.GREEN_DYE, 1);
         offerFlowerToDyeRecipe(exporter, ModBlocks.WARDEN_PRIMROSE.asItem(), Items.BLACK_DYE, 1);
         offerFlowerToDyeRecipe(exporter, ModBlocks.CHORUS_TULIP.asItem(), Items.PURPLE_DYE, 1);
         offerFlowerToDyeRecipe(exporter, ModBlocks.WHITE_OVERFLOWING_BELLFLOWER.asItem(), Items.WHITE_DYE, 1);
@@ -315,47 +307,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.STEM_PLANKS), conditionsFromItem(ModBlocks.STEM_PLANKS))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FLORAL_BLOOM_TIER_1)
-                .pattern("BSB")
-                .pattern("DFC")
-                .pattern("BRB")
-                .input('F', ItemTags.FLOWERS)
-                .input('B', ModItems.FLOWER_BLEND)
-                .input('S', ModBlocks.STEM_LOG)
-                .input('D', ModItems.DRIED_PETAL)
-                .input('R', ModBlocks.COBBLED_FLORAL_STONE)
-                .input('C', ModItems.COLD_PETAL)
-                .criterion(hasItem(ModItems.FLOWER_BLEND), conditionsFromItem(ModItems.FLOWER_BLEND))
-                .offerTo(exporter);
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FLORAL_BLOOM_TIER_2)
-                .pattern("FSF")
-                .pattern("DBC")
-                .pattern("FRF")
-                .input('F', ModItems.FLOWER_BLEND)
-                .input('B', ModItems.FLORAL_BLOOM_TIER_1)
-                .input('S', ModItems.TWISTED_WART)
-                .input('D', ModItems.BLAZING_PETAL)
-                .input('C', ModItems.FROZEN_DUST)
-                .input('R', ModItems.FLOWERING_INGOT)
-                .criterion(hasItem(ModItems.FLOWER_BLEND), conditionsFromItem(ModItems.FLOWER_BLEND))
-                .criterion(hasItem(ModItems.FLORAL_BLOOM_TIER_1), conditionsFromItem(ModItems.FLORAL_BLOOM_TIER_1))
-                .offerTo(exporter);
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FLORAL_BLOOM_TIER_3)
-                .pattern("FSF")
-                .pattern("DFC")
-                .pattern("FRF")
-                .input('F', ModItems.FLOWER_BLEND)
-                .input('B', ModItems.FLORAL_BLOOM_TIER_2)
-                .input('S', ModBlocks.STEM_LOG)
-                .input('D', ModItems.DRIED_PETAL)
-                .input('R', ModBlocks.COBBLED_FLORAL_STONE)
-                .input('C', ModItems.COLD_PETAL)
-                .criterion(hasItem(ModItems.FLOWER_BLEND), conditionsFromItem(ModItems.FLOWER_BLEND))
-                .criterion(hasItem(ModItems.FLORAL_BLOOM_TIER_2), conditionsFromItem(ModItems.FLORAL_BLOOM_TIER_2))
-                .offerTo(exporter);
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ROCKY_SEDUM)
                 .pattern("FCF")
                 .pattern("DBD")
@@ -378,120 +329,73 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.FLOWER_BLEND), conditionsFromItem(ModItems.FLOWER_BLEND))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SNOWY_CABARET)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.WEEPING_ROOTS)
                 .pattern("FCF")
-                .pattern("DBD")
+                .pattern("DND")
                 .pattern("FCF")
-                .input('F', Blocks.SNOW_BLOCK)
-                .input('B', ModItems.FLOWER_BLEND)
-                .input('D', ModItems.BLUE_PETAL)
-                .input('C', ModItems.LIGHT_BLUE_PETAL)
-                .criterion(hasItem(ModItems.FLOWER_BLEND), conditionsFromItem(ModItems.FLOWER_BLEND))
-                .offerTo(exporter);
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.DRIED_DAHLIA)
-                .pattern("FCF")
-                .pattern("DBD")
-                .pattern("FCF")
-                .input('F', Blocks.DEAD_BUSH)
-                .input('B', ModItems.FLOWER_BLEND)
+                .input('F', Blocks.NETHER_WART_BLOCK)
+                .input('N', Blocks.SOUL_SOIL)
                 .input('D', ModItems.RED_PETAL)
-                .input('C', ModItems.YELLOW_PETAL)
-                .criterion(hasItem(ModItems.FLOWER_BLEND), conditionsFromItem(ModItems.FLOWER_BLEND))
-                .offerTo(exporter);
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ROCKY_SEDUM)
-                .pattern("FCF")
-                .pattern("DBD")
-                .pattern("FCF")
-                .input('F', Blocks.COBBLESTONE)
-                .input('B', ModItems.FLOWER_BLEND)
-                .input('D', ModItems.BROWN_PETAL)
-                .input('C', ModItems.ORANGE_PETAL)
-                .criterion(hasItem(ModItems.FLOWER_BLEND), conditionsFromItem(ModItems.FLOWER_BLEND))
-                .offerTo(exporter);
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.STEM_LILY)
-                .pattern("FCF")
-                .pattern("DBD")
-                .pattern("FCF")
-                .input('F', ItemTags.LOGS)
-                .input('B', ModItems.FLOWER_BLEND)
-                .input('D', ModItems.GREEN_PETAL)
-                .input('C', ModItems.LIME_PETAL)
-                .criterion(hasItem(ModItems.FLOWER_BLEND), conditionsFromItem(ModItems.FLOWER_BLEND))
-                .offerTo(exporter);
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SNOWY_CABARET)
-                .pattern("FCF")
-                .pattern("DBD")
-                .pattern("FCF")
-                .input('F', Blocks.SNOW_BLOCK)
-                .input('B', ModItems.FLOWER_BLEND)
-                .input('D', ModItems.WHITE_PETAL)
-                .input('C', ModItems.LIGHT_BLUE_PETAL)
-                .criterion(hasItem(ModItems.FLOWER_BLEND), conditionsFromItem(ModItems.FLOWER_BLEND))
-                .offerTo(exporter);
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.DRIED_DAHLIA)
-                .pattern("FCF")
-                .pattern("DBD")
-                .pattern("FCF")
-                .input('F', Blocks.DEAD_BUSH)
-                .input('B', ModItems.FLOWER_BLEND)
-                .input('D', ModItems.RED_PETAL)
-                .input('C', ModItems.YELLOW_PETAL)
-                .criterion(hasItem(ModItems.FLOWER_BLEND), conditionsFromItem(ModItems.FLOWER_BLEND))
+                .input('C', ModItems.BROWN_PETAL)
+                .criterion(hasItem(Blocks.NETHER_WART_BLOCK), conditionsFromItem(Blocks.NETHER_WART_BLOCK))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.TWISTING_ROOTS)
                 .pattern("FCF")
                 .pattern("DND")
-                .pattern("FBF")
+                .pattern("FCF")
                 .input('F', Blocks.WARPED_WART_BLOCK)
                 .input('N', ModBlocks.WEEPING_ROOTS)
-                .input('B', ModItems.FLORAL_BLOOM_TIER_1)
                 .input('D', ModItems.CYAN_PETAL)
                 .input('C', ModItems.BLUE_PETAL)
-                .criterion(hasItem(ModItems.FLORAL_BLOOM_TIER_1), conditionsFromItem(ModItems.FLORAL_BLOOM_TIER_1))
+                .criterion(hasItem(Blocks.WARPED_WART_BLOCK), conditionsFromItem(Blocks.WARPED_WART_BLOCK))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.FROSTED_ROSE)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.BONES_BANE)
                 .pattern("FCF")
-                .pattern("DND")
-                .pattern("FBF")
-                .input('F', Blocks.BLUE_ICE)
-                .input('N', ModBlocks.BLAZING_ROSE)
-                .input('B', ModItems.FLORAL_BLOOM_TIER_1)
-                .input('D', ModItems.BLUE_PETAL)
-                .input('C', ModItems.LIGHT_BLUE_PETAL)
-                .criterion(hasItem(ModItems.FLORAL_BLOOM_TIER_1), conditionsFromItem(ModItems.FLORAL_BLOOM_TIER_1))
+                .pattern("DWD")
+                .pattern("FCF")
+                .input('F', ModItems.WITHERED_PETAL)
+                .input('W', ModBlocks.PURPLE_WOLFSBANE)
+                .input('D', ModItems.PURPLE_PETAL)
+                .input('C', ModItems.WHITE_PETAL)
+                .criterion(hasItem(ModBlocks.PURPLE_WOLFSBANE), conditionsFromItem(ModBlocks.PURPLE_WOLFSBANE))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.METALLIC_CONEFLOWER)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.WARDEN_PRIMROSE)
                 .pattern("FCF")
-                .pattern("DBD")
+                .pattern("DWD")
+                .pattern("BCB")
+                .input('F', Blocks.SCULK_SHRIEKER)
+                .input('B', Blocks.SCULK)
+                .input('W', Blocks.SCULK_CATALYST)
+                .input('D', Items.ECHO_SHARD)
+                .input('C', ModItems.BLACK_PETAL)
+                .criterion(hasItem(Blocks.SCULK_CATALYST), conditionsFromItem(Blocks.SCULK_CATALYST))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.CHORUS_TULIP)
                 .pattern("FCF")
-                .input('F', Blocks.IRON_BLOCK)
-                .input('B', ModItems.FLORAL_BLOOM_TIER_1)
-                .input('D', ModItems.GRAY_PETAL)
+                .pattern("DWD")
+                .pattern("BCB")
+                .input('F', Items.CHORUS_FRUIT)
+                .input('B', Blocks.END_STONE)
+                .input('W', Blocks.CHORUS_FLOWER)
+                .input('D', ModItems.PURPLE_PETAL)
                 .input('C', ModItems.LIGHT_GRAY_PETAL)
-                .criterion(hasItem(ModItems.FLORAL_BLOOM_TIER_1), conditionsFromItem(ModItems.FLORAL_BLOOM_TIER_1))
+                .criterion(hasItem(Blocks.CHORUS_FLOWER), conditionsFromItem(Blocks.CHORUS_FLOWER))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.BURNING_PETUNIA)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.WHITE_OVERFLOWING_BELLFLOWER)
                 .pattern("FCF")
-                .pattern("DBD")
+                .pattern("DWD")
                 .pattern("FCF")
-                .input('F', Items.BLAZE_ROD)
-                .input('B', ModItems.FLORAL_BLOOM_TIER_1)
-                .input('D', ModItems.ORANGE_PETAL)
-                .input('C', ModItems.RED_PETAL)
-                .criterion(hasItem(ModItems.FLORAL_BLOOM_TIER_1), conditionsFromItem(ModItems.FLORAL_BLOOM_TIER_1))
+                .input('F', Blocks.BONE_BLOCK)
+                .input('W', Blocks.SKELETON_SKULL)
+                .input('D', ModItems.WHITE_PETAL)
+                .input('C', ModItems.WHITE_PETAL)
+                .criterion(hasItem(Blocks.SKELETON_SKULL), conditionsFromItem(Blocks.SKELETON_SKULL))
                 .offerTo(exporter);
-
-
-
 
     }
 

@@ -5,14 +5,20 @@
     "B": {
       "item": "minecraft:bone"
     },
+    "M": {
+      "item": "minecraft:bone_block"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
     "P": {
-      "item": "floral:bonesbane_petal"
+      "item": "floral:bones_bane_petal"
     }
   },
   "pattern": [
     " PP",
-    " PB",
-    "B  "
+    "MPB",
+    "BN "
   ],
   "result": {
     "item": "floral:floral_bane"

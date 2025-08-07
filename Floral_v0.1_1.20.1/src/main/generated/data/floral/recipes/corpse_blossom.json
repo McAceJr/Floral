@@ -2,6 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
+    "B": {
+      "item": "floral:flower_blend"
+    },
     "O": {
       "item": "minecraft:oxeye_daisy"
     },
@@ -10,9 +13,9 @@
     }
   },
   "pattern": [
-    "WWW",
+    "WBW",
     "WOW",
-    "WWW"
+    "WBW"
   ],
   "result": {
     "item": "floral:corpse_blossom"

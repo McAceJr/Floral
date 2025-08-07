@@ -1,11 +1,11 @@
-// 1.20.1	2025-06-20T00:01:02.1953374	Floral/Tags for minecraft:block
+// 1.20.1	2025-08-07T03:44:08.3355657	Floral/Tags for minecraft:block
 00aa68ba832c221662c47b70d53c591e04097cb0 data\minecraft\tags\blocks\tall_flowers.json
 759508ed096af03042a5c6490d5ff496202a3815 data\minecraft\tags\blocks\climbable.json
 069096a8b91818862bb60faafac7fe64c49dff0a data\minecraft\tags\blocks\flowers.json
 8cd0833b60aa573dfc485c9422589ba18537ca23 data\minecraft\tags\blocks\fence_gates.json
 bc47173ee10b43c912558db3544c5811ab687e7d data\minecraft\tags\blocks\logs_that_burn.json
 879acb5e4e3da33d621cd2c29207a6b81a5f278d data\minecraft\tags\blocks\flower_pots.json
-1fe0435139700d90b0789b3c658d08727fec691a data\minecraft\tags\blocks\stairs.json
 f507730eaba6e133b7d8063c728152634a1e04dd data\minecraft\tags\blocks\slabs.json
+1fe0435139700d90b0789b3c658d08727fec691a data\minecraft\tags\blocks\stairs.json
 b0398335ca7c316c38effb656aaf12c47e3c7b44 data\minecraft\tags\blocks\walls.json
 48282c709615271f145ed0d6a09644ecf42542fc data\minecraft\tags\blocks\fences.json

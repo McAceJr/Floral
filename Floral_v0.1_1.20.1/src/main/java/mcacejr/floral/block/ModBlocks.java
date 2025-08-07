@@ -244,81 +244,20 @@ public class ModBlocks {
 
 
 
-    //
-    // Floral Bloom Material Flowers
-    //
-
-    // Tier 0 Harvestable Flowers
-
     public static final Block ROCKY_SEDUM = registerBlock("rocky_sedum",
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), COBBLED_FLORAL_STONE.asItem()));
     public static final Block STEM_LILY = registerBlock("stem_lily",
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), STEM_LOG.asItem()));
-    public static final Block SNOWY_CABARET = registerBlock("snowy_cabaret",
-            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), ModItems.COLD_PETAL));
-    public static final Block DRIED_DAHLIA = registerBlock("dried_dahlia",
-            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), ModItems.DRIED_PETAL));
-
-    // Tier 1 Harvestable Flowers
-
     public static final Block TWISTING_ROOTS = registerBlock("twisting_roots",
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), ModItems.TWISTED_WART));
-    public static final Block FROSTED_ROSE = registerBlock("frosted_rose",
-            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), ModItems.FROZEN_DUST));
-    public static final Block METALLIC_CONEFLOWER = registerBlock("metallic_coneflower",
-            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), ModItems.FLOWERING_INGOT));
-    public static final Block BURNING_PETUNIA = registerBlock("burning_petunia",
-            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), ModItems.BLAZING_PETAL));
-
-    // Tier 2 Harvestable Flowers
-
     public static final Block BONES_BANE = registerBlock("bones_bane",
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), ModItems.BONES_BANE_PETAL));
-    public static final Block ENDER_CLAM_FLOWER = registerBlock("ender_clam_flower",
-            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), ModItems.FLOWER_PEARL));
-    public static final Block SHINY_JASMINE = registerBlock("shiny_jasmine",
-            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), ModItems.FLOWERING_GEM));
-    public static final Block PUTTY_PETUNIA = registerBlock("putty_petunia",
-            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), ModItems.FLOWER_BLEND));
-
-    // Tier 3 Harvestable Flowers
-
-    public static final Block CRAFTING_FLOWER = registerBlock("crafting_flower",
-            new CraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).nonOpaque().noCollision()));
-    public static final Block POTTED_CRAFTING_FLOWER = registerBlock("crafting_flower",
-            new CraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE).nonOpaque().noCollision()));
-
-    //
-    // Non Floral Bloom Material Flowers
-    //
-
-    // Tier 0 Harvestable Flowers
-
-    public static final Block GLOWING_BELLFLOWER = registerBlock("glowing_bellflower",
-            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.GLOW_BERRIES));
     public static final Block WEEPING_ROOTS = registerBlock("weeping_roots",
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.NETHER_WART));
-    public static final Block BLAZING_ROSE = registerBlock("blazing_rose",
-            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.BLAZE_POWDER));
-
-    // Tier 1 Harvestable Flowers
-
-    public static final Block GLOWING_ROOTS = registerBlock("glowing_roots",
-            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.GLOWSTONE_DUST));
-    public static final Block SHARD_OXALIS = registerBlock("blazing_rose",
-            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.QUARTZ));
-
-    // Tier 2 Harvestable Flowers
-
-    public static final Block GREEN_OVERFLOWING_BELLFLOWER = registerBlock("green_overflowing_bellflower",
-            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), ModItems.FLOWER_BLEND));
     public static final Block WARDEN_PRIMROSE = registerBlock("warden_primrose",
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.ECHO_SHARD));
     public static final Block CHORUS_TULIP = registerBlock("chorus_tulip",
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.CHORUS_FRUIT));
-
-    // Tier 3 Harvestable Flowers
-
     public static final Block WHITE_OVERFLOWING_BELLFLOWER = registerBlock("white_overflowing_bellflower",
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.BONE_MEAL));
 

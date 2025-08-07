@@ -82,6 +82,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ROCKY_SEDUM);
                         entries.add(ModBlocks.STEM_LILY);
                         entries.add(ModBlocks.BONES_BANE);
+                        entries.add(ModBlocks.CHORUS_TULIP);
+                        entries.add(ModBlocks.WHITE_OVERFLOWING_BELLFLOWER);
 
                         entries.add(ModItems.TWISTED_WART);
 
@@ -111,10 +113,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STEM_DOOR);
                         entries.add(ModBlocks.STEM_BUTTON);
                         entries.add(ModBlocks.STEM_PRESSURE_PLATE);
-
-                        entries.add(ModItems.FLORAL_BLOOM_TIER_1);
-                        entries.add(ModItems.FLORAL_BLOOM_TIER_2);
-                        entries.add(ModItems.FLORAL_BLOOM_TIER_3);
 
                     }).build());
 

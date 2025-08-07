@@ -29,7 +29,7 @@
   "item.floral.magenta_petal": "Magenta Petal",
   "item.floral.pink_petal": "Pink Petal",
   "item.floral.withered_petal": "Withered Petal",
-  "item.floral.bones_bane_petal": "Bones bane Petal",
+  "item.floral.bones_bane_petal": "Bones Bane Petal",
 
   "block.floral.black_petunia": "Black Petunia",
   "block.floral.red_petunia": "Red Petunia",
@@ -51,7 +51,9 @@
   "block.floral.warden_primrose": "Warden Primrose",
   "block.floral.rocky_sedum": "Rocky Sedum",
   "block.floral.stem_lily": "Stem Lily",
-  "block.floral.bones_bane": "Bones bane",
+  "block.floral.bones_bane": "Bones Bane",
+  "block.floral.white_overflowing_bellflower": "Overflowing Bellflower",
+  "block.floral.chorus_tulip": "Chorus Tulip",
 
   "block.floral.floral_stone": "Floral Stone",
   "block.floral.floral_stone_stairs": "Floral Stone Stairs",
