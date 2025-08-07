@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "floral:block/white_overflowing_bellflower_stage0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "floral:block/chorus_tulip_stage1"
+  }
+}
