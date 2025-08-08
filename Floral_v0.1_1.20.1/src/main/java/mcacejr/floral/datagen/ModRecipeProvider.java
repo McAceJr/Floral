@@ -397,6 +397,46 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Blocks.SKELETON_SKULL), conditionsFromItem(Blocks.SKELETON_SKULL))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.THICK_VINES)
+                .pattern("   ")
+                .pattern("GVG")
+                .pattern(" G ")
+                .input('G', ModItems.GREEN_PETAL)
+                .input('V', Blocks.VINE)
+                .criterion(hasItem(Blocks.VINE), conditionsFromItem(Blocks.VINE))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.THICK_STALK)
+                .pattern(" G ")
+                .pattern("GVG")
+                .pattern("   ")
+                .input('G', ModItems.GREEN_PETAL)
+                .input('V', Blocks.VINE)
+                .criterion(hasItem(Blocks.VINE), conditionsFromItem(Blocks.VINE))
+                .offerTo(exporter);
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.PINK_ALCEA)
+                .pattern("   ")
+                .pattern("PVP")
+                .pattern("   ")
+                .input('P', ModItems.PINK_PETAL)
+                .input('V', ModBlocks.THICK_STALK)
+                .criterion(hasItem(ModBlocks.THICK_STALK), conditionsFromItem(ModBlocks.THICK_STALK))
+                .criterion(hasItem(ModItems.PINK_PETAL), conditionsFromItem(ModItems.PINK_PETAL))
+                .offerTo(exporter);
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.BLUE_AUBRIETAS)
+                .pattern(" B ")
+                .pattern("BCB")
+                .pattern(" B ")
+                .input('B', ModItems.BLUE_PETAL)
+                .input('C', Blocks.PINK_PETALS)
+                .criterion(hasItem(Blocks.PINK_PETALS), conditionsFromItem(Blocks.PINK_PETALS))
+                .criterion(hasItem(ModItems.BLUE_PETAL), conditionsFromItem(ModItems.BLUE_PETAL))
+                .offerTo(exporter);
+
     }
 
 }

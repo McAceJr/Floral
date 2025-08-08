@@ -242,8 +242,6 @@ public class ModBlocks {
             new Identifier(Floral.MOD_ID, "potted_purple_wolfsbane"),
             new FlowerPotBlock(PURPLE_WOLFSBANE, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
 
-
-
     public static final Block ROCKY_SEDUM = registerBlock("rocky_sedum",
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), COBBLED_FLORAL_STONE.asItem()));
     public static final Block STEM_LILY = registerBlock("stem_lily",
