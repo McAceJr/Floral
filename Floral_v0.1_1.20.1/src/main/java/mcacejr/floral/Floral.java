@@ -5,6 +5,7 @@ import mcacejr.floral.enchantment.FloralEnchantments;
 import mcacejr.floral.entity.effect.DeathPrickStatusEffect;
 import mcacejr.floral.item.ModItemGroups;
 import mcacejr.floral.item.ModItems;
+import mcacejr.floral.world.gen.FloralWorldGen;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
@@ -31,13 +32,18 @@ public class Floral implements ModInitializer {
 
 		ModItemGroups.registerItemGroups();
 
+		FloralWorldGen.generateModWorldGen();
+
 		FloralEnchantments.init();
 
 		Registry.register(Registries.STATUS_EFFECT, new Identifier("floral", "death_prick"), DEATH_PRICK);
 
+
+		LOGGER.info("Adding blocks to StrippableBlockRegistry");
 		StrippableBlockRegistry.register(ModBlocks.STEM_LOG, ModBlocks.STRIPPED_STEM_LOG);
 		StrippableBlockRegistry.register(ModBlocks.STEM_WOOD, ModBlocks.STRIPPED_STEM_WOOD);
 
+		LOGGER.info("Adding blocks to FlammableBlockRegistry");
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STEM_LOG, 5, 5);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STEM_WOOD, 5, 5);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_STEM_LOG, 5, 5);
@@ -51,7 +57,6 @@ public class Floral implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STEM_PRESSURE_PLATE, 5, 20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STEM_TRAPDOOR, 5, 20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STEM_DOOR, 5, 20);
-
 	}
 
 }
