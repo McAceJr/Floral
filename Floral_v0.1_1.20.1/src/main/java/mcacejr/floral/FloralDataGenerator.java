@@ -19,6 +19,7 @@ public class FloralDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModItemTagProvider::new);
 		pack.addProvider(ModBlockTagProvider::new);
 		pack.addProvider(FloralRegistryDataGenerator::new);
+        pack.addProvider(FloralAdvancementProvider::new);
 	}
 
 	@Override
