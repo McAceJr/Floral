@@ -2,7 +2,7 @@ package mcacejr.floral.mixin;
 
 
 import mcacejr.floral.Floral;
-import mcacejr.floral.item.ModItems;
+import mcacejr.floral.item.FloralItems;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.item.ItemRenderer;
 import net.minecraft.client.render.model.BakedModel;
@@ -20,7 +20,7 @@ public class ItemRendererMixin {
     @ModifyVariable(method = "renderItem", at = @At(value = "HEAD"), argsOnly = true)
     public BakedModel useCorpseBlossomModel(BakedModel value, ItemStack stack, ModelTransformationMode renderMode, boolean leftHanded,
                                              MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay) {
-        if (stack.isOf(ModItems.CORPSE_BLOSSOM) && renderMode != ModelTransformationMode.GUI) {
+        if (stack.isOf(FloralItems.CORPSE_BLOSSOM) && renderMode != ModelTransformationMode.GUI) {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(
                     new ModelIdentifier(Floral.MOD_ID, "corpse_blossom_3d", "inventory"));
         }
@@ -29,7 +29,7 @@ public class ItemRendererMixin {
     @ModifyVariable(method = "renderItem", at = @At(value = "HEAD"), argsOnly = true)
     public BakedModel useDeadheader(BakedModel value, ItemStack stack, ModelTransformationMode renderMode, boolean leftHanded,
                                              MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay) {
-        if (stack.isOf(ModItems.DEADHEADER) && renderMode != ModelTransformationMode.GUI) {
+        if (stack.isOf(FloralItems.DEADHEADER) && renderMode != ModelTransformationMode.GUI) {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(
                     new ModelIdentifier(Floral.MOD_ID, "deadheader_3d", "inventory"));
         }

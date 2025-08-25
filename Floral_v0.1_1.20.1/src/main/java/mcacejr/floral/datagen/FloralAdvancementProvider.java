@@ -2,7 +2,7 @@ package mcacejr.floral.datagen;
 
 import mcacejr.floral.Floral;
 import mcacejr.floral.block.ModBlocks;
-import mcacejr.floral.item.ModItems;
+import mcacejr.floral.item.FloralItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricAdvancementProvider;
 import net.minecraft.advancement.Advancement;
@@ -77,7 +77,7 @@ public class FloralAdvancementProvider extends FabricAdvancementProvider {
         Advancement getFlowerTrimmers = Advancement.Builder.create()
                 .parent(getAdvancement("husbandry/root"))
                 .display(
-                        ModItems.FLOWER_TRIMMER,
+                        FloralItems.FLOWER_TRIMMER,
                         Text.translatable("advancements.husbandry.get_flower_trimmers.title"),
                         Text.translatable("advancements.husbandry.get_flower_trimmers.description"),
                         null,
@@ -86,13 +86,13 @@ public class FloralAdvancementProvider extends FabricAdvancementProvider {
                         true,
                         false
                 )
-                .criterion("flower_trimmers", InventoryChangedCriterion.Conditions.items(ModItems.FLOWER_TRIMMER))
+                .criterion("flower_trimmers", InventoryChangedCriterion.Conditions.items(FloralItems.FLOWER_TRIMMER))
                 .build(consumer, Floral.MOD_ID + ":husbandry/get_flower_trimmers");
 
         Advancement getDeadheader = Advancement.Builder.create()
                 .parent(getFlowerTrimmers)
                 .display(
-                        ModItems.DEADHEADER,
+                        FloralItems.DEADHEADER,
                         Text.translatable("advancements.husbandry.get_deadheader.title"),
                         Text.translatable("advancements.husbandry.get_deadheader.description"),
                         null,
@@ -101,13 +101,13 @@ public class FloralAdvancementProvider extends FabricAdvancementProvider {
                         true,
                         true
                 )
-                .criterion("deadheader", InventoryChangedCriterion.Conditions.items(ModItems.DEADHEADER))
+                .criterion("deadheader", InventoryChangedCriterion.Conditions.items(FloralItems.DEADHEADER))
                 .build(consumer, Floral.MOD_ID + ":husbandry/get_deadheader");
 
         Advancement getCorpseBlossom = Advancement.Builder.create()
                 .parent(getFlowerTrimmers)
                 .display(
-                        ModItems.CORPSE_BLOSSOM,
+                        FloralItems.CORPSE_BLOSSOM,
                         Text.translatable("advancements.husbandry.get_corpse_blossom.title"),
                         Text.translatable("advancements.husbandry.get_corpse_blossom.description"),
                         null,
@@ -116,13 +116,13 @@ public class FloralAdvancementProvider extends FabricAdvancementProvider {
                         true,
                         false
                 )
-                .criterion("corpse_blossom", InventoryChangedCriterion.Conditions.items(ModItems.CORPSE_BLOSSOM))
+                .criterion("corpse_blossom", InventoryChangedCriterion.Conditions.items(FloralItems.CORPSE_BLOSSOM))
                 .build(consumer, Floral.MOD_ID + ":husbandry/get_corpse_blossom");
 
         Advancement getFloralBane = Advancement.Builder.create()
                 .parent(getFlowerTrimmers)
                 .display(
-                        ModItems.FLORAL_BANE,
+                        FloralItems.FLORAL_BANE,
                         Text.translatable("advancements.husbandry.get_floral_bane.title"),
                         Text.translatable("advancements.husbandry.get_floral_bane.description"),
                         null,
@@ -131,7 +131,7 @@ public class FloralAdvancementProvider extends FabricAdvancementProvider {
                         true,
                         false
                 )
-                .criterion("floral_bane", InventoryChangedCriterion.Conditions.items(ModItems.FLORAL_BANE))
+                .criterion("floral_bane", InventoryChangedCriterion.Conditions.items(FloralItems.FLORAL_BANE))
                 .build(consumer, Floral.MOD_ID + ":husbandry/get_floral_bane");
 
         Advancement getAllFlowers = addFlowers(Advancement.Builder.create()

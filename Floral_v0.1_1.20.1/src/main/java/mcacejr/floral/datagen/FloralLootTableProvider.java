@@ -6,9 +6,9 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.TallPlantBlock;
 import net.minecraft.block.enums.DoubleBlockHalf;
 
-public class ModLootTableProvider extends FabricBlockLootTableProvider {
+public class FloralLootTableProvider extends FabricBlockLootTableProvider {
 
-    public ModLootTableProvider(FabricDataOutput dataOutput) {
+    public FloralLootTableProvider(FabricDataOutput dataOutput) {
         super(dataOutput);
     }
 

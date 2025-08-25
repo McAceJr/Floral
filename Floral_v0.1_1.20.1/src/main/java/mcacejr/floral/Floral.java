@@ -3,8 +3,8 @@ package mcacejr.floral;
 import mcacejr.floral.block.ModBlocks;
 import mcacejr.floral.enchantment.FloralEnchantments;
 import mcacejr.floral.entity.effect.DeathPrickStatusEffect;
-import mcacejr.floral.item.ModItemGroups;
-import mcacejr.floral.item.ModItems;
+import mcacejr.floral.item.FloralItemGroups;
+import mcacejr.floral.item.FloralItems;
 import mcacejr.floral.world.gen.FloralWorldGen;
 import net.fabricmc.api.ModInitializer;
 
@@ -26,11 +26,11 @@ public class Floral implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-		ModItems.registerModItems();
+		FloralItems.registerModItems();
 
 		ModBlocks.registerModBlocks();
 
-		ModItemGroups.registerItemGroups();
+		FloralItemGroups.registerItemGroups();
 
 		FloralWorldGen.generateModWorldGen();
 

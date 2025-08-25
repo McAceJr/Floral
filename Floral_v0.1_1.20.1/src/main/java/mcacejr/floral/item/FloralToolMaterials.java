@@ -7,7 +7,7 @@ import net.minecraft.recipe.Ingredient;
 
 import java.util.function.Supplier;
 
-public enum ModToolMaterials implements ToolMaterial {
+public enum FloralToolMaterials implements ToolMaterial {
     PETUNIA(0, 150, 2.0f, 0.0f, 15,
             () -> Ingredient.ofItems(ModBlocks.BLACK_PETUNIA, ModBlocks.RED_PETUNIA)),
     DEADHEADER(4, 1540, 6.0f, 4.0f, 15,
@@ -20,8 +20,8 @@ public enum ModToolMaterials implements ToolMaterial {
     private final int enchantability;
     private final Supplier<Ingredient> repairIngredient;
 
-    ModToolMaterials(int miningLevel, int itemDurability, float miningSpeed, float attackDamage,
-                     int enchantability, Supplier<Ingredient> repairIngredient) {
+    FloralToolMaterials(int miningLevel, int itemDurability, float miningSpeed, float attackDamage,
+                        int enchantability, Supplier<Ingredient> repairIngredient) {
         this.miningLevel = miningLevel;
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;

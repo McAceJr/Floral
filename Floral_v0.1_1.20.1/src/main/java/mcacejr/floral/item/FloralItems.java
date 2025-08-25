@@ -8,17 +8,17 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-public class ModItems {
+public class FloralItems {
 
     public static final Item FLORAL_CROWN = registerItem("floral_crown",
-            new ArmorWithEffect(ModArmorMaterials.FLORAL, ArmorItem.Type.HELMET,
-                    new FabricItemSettings(), ModArmorMaterials.FLORAL_ARMOR_EFFECT));
+            new ArmorWithEffect(FloralArmorMaterials.FLORAL, ArmorItem.Type.HELMET,
+                    new FabricItemSettings(), FloralArmorMaterials.FLORAL_ARMOR_EFFECT));
 
     public static final Item PETUNIA_LANCE = registerItem("petunia_lance",
-            new SwordItem(ModToolMaterials.PETUNIA, 3, -1.8f, new FabricItemSettings()));
+            new SwordItem(FloralToolMaterials.PETUNIA, 3, -1.8f, new FabricItemSettings()));
 
     public static final Item CORPSE_BLOSSOM = registerItem("corpse_blossom",
-            new CorpseBlossomSword(ModToolMaterials.PETUNIA, 2, -1.8f, new FabricItemSettings()));
+            new CorpseBlossomSword(FloralToolMaterials.PETUNIA, 2, -1.8f, new FabricItemSettings()));
 
     public static final Item FLOWER_BLEND = registerItem("flower_blend",
             new FlowerBlendItem(new FabricItemSettings()));
@@ -26,10 +26,10 @@ public class ModItems {
     public static final Item FLOWER_TRIMMER = registerItem("flower_trimmer",
             new CraftingSword(ToolMaterials.IRON, 0, -2.4f, new FabricItemSettings()));
     public static final Item DEADHEADER = registerItem("deadheader",
-            new CraftingSword(ModToolMaterials.DEADHEADER, 7, -3.2f, new FabricItemSettings()));
+            new CraftingSword(FloralToolMaterials.DEADHEADER, 7, -3.2f, new FabricItemSettings()));
 
     public static final Item FLORAL_BANE = registerItem("floral_bane",
-            new FloralBaneSword(ModToolMaterials.PETUNIA, 2, -2.0f, new FabricItemSettings()));
+            new FloralBaneSword(FloralToolMaterials.PETUNIA, 2, -2.0f, new FabricItemSettings()));
 
     public static final Item WHITE_PETAL = registerItem("white_petal",
             new Item(new FabricItemSettings()));

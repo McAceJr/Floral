@@ -14,7 +14,7 @@ import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
 
 import java.util.List;
 
-public class ModPlacedFeatures {
+public class FloralPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> BLACK_PETUNIA_PLACED_KEY = registerKey("black_petunia_placed");
 
@@ -55,126 +55,126 @@ public class ModPlacedFeatures {
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
-        register(context, BLACK_PETUNIA_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.BLACK_PETUNIA_KEY),
+        register(context, BLACK_PETUNIA_PLACED_KEY, configuredFeatures.getOrThrow(FloralConfiguredFeatures.BLACK_PETUNIA_KEY),
                 RarityFilterPlacementModifier.of(16),
                 SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
                 BiomePlacementModifier.of()
         );
 
-        register(context, RED_PETUNIA_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.RED_PETUNIA_KEY),
+        register(context, RED_PETUNIA_PLACED_KEY, configuredFeatures.getOrThrow(FloralConfiguredFeatures.RED_PETUNIA_KEY),
                 RarityFilterPlacementModifier.of(16),
                 SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
                 BiomePlacementModifier.of()
         );
 
-        register(context, PETUNIA_BUNCH_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PETUNIA_BUNCH_KEY),
+        register(context, PETUNIA_BUNCH_PLACED_KEY, configuredFeatures.getOrThrow(FloralConfiguredFeatures.PETUNIA_BUNCH_KEY),
                 RarityFilterPlacementModifier.of(16),
                 SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
                 BiomePlacementModifier.of()
         );
 
-        register(context, PURPLE_BELLFLOWER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PURPLE_BELLFLOWER_KEY),
+        register(context, PURPLE_BELLFLOWER_PLACED_KEY, configuredFeatures.getOrThrow(FloralConfiguredFeatures.PURPLE_BELLFLOWER_KEY),
                 RarityFilterPlacementModifier.of(16),
                 SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
                 BiomePlacementModifier.of()
         );
 
-        register(context, PURPLE_CHIMNEY_BELLFLOWER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PURPLE_CHIMNEY_BELLFLOWER_KEY),
+        register(context, PURPLE_CHIMNEY_BELLFLOWER_PLACED_KEY, configuredFeatures.getOrThrow(FloralConfiguredFeatures.PURPLE_CHIMNEY_BELLFLOWER_KEY),
                 RarityFilterPlacementModifier.of(16),
                 SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
                 BiomePlacementModifier.of()
         );
 
-        register(context, LIME_BELLFLOWER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.LIME_BELLFLOWER_KEY),
+        register(context, LIME_BELLFLOWER_PLACED_KEY, configuredFeatures.getOrThrow(FloralConfiguredFeatures.LIME_BELLFLOWER_KEY),
                 RarityFilterPlacementModifier.of(16),
                 SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
                 BiomePlacementModifier.of()
         );
 
-        register(context, LIME_CHIMNEY_BELLFLOWER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.LIME_CHIMNEY_BELLFLOWER_KEY),
+        register(context, LIME_CHIMNEY_BELLFLOWER_PLACED_KEY, configuredFeatures.getOrThrow(FloralConfiguredFeatures.LIME_CHIMNEY_BELLFLOWER_KEY),
                 RarityFilterPlacementModifier.of(16),
                 SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
                 BiomePlacementModifier.of()
         );
 
-        register(context, BELLFLOWER_BUNCH_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.BELLFLOWER_BUNCH_KEY),
+        register(context, BELLFLOWER_BUNCH_PLACED_KEY, configuredFeatures.getOrThrow(FloralConfiguredFeatures.BELLFLOWER_BUNCH_KEY),
                 RarityFilterPlacementModifier.of(16),
                 SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
                 BiomePlacementModifier.of()
         );
 
-        register(context, GREEN_CONEFLOWER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.GREEN_CONEFLOWER_KEY),
+        register(context, GREEN_CONEFLOWER_PLACED_KEY, configuredFeatures.getOrThrow(FloralConfiguredFeatures.GREEN_CONEFLOWER_KEY),
                 RarityFilterPlacementModifier.of(16),
                 SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
                 BiomePlacementModifier.of()
         );
 
-        register(context, FULL_TULIP_BUNCH_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.FULL_TULIP_BUNCH_KEY),
+        register(context, FULL_TULIP_BUNCH_PLACED_KEY, configuredFeatures.getOrThrow(FloralConfiguredFeatures.FULL_TULIP_BUNCH_KEY),
                 RarityFilterPlacementModifier.of(16),
                 SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
                 BiomePlacementModifier.of()
         );
 
-        register(context, COLORLESS_TULIP_BUNCH_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.COLORLESS_TULIP_BUNCH_KEY),
+        register(context, COLORLESS_TULIP_BUNCH_PLACED_KEY, configuredFeatures.getOrThrow(FloralConfiguredFeatures.COLORLESS_TULIP_BUNCH_KEY),
                 RarityFilterPlacementModifier.of(16),
                 SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
                 BiomePlacementModifier.of()
         );
 
-        register(context, WARM_TULIP_BUNCH_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.WARM_TULIP_BUNCH_KEY),
+        register(context, WARM_TULIP_BUNCH_PLACED_KEY, configuredFeatures.getOrThrow(FloralConfiguredFeatures.WARM_TULIP_BUNCH_KEY),
                 RarityFilterPlacementModifier.of(16),
                 SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
                 BiomePlacementModifier.of()
         );
 
-        register(context, COLD_TULIP_BUNCH_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.COLD_TULIP_BUNCH_KEY),
+        register(context, COLD_TULIP_BUNCH_PLACED_KEY, configuredFeatures.getOrThrow(FloralConfiguredFeatures.COLD_TULIP_BUNCH_KEY),
                 RarityFilterPlacementModifier.of(16),
                 SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
                 BiomePlacementModifier.of()
         );
 
-        register(context, PURPLE_TULIP_BUNCH_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PURPLE_TULIP_BUNCH_KEY),
+        register(context, PURPLE_TULIP_BUNCH_PLACED_KEY, configuredFeatures.getOrThrow(FloralConfiguredFeatures.PURPLE_TULIP_BUNCH_KEY),
                 RarityFilterPlacementModifier.of(16),
                 SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
                 BiomePlacementModifier.of()
         );
 
-        register(context, LIME_TULIP_BUNCH_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.LIME_TULIP_BUNCH_KEY),
+        register(context, LIME_TULIP_BUNCH_PLACED_KEY, configuredFeatures.getOrThrow(FloralConfiguredFeatures.LIME_TULIP_BUNCH_KEY),
                 RarityFilterPlacementModifier.of(16),
                 SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
                 BiomePlacementModifier.of()
         );
 
-        register(context, MAGENTA_CABARET_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MAGENTA_CABARET_KEY),
+        register(context, MAGENTA_CABARET_PLACED_KEY, configuredFeatures.getOrThrow(FloralConfiguredFeatures.MAGENTA_CABARET_KEY),
                 RarityFilterPlacementModifier.of(16),
                 SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
                 BiomePlacementModifier.of()
         );
 
-        register(context, GREEN_DAHLIA_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.GREEN_DAHLIA_KEY),
+        register(context, GREEN_DAHLIA_PLACED_KEY, configuredFeatures.getOrThrow(FloralConfiguredFeatures.GREEN_DAHLIA_KEY),
                 RarityFilterPlacementModifier.of(16),
                 SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
                 BiomePlacementModifier.of()
         );
 
-        register(context, PURPLE_WOLFSBANE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PURPLE_WOLFSBANE_KEY),
+        register(context, PURPLE_WOLFSBANE_PLACED_KEY, configuredFeatures.getOrThrow(FloralConfiguredFeatures.PURPLE_WOLFSBANE_KEY),
                 RarityFilterPlacementModifier.of(16),
                 SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,

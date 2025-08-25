@@ -2,7 +2,7 @@ package mcacejr.floral.block;
 
 import mcacejr.floral.Floral;
 import mcacejr.floral.block.custom.*;
-import mcacejr.floral.item.ModItems;
+import mcacejr.floral.item.FloralItems;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -247,9 +247,9 @@ public class ModBlocks {
     public static final Block STEM_LILY = registerBlock("stem_lily",
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), STEM_LOG.asItem()));
     public static final Block TWISTING_ROOTS = registerBlock("twisting_roots",
-            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), ModItems.TWISTED_WART));
+            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), FloralItems.TWISTED_WART));
     public static final Block BONES_BANE = registerBlock("bones_bane",
-            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), ModItems.BONES_BANE_PETAL));
+            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), FloralItems.BONES_BANE_PETAL));
     public static final Block WEEPING_ROOTS = registerBlock("weeping_roots",
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.NETHER_WART));
     public static final Block WARDEN_PRIMROSE = registerBlock("warden_primrose",

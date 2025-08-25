@@ -6,14 +6,13 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 
 import java.util.function.Supplier;
 
-public enum ModArmorMaterials implements ArmorMaterial {
+public enum FloralArmorMaterials implements ArmorMaterial {
     FLORAL("floral", 10, new int[] {1, 0, 0, 0}, 5,
             SoundEvents.BLOCK_MOSS_STEP, 0f, 0f,() -> Ingredient.fromTag(ItemTags.FLOWERS));
 
@@ -31,9 +30,9 @@ public enum ModArmorMaterials implements ArmorMaterial {
 
     private static final int[] BASE_DURABILITY = {11, 16, 15, 13};
 
-    ModArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantability,
-                      SoundEvent equipSound, float toughness, float knockbackResistance,
-                      Supplier<Ingredient> repairIngredient) {
+    FloralArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantability,
+                         SoundEvent equipSound, float toughness, float knockbackResistance,
+                         Supplier<Ingredient> repairIngredient) {
         this.name = name;
         this.durabilityMultiplier = durabilityMultiplier;
         this.protectionAmounts = protectionAmounts;

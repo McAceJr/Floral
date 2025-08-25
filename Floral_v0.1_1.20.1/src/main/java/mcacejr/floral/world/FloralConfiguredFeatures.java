@@ -13,7 +13,7 @@ import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.stateprovider.WeightedBlockStateProvider;
 
-public class ModConfiguredFeatures {
+public class FloralConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> BLACK_PETUNIA_KEY = registryKey("black_petunia");
 

@@ -1,7 +1,7 @@
 package mcacejr.floral.datagen;
 
 import mcacejr.floral.block.ModBlocks;
-import mcacejr.floral.item.ModItems;
+import mcacejr.floral.item.FloralItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
@@ -9,9 +9,9 @@ import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.state.property.Properties;
 
-public class ModModelProvider extends FabricModelProvider {
+public class FloralModelProvider extends FabricModelProvider {
 
-    public ModModelProvider(FabricDataOutput output) {
+    public FloralModelProvider(FabricDataOutput output) {
 
         super(output);
 
@@ -155,36 +155,36 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
 
-        itemModelGenerator.registerArmor((ArmorItem) ModItems.FLORAL_CROWN);
+        itemModelGenerator.registerArmor((ArmorItem) FloralItems.FLORAL_CROWN);
 
-        itemModelGenerator.register(ModItems.PETUNIA_LANCE, Models.HANDHELD);
+        itemModelGenerator.register(FloralItems.PETUNIA_LANCE, Models.HANDHELD);
 
-        itemModelGenerator.register(ModItems.FLOWER_TRIMMER, Models.HANDHELD);
+        itemModelGenerator.register(FloralItems.FLOWER_TRIMMER, Models.HANDHELD);
 
-        itemModelGenerator.register(ModItems.FLORAL_BANE, Models.HANDHELD);
+        itemModelGenerator.register(FloralItems.FLORAL_BANE, Models.HANDHELD);
 
-        itemModelGenerator.register(ModItems.FLOWER_BLEND, Models.GENERATED);
+        itemModelGenerator.register(FloralItems.FLOWER_BLEND, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.WHITE_PETAL, Models.GENERATED);
-        itemModelGenerator.register(ModItems.LIGHT_GRAY_PETAL, Models.GENERATED);
-        itemModelGenerator.register(ModItems.GRAY_PETAL, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BLACK_PETAL, Models.GENERATED);
-        itemModelGenerator.register(ModItems.RED_PETAL, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ORANGE_PETAL, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BROWN_PETAL, Models.GENERATED);
-        itemModelGenerator.register(ModItems.YELLOW_PETAL, Models.GENERATED);
-        itemModelGenerator.register(ModItems.LIME_PETAL, Models.GENERATED);
-        itemModelGenerator.register(ModItems.GREEN_PETAL, Models.GENERATED);
-        itemModelGenerator.register(ModItems.CYAN_PETAL, Models.GENERATED);
-        itemModelGenerator.register(ModItems.LIGHT_BLUE_PETAL, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BLUE_PETAL, Models.GENERATED);
-        itemModelGenerator.register(ModItems.PURPLE_PETAL, Models.GENERATED);
-        itemModelGenerator.register(ModItems.MAGENTA_PETAL, Models.GENERATED);
-        itemModelGenerator.register(ModItems.PINK_PETAL, Models.GENERATED);
-        itemModelGenerator.register(ModItems.WITHERED_PETAL, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BONES_BANE_PETAL, Models.GENERATED);
+        itemModelGenerator.register(FloralItems.WHITE_PETAL, Models.GENERATED);
+        itemModelGenerator.register(FloralItems.LIGHT_GRAY_PETAL, Models.GENERATED);
+        itemModelGenerator.register(FloralItems.GRAY_PETAL, Models.GENERATED);
+        itemModelGenerator.register(FloralItems.BLACK_PETAL, Models.GENERATED);
+        itemModelGenerator.register(FloralItems.RED_PETAL, Models.GENERATED);
+        itemModelGenerator.register(FloralItems.ORANGE_PETAL, Models.GENERATED);
+        itemModelGenerator.register(FloralItems.BROWN_PETAL, Models.GENERATED);
+        itemModelGenerator.register(FloralItems.YELLOW_PETAL, Models.GENERATED);
+        itemModelGenerator.register(FloralItems.LIME_PETAL, Models.GENERATED);
+        itemModelGenerator.register(FloralItems.GREEN_PETAL, Models.GENERATED);
+        itemModelGenerator.register(FloralItems.CYAN_PETAL, Models.GENERATED);
+        itemModelGenerator.register(FloralItems.LIGHT_BLUE_PETAL, Models.GENERATED);
+        itemModelGenerator.register(FloralItems.BLUE_PETAL, Models.GENERATED);
+        itemModelGenerator.register(FloralItems.PURPLE_PETAL, Models.GENERATED);
+        itemModelGenerator.register(FloralItems.MAGENTA_PETAL, Models.GENERATED);
+        itemModelGenerator.register(FloralItems.PINK_PETAL, Models.GENERATED);
+        itemModelGenerator.register(FloralItems.WITHERED_PETAL, Models.GENERATED);
+        itemModelGenerator.register(FloralItems.BONES_BANE_PETAL, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.TWISTED_WART, Models.GENERATED);
+        itemModelGenerator.register(FloralItems.TWISTED_WART, Models.GENERATED);
 
     }
 

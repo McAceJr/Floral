@@ -1,8 +1,8 @@
 package mcacejr.floral.datagen;
 
 import mcacejr.floral.block.ModBlocks;
-import mcacejr.floral.item.ModItems;
-import mcacejr.floral.util.ModTags;
+import mcacejr.floral.item.FloralItems;
+import mcacejr.floral.util.FloralTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
@@ -13,24 +13,23 @@ import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.recipe.ShapedRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.registry.tag.TagKey;
 
 import java.util.function.Consumer;
 
-public class ModRecipeProvider extends FabricRecipeProvider {
+public class FloralRecipeProvider extends FabricRecipeProvider {
 
-    public ModRecipeProvider(FabricDataOutput output) { super(output); }
+    public FloralRecipeProvider(FabricDataOutput output) { super(output); }
 
     public static void offerPetalRecipe(Consumer<RecipeJsonProvider> exporter, TagKey<Item> flowerItem, Item petalItem) {
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, petalItem, 3)
-                .input(ModTags.Items.FLOWER_TRIMMERS)
+                .input(FloralTags.Items.FLOWER_TRIMMERS)
                 .input(flowerItem)
-                .criterion(hasItem(ModItems.FLOWER_TRIMMER), conditionsFromItem(ModItems.FLOWER_TRIMMER))
-                .criterion(hasItem(ModItems.DEADHEADER), conditionsFromItem(ModItems.DEADHEADER))
+                .criterion(hasItem(FloralItems.FLOWER_TRIMMER), conditionsFromItem(FloralItems.FLOWER_TRIMMER))
+                .criterion(hasItem(FloralItems.DEADHEADER), conditionsFromItem(FloralItems.DEADHEADER))
                 .offerTo(exporter, petalItem + "_from_" + flowerItem.id());
 
     }
@@ -38,10 +37,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     public static void offerTallPetalRecipe(Consumer<RecipeJsonProvider> exporter, TagKey<Item> flowerItem, Item petalItem) {
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, petalItem, 6)
-                .input(ModTags.Items.FLOWER_TRIMMERS)
+                .input(FloralTags.Items.FLOWER_TRIMMERS)
                 .input(flowerItem)
-                .criterion(hasItem(ModItems.FLOWER_TRIMMER), conditionsFromItem(ModItems.FLOWER_TRIMMER))
-                .criterion(hasItem(ModItems.DEADHEADER), conditionsFromItem(ModItems.DEADHEADER))
+                .criterion(hasItem(FloralItems.FLOWER_TRIMMER), conditionsFromItem(FloralItems.FLOWER_TRIMMER))
+                .criterion(hasItem(FloralItems.DEADHEADER), conditionsFromItem(FloralItems.DEADHEADER))
                 .offerTo(exporter, petalItem + "_from_" + flowerItem.id());
 
     }
@@ -67,7 +66,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FLOWER_TRIMMER)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, FloralItems.FLOWER_TRIMMER)
                 .pattern(" I ")
                 .pattern("LSI")
                 .pattern("G  ")
@@ -79,47 +78,47 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.LEATHER), conditionsFromItem(Items.LEATHER))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DEADHEADER)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, FloralItems.DEADHEADER)
                 .pattern("N N")
                 .pattern("LTL")
                 .pattern(" R ")
                 .input('N', Items.NETHERITE_INGOT)
-                .input('T', ModItems.FLOWER_TRIMMER)
-                .input('L', ModItems.RED_PETAL)
+                .input('T', FloralItems.FLOWER_TRIMMER)
+                .input('L', FloralItems.RED_PETAL)
                 .input('R', Items.LEATHER)
-                .criterion(hasItem(ModItems.FLOWER_TRIMMER), conditionsFromItem(ModItems.FLOWER_TRIMMER))
+                .criterion(hasItem(FloralItems.FLOWER_TRIMMER), conditionsFromItem(FloralItems.FLOWER_TRIMMER))
                 .criterion(hasItem(Items.NETHERITE_INGOT), conditionsFromItem(Items.NETHERITE_INGOT))
                 .offerTo(exporter);
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.WITHERED_PETAL)
-                .input(ModTags.Items.FLOWER_TRIMMERS)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, FloralItems.WITHERED_PETAL)
+                .input(FloralTags.Items.FLOWER_TRIMMERS)
                 .input(Blocks.WITHER_ROSE)
-                .criterion(hasItem(ModItems.FLOWER_TRIMMER), conditionsFromItem(ModItems.FLOWER_TRIMMER))
-                .criterion(hasItem(ModItems.DEADHEADER), conditionsFromItem(ModItems.DEADHEADER))
+                .criterion(hasItem(FloralItems.FLOWER_TRIMMER), conditionsFromItem(FloralItems.FLOWER_TRIMMER))
+                .criterion(hasItem(FloralItems.DEADHEADER), conditionsFromItem(FloralItems.DEADHEADER))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.CORPSE_BLOSSOM)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, FloralItems.CORPSE_BLOSSOM)
                 .pattern("WBW")
                 .pattern("WOW")
                 .pattern("WBW")
-                .input('W', ModItems.WITHERED_PETAL)
+                .input('W', FloralItems.WITHERED_PETAL)
                 .input('O', Items.OXEYE_DAISY)
-                .input('B', ModItems.FLOWER_BLEND)
-                .criterion(hasItem(ModItems.WITHERED_PETAL), conditionsFromItem(ModItems.WITHERED_PETAL))
+                .input('B', FloralItems.FLOWER_BLEND)
+                .criterion(hasItem(FloralItems.WITHERED_PETAL), conditionsFromItem(FloralItems.WITHERED_PETAL))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FLORAL_BANE)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, FloralItems.FLORAL_BANE)
                 .pattern(" PP")
                 .pattern("MPB")
                 .pattern("BN ")
-                .input('P', ModItems.BONES_BANE_PETAL)
+                .input('P', FloralItems.BONES_BANE_PETAL)
                 .input('B', Items.BONE)
                 .input('M', Items.BONE_BLOCK)
                 .input('N', Items.NETHERITE_INGOT)
-                .criterion(hasItem(ModItems.BONES_BANE_PETAL), conditionsFromItem(ModItems.BONES_BANE_PETAL))
+                .criterion(hasItem(FloralItems.BONES_BANE_PETAL), conditionsFromItem(FloralItems.BONES_BANE_PETAL))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FLOWER_BLEND, 2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, FloralItems.FLOWER_BLEND, 2)
                 .pattern("FFF")
                 .pattern("FBF")
                 .pattern("FFF")
@@ -128,67 +127,67 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.BONE_MEAL), conditionsFromItem(Items.BONE_MEAL))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FLORAL_CROWN)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, FloralItems.FLORAL_CROWN)
                 .pattern("FFF")
                 .pattern("FBF")
                 .pattern("FFF")
                 .input('F', ItemTags.FLOWERS)
-                .input('B', ModItems.FLOWER_BLEND)
-                .criterion(hasItem(ModItems.FLOWER_BLEND), conditionsFromItem(ModItems.FLOWER_BLEND))
+                .input('B', FloralItems.FLOWER_BLEND)
+                .criterion(hasItem(FloralItems.FLOWER_BLEND), conditionsFromItem(FloralItems.FLOWER_BLEND))
                 .offerTo(exporter);
 
-        offerPetalRecipe(exporter, ModTags.Items.WHITE_FLOWERS, ModItems.WHITE_PETAL);
-        offerPetalRecipe(exporter, ModTags.Items.LIGHT_GRAY_FLOWERS, ModItems.LIGHT_GRAY_PETAL);
-        offerPetalRecipe(exporter, ModTags.Items.GRAY_FLOWERS, ModItems.GRAY_PETAL);
-        offerPetalRecipe(exporter, ModTags.Items.BLACK_FLOWERS, ModItems.BLACK_PETAL);
-        offerPetalRecipe(exporter, ModTags.Items.RED_FLOWERS, ModItems.RED_PETAL);
-        offerPetalRecipe(exporter, ModTags.Items.ORANGE_FLOWERS, ModItems.ORANGE_PETAL);
-        offerPetalRecipe(exporter, ModTags.Items.BROWN_FLOWERS, ModItems.BROWN_PETAL);
-        offerPetalRecipe(exporter, ModTags.Items.YELLOW_FLOWERS, ModItems.YELLOW_PETAL);
-        offerPetalRecipe(exporter, ModTags.Items.LIME_FLOWERS, ModItems.LIME_PETAL);
-        offerPetalRecipe(exporter, ModTags.Items.GREEN_FLOWERS, ModItems.GREEN_PETAL);
-        offerPetalRecipe(exporter, ModTags.Items.CYAN_FLOWERS, ModItems.CYAN_PETAL);
-        offerPetalRecipe(exporter, ModTags.Items.LIGHT_BLUE_FLOWERS, ModItems.LIGHT_BLUE_PETAL);
-        offerPetalRecipe(exporter, ModTags.Items.BLUE_FLOWERS, ModItems.BLUE_PETAL);
-        offerPetalRecipe(exporter, ModTags.Items.PURPLE_FLOWERS, ModItems.PURPLE_PETAL);
-        offerPetalRecipe(exporter, ModTags.Items.MAGENTA_FLOWERS, ModItems.MAGENTA_PETAL);
-        offerPetalRecipe(exporter, ModTags.Items.PINK_FLOWERS, ModItems.PINK_PETAL);
+        offerPetalRecipe(exporter, FloralTags.Items.WHITE_FLOWERS, FloralItems.WHITE_PETAL);
+        offerPetalRecipe(exporter, FloralTags.Items.LIGHT_GRAY_FLOWERS, FloralItems.LIGHT_GRAY_PETAL);
+        offerPetalRecipe(exporter, FloralTags.Items.GRAY_FLOWERS, FloralItems.GRAY_PETAL);
+        offerPetalRecipe(exporter, FloralTags.Items.BLACK_FLOWERS, FloralItems.BLACK_PETAL);
+        offerPetalRecipe(exporter, FloralTags.Items.RED_FLOWERS, FloralItems.RED_PETAL);
+        offerPetalRecipe(exporter, FloralTags.Items.ORANGE_FLOWERS, FloralItems.ORANGE_PETAL);
+        offerPetalRecipe(exporter, FloralTags.Items.BROWN_FLOWERS, FloralItems.BROWN_PETAL);
+        offerPetalRecipe(exporter, FloralTags.Items.YELLOW_FLOWERS, FloralItems.YELLOW_PETAL);
+        offerPetalRecipe(exporter, FloralTags.Items.LIME_FLOWERS, FloralItems.LIME_PETAL);
+        offerPetalRecipe(exporter, FloralTags.Items.GREEN_FLOWERS, FloralItems.GREEN_PETAL);
+        offerPetalRecipe(exporter, FloralTags.Items.CYAN_FLOWERS, FloralItems.CYAN_PETAL);
+        offerPetalRecipe(exporter, FloralTags.Items.LIGHT_BLUE_FLOWERS, FloralItems.LIGHT_BLUE_PETAL);
+        offerPetalRecipe(exporter, FloralTags.Items.BLUE_FLOWERS, FloralItems.BLUE_PETAL);
+        offerPetalRecipe(exporter, FloralTags.Items.PURPLE_FLOWERS, FloralItems.PURPLE_PETAL);
+        offerPetalRecipe(exporter, FloralTags.Items.MAGENTA_FLOWERS, FloralItems.MAGENTA_PETAL);
+        offerPetalRecipe(exporter, FloralTags.Items.PINK_FLOWERS, FloralItems.PINK_PETAL);
 
-        offerTallPetalRecipe(exporter, ModTags.Items.TALL_WHITE_FLOWERS, ModItems.WHITE_PETAL);
-        offerTallPetalRecipe(exporter, ModTags.Items.TALL_LIGHT_GRAY_FLOWERS, ModItems.LIGHT_GRAY_PETAL);
-        offerTallPetalRecipe(exporter, ModTags.Items.TALL_GRAY_FLOWERS, ModItems.GRAY_PETAL);
-        offerTallPetalRecipe(exporter, ModTags.Items.TALL_BLACK_FLOWERS, ModItems.BLACK_PETAL);
-        offerTallPetalRecipe(exporter, ModTags.Items.TALL_RED_FLOWERS, ModItems.RED_PETAL);
-        offerTallPetalRecipe(exporter, ModTags.Items.TALL_ORANGE_FLOWERS, ModItems.ORANGE_PETAL);
-        offerTallPetalRecipe(exporter, ModTags.Items.TALL_BROWN_FLOWERS, ModItems.BROWN_PETAL);
-        offerTallPetalRecipe(exporter, ModTags.Items.TALL_YELLOW_FLOWERS, ModItems.YELLOW_PETAL);
-        offerTallPetalRecipe(exporter, ModTags.Items.TALL_LIME_FLOWERS, ModItems.LIME_PETAL);
-        offerTallPetalRecipe(exporter, ModTags.Items.TALL_GREEN_FLOWERS, ModItems.GREEN_PETAL);
-        offerTallPetalRecipe(exporter, ModTags.Items.TALL_CYAN_FLOWERS, ModItems.CYAN_PETAL);
-        offerTallPetalRecipe(exporter, ModTags.Items.TALL_LIGHT_BLUE_FLOWERS, ModItems.LIGHT_BLUE_PETAL);
-        offerTallPetalRecipe(exporter, ModTags.Items.TALL_BLUE_FLOWERS, ModItems.BLUE_PETAL);
-        offerTallPetalRecipe(exporter, ModTags.Items.TALL_PURPLE_FLOWERS, ModItems.PURPLE_PETAL);
-        offerTallPetalRecipe(exporter, ModTags.Items.TALL_MAGENTA_FLOWERS, ModItems.MAGENTA_PETAL);
-        offerTallPetalRecipe(exporter, ModTags.Items.TALL_PINK_FLOWERS, ModItems.PINK_PETAL);
+        offerTallPetalRecipe(exporter, FloralTags.Items.TALL_WHITE_FLOWERS, FloralItems.WHITE_PETAL);
+        offerTallPetalRecipe(exporter, FloralTags.Items.TALL_LIGHT_GRAY_FLOWERS, FloralItems.LIGHT_GRAY_PETAL);
+        offerTallPetalRecipe(exporter, FloralTags.Items.TALL_GRAY_FLOWERS, FloralItems.GRAY_PETAL);
+        offerTallPetalRecipe(exporter, FloralTags.Items.TALL_BLACK_FLOWERS, FloralItems.BLACK_PETAL);
+        offerTallPetalRecipe(exporter, FloralTags.Items.TALL_RED_FLOWERS, FloralItems.RED_PETAL);
+        offerTallPetalRecipe(exporter, FloralTags.Items.TALL_ORANGE_FLOWERS, FloralItems.ORANGE_PETAL);
+        offerTallPetalRecipe(exporter, FloralTags.Items.TALL_BROWN_FLOWERS, FloralItems.BROWN_PETAL);
+        offerTallPetalRecipe(exporter, FloralTags.Items.TALL_YELLOW_FLOWERS, FloralItems.YELLOW_PETAL);
+        offerTallPetalRecipe(exporter, FloralTags.Items.TALL_LIME_FLOWERS, FloralItems.LIME_PETAL);
+        offerTallPetalRecipe(exporter, FloralTags.Items.TALL_GREEN_FLOWERS, FloralItems.GREEN_PETAL);
+        offerTallPetalRecipe(exporter, FloralTags.Items.TALL_CYAN_FLOWERS, FloralItems.CYAN_PETAL);
+        offerTallPetalRecipe(exporter, FloralTags.Items.TALL_LIGHT_BLUE_FLOWERS, FloralItems.LIGHT_BLUE_PETAL);
+        offerTallPetalRecipe(exporter, FloralTags.Items.TALL_BLUE_FLOWERS, FloralItems.BLUE_PETAL);
+        offerTallPetalRecipe(exporter, FloralTags.Items.TALL_PURPLE_FLOWERS, FloralItems.PURPLE_PETAL);
+        offerTallPetalRecipe(exporter, FloralTags.Items.TALL_MAGENTA_FLOWERS, FloralItems.MAGENTA_PETAL);
+        offerTallPetalRecipe(exporter, FloralTags.Items.TALL_PINK_FLOWERS, FloralItems.PINK_PETAL);
 
-        offerPetalToDyeRecipe(exporter, ModItems.WHITE_PETAL, Items.WHITE_DYE);
-        offerPetalToDyeRecipe(exporter, ModItems.LIGHT_GRAY_PETAL, Items.LIGHT_GRAY_DYE);
-        offerPetalToDyeRecipe(exporter, ModItems.GRAY_PETAL, Items.GRAY_DYE);
-        offerPetalToDyeRecipe(exporter, ModItems.BLACK_PETAL, Items.BLACK_DYE);
-        offerPetalToDyeRecipe(exporter, ModItems.RED_PETAL, Items.RED_DYE);
-        offerPetalToDyeRecipe(exporter, ModItems.ORANGE_PETAL, Items.ORANGE_DYE);
-        offerPetalToDyeRecipe(exporter, ModItems.BROWN_PETAL, Items.BROWN_DYE);
-        offerPetalToDyeRecipe(exporter, ModItems.YELLOW_PETAL, Items.YELLOW_DYE);
-        offerPetalToDyeRecipe(exporter, ModItems.LIME_PETAL, Items.LIME_DYE);
-        offerPetalToDyeRecipe(exporter, ModItems.GREEN_PETAL, Items.GREEN_DYE);
-        offerPetalToDyeRecipe(exporter, ModItems.CYAN_PETAL, Items.CYAN_DYE);
-        offerPetalToDyeRecipe(exporter, ModItems.LIGHT_BLUE_PETAL, Items.LIGHT_BLUE_DYE);
-        offerPetalToDyeRecipe(exporter, ModItems.BLUE_PETAL, Items.BLUE_DYE);
-        offerPetalToDyeRecipe(exporter, ModItems.PURPLE_PETAL, Items.PURPLE_DYE);
-        offerPetalToDyeRecipe(exporter, ModItems.MAGENTA_PETAL, Items.MAGENTA_DYE);
-        offerPetalToDyeRecipe(exporter, ModItems.PINK_PETAL, Items.PINK_DYE);
-        offerPetalToDyeRecipe(exporter, ModItems.WITHERED_PETAL, Items.BLACK_DYE);
-        offerPetalToDyeRecipe(exporter, ModItems.BONES_BANE_PETAL, Items.PURPLE_DYE);
+        offerPetalToDyeRecipe(exporter, FloralItems.WHITE_PETAL, Items.WHITE_DYE);
+        offerPetalToDyeRecipe(exporter, FloralItems.LIGHT_GRAY_PETAL, Items.LIGHT_GRAY_DYE);
+        offerPetalToDyeRecipe(exporter, FloralItems.GRAY_PETAL, Items.GRAY_DYE);
+        offerPetalToDyeRecipe(exporter, FloralItems.BLACK_PETAL, Items.BLACK_DYE);
+        offerPetalToDyeRecipe(exporter, FloralItems.RED_PETAL, Items.RED_DYE);
+        offerPetalToDyeRecipe(exporter, FloralItems.ORANGE_PETAL, Items.ORANGE_DYE);
+        offerPetalToDyeRecipe(exporter, FloralItems.BROWN_PETAL, Items.BROWN_DYE);
+        offerPetalToDyeRecipe(exporter, FloralItems.YELLOW_PETAL, Items.YELLOW_DYE);
+        offerPetalToDyeRecipe(exporter, FloralItems.LIME_PETAL, Items.LIME_DYE);
+        offerPetalToDyeRecipe(exporter, FloralItems.GREEN_PETAL, Items.GREEN_DYE);
+        offerPetalToDyeRecipe(exporter, FloralItems.CYAN_PETAL, Items.CYAN_DYE);
+        offerPetalToDyeRecipe(exporter, FloralItems.LIGHT_BLUE_PETAL, Items.LIGHT_BLUE_DYE);
+        offerPetalToDyeRecipe(exporter, FloralItems.BLUE_PETAL, Items.BLUE_DYE);
+        offerPetalToDyeRecipe(exporter, FloralItems.PURPLE_PETAL, Items.PURPLE_DYE);
+        offerPetalToDyeRecipe(exporter, FloralItems.MAGENTA_PETAL, Items.MAGENTA_DYE);
+        offerPetalToDyeRecipe(exporter, FloralItems.PINK_PETAL, Items.PINK_DYE);
+        offerPetalToDyeRecipe(exporter, FloralItems.WITHERED_PETAL, Items.BLACK_DYE);
+        offerPetalToDyeRecipe(exporter, FloralItems.BONES_BANE_PETAL, Items.PURPLE_DYE);
 
         offerFlowerToDyeRecipe(exporter, ModBlocks.BLACK_PETUNIA.asItem(), Items.BLACK_DYE, 1);
         offerFlowerToDyeRecipe(exporter, ModBlocks.RED_PETUNIA.asItem(), Items.RED_DYE, 1);
@@ -281,7 +280,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerBarkBlockRecipe(exporter, ModBlocks.STRIPPED_STEM_WOOD, ModBlocks.STRIPPED_STEM_LOG);
 
-        offerPlanksRecipe(exporter, ModBlocks.STEM_PLANKS, ModTags.Items.STEM_LOGS, 4);
+        offerPlanksRecipe(exporter, ModBlocks.STEM_PLANKS, FloralTags.Items.STEM_LOGS, 4);
 
         createStairsRecipe(ModBlocks.STEM_STAIRS, Ingredient.ofItems(ModBlocks.STEM_PLANKS))
                 .criterion(hasItem(ModBlocks.STEM_PLANKS), conditionsFromItem(ModBlocks.STEM_PLANKS))
@@ -312,10 +311,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("DBD")
                 .pattern("FCF")
                 .input('F', Blocks.COBBLESTONE)
-                .input('B', ModItems.FLOWER_BLEND)
-                .input('D', ModItems.BROWN_PETAL)
-                .input('C', ModItems.ORANGE_PETAL)
-                .criterion(hasItem(ModItems.FLOWER_BLEND), conditionsFromItem(ModItems.FLOWER_BLEND))
+                .input('B', FloralItems.FLOWER_BLEND)
+                .input('D', FloralItems.BROWN_PETAL)
+                .input('C', FloralItems.ORANGE_PETAL)
+                .criterion(hasItem(FloralItems.FLOWER_BLEND), conditionsFromItem(FloralItems.FLOWER_BLEND))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.STEM_LILY)
@@ -323,10 +322,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("DBD")
                 .pattern("FCF")
                 .input('F', ItemTags.LOGS)
-                .input('B', ModItems.FLOWER_BLEND)
-                .input('D', ModItems.GREEN_PETAL)
-                .input('C', ModItems.LIME_PETAL)
-                .criterion(hasItem(ModItems.FLOWER_BLEND), conditionsFromItem(ModItems.FLOWER_BLEND))
+                .input('B', FloralItems.FLOWER_BLEND)
+                .input('D', FloralItems.GREEN_PETAL)
+                .input('C', FloralItems.LIME_PETAL)
+                .criterion(hasItem(FloralItems.FLOWER_BLEND), conditionsFromItem(FloralItems.FLOWER_BLEND))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.WEEPING_ROOTS)
@@ -335,8 +334,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("FCF")
                 .input('F', Blocks.NETHER_WART_BLOCK)
                 .input('N', Blocks.SOUL_SOIL)
-                .input('D', ModItems.RED_PETAL)
-                .input('C', ModItems.BROWN_PETAL)
+                .input('D', FloralItems.RED_PETAL)
+                .input('C', FloralItems.BROWN_PETAL)
                 .criterion(hasItem(Blocks.NETHER_WART_BLOCK), conditionsFromItem(Blocks.NETHER_WART_BLOCK))
                 .offerTo(exporter);
 
@@ -346,8 +345,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("FCF")
                 .input('F', Blocks.WARPED_WART_BLOCK)
                 .input('N', ModBlocks.WEEPING_ROOTS)
-                .input('D', ModItems.CYAN_PETAL)
-                .input('C', ModItems.BLUE_PETAL)
+                .input('D', FloralItems.CYAN_PETAL)
+                .input('C', FloralItems.BLUE_PETAL)
                 .criterion(hasItem(Blocks.WARPED_WART_BLOCK), conditionsFromItem(Blocks.WARPED_WART_BLOCK))
                 .offerTo(exporter);
 
@@ -355,10 +354,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("FCF")
                 .pattern("DWD")
                 .pattern("FCF")
-                .input('F', ModItems.WITHERED_PETAL)
+                .input('F', FloralItems.WITHERED_PETAL)
                 .input('W', ModBlocks.PURPLE_WOLFSBANE)
-                .input('D', ModItems.PURPLE_PETAL)
-                .input('C', ModItems.WHITE_PETAL)
+                .input('D', FloralItems.PURPLE_PETAL)
+                .input('C', FloralItems.WHITE_PETAL)
                 .criterion(hasItem(ModBlocks.PURPLE_WOLFSBANE), conditionsFromItem(ModBlocks.PURPLE_WOLFSBANE))
                 .offerTo(exporter);
 
@@ -370,7 +369,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('B', Blocks.SCULK)
                 .input('W', Blocks.SCULK_CATALYST)
                 .input('D', Items.ECHO_SHARD)
-                .input('C', ModItems.BLACK_PETAL)
+                .input('C', FloralItems.BLACK_PETAL)
                 .criterion(hasItem(Blocks.SCULK_CATALYST), conditionsFromItem(Blocks.SCULK_CATALYST))
                 .offerTo(exporter);
 
@@ -381,8 +380,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('F', Items.CHORUS_FRUIT)
                 .input('B', Blocks.END_STONE)
                 .input('W', Blocks.CHORUS_FLOWER)
-                .input('D', ModItems.PURPLE_PETAL)
-                .input('C', ModItems.LIGHT_GRAY_PETAL)
+                .input('D', FloralItems.PURPLE_PETAL)
+                .input('C', FloralItems.LIGHT_GRAY_PETAL)
                 .criterion(hasItem(Blocks.CHORUS_FLOWER), conditionsFromItem(Blocks.CHORUS_FLOWER))
                 .offerTo(exporter);
 
@@ -392,8 +391,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("FCF")
                 .input('F', Blocks.BONE_BLOCK)
                 .input('W', Blocks.SKELETON_SKULL)
-                .input('D', ModItems.WHITE_PETAL)
-                .input('C', ModItems.WHITE_PETAL)
+                .input('D', FloralItems.WHITE_PETAL)
+                .input('C', FloralItems.WHITE_PETAL)
                 .criterion(hasItem(Blocks.SKELETON_SKULL), conditionsFromItem(Blocks.SKELETON_SKULL))
                 .offerTo(exporter);
 
@@ -401,7 +400,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("   ")
                 .pattern("GVG")
                 .pattern(" G ")
-                .input('G', ModItems.GREEN_PETAL)
+                .input('G', FloralItems.GREEN_PETAL)
                 .input('V', Blocks.VINE)
                 .criterion(hasItem(Blocks.VINE), conditionsFromItem(Blocks.VINE))
                 .offerTo(exporter);
@@ -410,7 +409,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern(" G ")
                 .pattern("GVG")
                 .pattern("   ")
-                .input('G', ModItems.GREEN_PETAL)
+                .input('G', FloralItems.GREEN_PETAL)
                 .input('V', Blocks.VINE)
                 .criterion(hasItem(Blocks.VINE), conditionsFromItem(Blocks.VINE))
                 .offerTo(exporter);
@@ -420,10 +419,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("   ")
                 .pattern("PVP")
                 .pattern("   ")
-                .input('P', ModItems.PINK_PETAL)
+                .input('P', FloralItems.PINK_PETAL)
                 .input('V', ModBlocks.THICK_STALK)
                 .criterion(hasItem(ModBlocks.THICK_STALK), conditionsFromItem(ModBlocks.THICK_STALK))
-                .criterion(hasItem(ModItems.PINK_PETAL), conditionsFromItem(ModItems.PINK_PETAL))
+                .criterion(hasItem(FloralItems.PINK_PETAL), conditionsFromItem(FloralItems.PINK_PETAL))
                 .offerTo(exporter);
 
 
@@ -431,10 +430,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern(" B ")
                 .pattern("BCB")
                 .pattern(" B ")
-                .input('B', ModItems.BLUE_PETAL)
+                .input('B', FloralItems.BLUE_PETAL)
                 .input('C', Blocks.PINK_PETALS)
                 .criterion(hasItem(Blocks.PINK_PETALS), conditionsFromItem(Blocks.PINK_PETALS))
-                .criterion(hasItem(ModItems.BLUE_PETAL), conditionsFromItem(ModItems.BLUE_PETAL))
+                .criterion(hasItem(FloralItems.BLUE_PETAL), conditionsFromItem(FloralItems.BLUE_PETAL))
                 .offerTo(exporter);
 
     }

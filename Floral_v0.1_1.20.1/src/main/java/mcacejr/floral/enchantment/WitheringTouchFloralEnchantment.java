@@ -1,6 +1,5 @@
 package mcacejr.floral.enchantment;
 
-import mcacejr.floral.item.ModItems;
 import mcacejr.floral.item.custom.CorpseBlossomSword;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;

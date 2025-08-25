@@ -1,6 +1,6 @@
 package mcacejr.floral.block.custom;
 
-import mcacejr.floral.item.ModItems;
+import mcacejr.floral.item.FloralItems;
 import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -66,7 +66,7 @@ public class FloralHarvestableBlock extends PlantBlock implements Fertilizable {
         boolean bl = i == MAX_AGE;
         if (!bl && player.getStackInHand(hand).isOf(Items.BONE_MEAL)) {
             return ActionResult.PASS;
-        } else if (!bl && player.getStackInHand(hand).isOf(ModItems.FLOWER_BLEND)) {
+        } else if (!bl && player.getStackInHand(hand).isOf(FloralItems.FLOWER_BLEND)) {
             return ActionResult.PASS;
         } else if (i > 1) {
             int j = 1 + world.random.nextInt(3);

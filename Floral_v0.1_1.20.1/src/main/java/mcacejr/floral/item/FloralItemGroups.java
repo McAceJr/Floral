@@ -10,14 +10,14 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-public class ModItemGroups {
+public class FloralItemGroups {
 
     public static final ItemGroup FLORAL_TAB = Registry.register(Registries.ITEM_GROUP,
             new Identifier(Floral.MOD_ID, "floral_tab"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.floral_tab"))
-                    .icon(() -> new ItemStack(ModItems.FLORAL_CROWN)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(FloralItems.FLORAL_CROWN)).entries((displayContext, entries) -> {
 
-                        entries.add(ModItems.FLORAL_CROWN);
+                        entries.add(FloralItems.FLORAL_CROWN);
 
                         entries.add(ModBlocks.BLACK_PETUNIA);
                         entries.add(ModBlocks.RED_PETUNIA);
@@ -49,32 +49,32 @@ public class ModItemGroups {
                         entries.add(ModBlocks.THICK_VINES);
                         entries.add(ModBlocks.PINK_ALCEA);
 
-                        entries.add(ModItems.FLOWER_BLEND);
+                        entries.add(FloralItems.FLOWER_BLEND);
 
-                        entries.add(ModItems.PETUNIA_LANCE);
-                        entries.add(ModItems.CORPSE_BLOSSOM);
-                        entries.add(ModItems.FLOWER_TRIMMER);
-                        entries.add(ModItems.DEADHEADER);
-                        entries.add(ModItems.FLORAL_BANE);
+                        entries.add(FloralItems.PETUNIA_LANCE);
+                        entries.add(FloralItems.CORPSE_BLOSSOM);
+                        entries.add(FloralItems.FLOWER_TRIMMER);
+                        entries.add(FloralItems.DEADHEADER);
+                        entries.add(FloralItems.FLORAL_BANE);
 
-                        entries.add(ModItems.WHITE_PETAL);
-                        entries.add(ModItems.LIGHT_GRAY_PETAL);
-                        entries.add(ModItems.GRAY_PETAL);
-                        entries.add(ModItems.BLACK_PETAL);
-                        entries.add(ModItems.RED_PETAL);
-                        entries.add(ModItems.ORANGE_PETAL);
-                        entries.add(ModItems.BROWN_PETAL);
-                        entries.add(ModItems.YELLOW_PETAL);
-                        entries.add(ModItems.LIME_PETAL);
-                        entries.add(ModItems.GREEN_PETAL);
-                        entries.add(ModItems.CYAN_PETAL);
-                        entries.add(ModItems.LIGHT_BLUE_PETAL);
-                        entries.add(ModItems.BLUE_PETAL);
-                        entries.add(ModItems.PURPLE_PETAL);
-                        entries.add(ModItems.MAGENTA_PETAL);
-                        entries.add(ModItems.PINK_PETAL);
-                        entries.add(ModItems.WITHERED_PETAL);
-                        entries.add(ModItems.BONES_BANE_PETAL);
+                        entries.add(FloralItems.WHITE_PETAL);
+                        entries.add(FloralItems.LIGHT_GRAY_PETAL);
+                        entries.add(FloralItems.GRAY_PETAL);
+                        entries.add(FloralItems.BLACK_PETAL);
+                        entries.add(FloralItems.RED_PETAL);
+                        entries.add(FloralItems.ORANGE_PETAL);
+                        entries.add(FloralItems.BROWN_PETAL);
+                        entries.add(FloralItems.YELLOW_PETAL);
+                        entries.add(FloralItems.LIME_PETAL);
+                        entries.add(FloralItems.GREEN_PETAL);
+                        entries.add(FloralItems.CYAN_PETAL);
+                        entries.add(FloralItems.LIGHT_BLUE_PETAL);
+                        entries.add(FloralItems.BLUE_PETAL);
+                        entries.add(FloralItems.PURPLE_PETAL);
+                        entries.add(FloralItems.MAGENTA_PETAL);
+                        entries.add(FloralItems.PINK_PETAL);
+                        entries.add(FloralItems.WITHERED_PETAL);
+                        entries.add(FloralItems.BONES_BANE_PETAL);
 
                         entries.add(ModBlocks.WEEPING_ROOTS);
                         entries.add(ModBlocks.TWISTING_ROOTS);
@@ -85,7 +85,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CHORUS_TULIP);
                         entries.add(ModBlocks.WHITE_OVERFLOWING_BELLFLOWER);
 
-                        entries.add(ModItems.TWISTED_WART);
+                        entries.add(FloralItems.TWISTED_WART);
 
                         entries.add(ModBlocks.FLORAL_STONE);
                         entries.add(ModBlocks.FLORAL_STONE_STAIRS);
