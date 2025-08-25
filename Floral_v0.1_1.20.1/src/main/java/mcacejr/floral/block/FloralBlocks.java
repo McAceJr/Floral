@@ -14,7 +14,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-public class ModBlocks {
+public class FloralBlocks {
 
     public static final Block BLACK_PETUNIA = registerBlock("black_petunia",
             new FlowerBlock(StatusEffects.WEAKNESS, 10,
@@ -184,14 +184,14 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.COBBLESTONE)));
 
     public static final Block FLORAL_STONE_STAIRS = registerBlock("floral_stone_stairs",
-            new StairsBlock(ModBlocks.FLORAL_STONE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_STAIRS)));
+            new StairsBlock(FloralBlocks.FLORAL_STONE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_STAIRS)));
     public static final Block FLORAL_STONE_SLAB = registerBlock("floral_stone_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_SLAB)));
     public static final Block FLORAL_STONE_WALL = registerBlock("floral_stone_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_WALL)));
 
     public static final Block FLORAL_STONE_BRICK_STAIRS = registerBlock("floral_stone_brick_stairs",
-            new StairsBlock(ModBlocks.FLORAL_STONE_BRICKS.getDefaultState(),
+            new StairsBlock(FloralBlocks.FLORAL_STONE_BRICKS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE_BRICK_STAIRS)));
     public static final Block FLORAL_STONE_BRICK_SLAB = registerBlock("floral_stone_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_SLAB)));
@@ -199,7 +199,7 @@ public class ModBlocks {
             new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_WALL)));
 
     public static final Block COBBLED_FLORAL_STONE_STAIRS = registerBlock("cobbled_floral_stone_stairs",
-            new StairsBlock(ModBlocks.COBBLED_FLORAL_STONE.getDefaultState(),
+            new StairsBlock(FloralBlocks.COBBLED_FLORAL_STONE.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.COBBLESTONE_STAIRS)));
     public static final Block COBBLED_FLORAL_STONE_SLAB = registerBlock("cobbled_floral_stone_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE_SLAB)));
@@ -217,7 +217,7 @@ public class ModBlocks {
     public static final Block STEM_PLANKS = registerBlock("stem_planks",
             new Block(FabricBlockSettings.copyOf(Blocks.CHERRY_PLANKS)));
     public static final Block STEM_STAIRS = registerBlock("stem_stairs",
-            new StairsBlock(ModBlocks.STEM_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.CHERRY_STAIRS)));
+            new StairsBlock(FloralBlocks.STEM_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.CHERRY_STAIRS)));
     public static final Block STEM_SLAB = registerBlock("stem_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_SLAB)));
     public static final Block STEM_FENCE = registerBlock("stem_fence",
@@ -276,7 +276,7 @@ public class ModBlocks {
 
     public static void registerModBlocks() {
 
-        Floral.LOGGER.info("Registering ModBlocks for " + Floral.MOD_ID);
+        Floral.LOGGER.info("Registering FloralBlocks for " + Floral.MOD_ID);
 
     }
 

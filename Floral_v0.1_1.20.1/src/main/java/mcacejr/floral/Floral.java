@@ -1,6 +1,6 @@
 package mcacejr.floral;
 
-import mcacejr.floral.block.ModBlocks;
+import mcacejr.floral.block.FloralBlocks;
 import mcacejr.floral.enchantment.FloralEnchantments;
 import mcacejr.floral.entity.effect.DeathPrickStatusEffect;
 import mcacejr.floral.item.FloralItemGroups;
@@ -28,7 +28,7 @@ public class Floral implements ModInitializer {
 
 		FloralItems.registerModItems();
 
-		ModBlocks.registerModBlocks();
+		FloralBlocks.registerModBlocks();
 
 		FloralItemGroups.registerItemGroups();
 
@@ -40,23 +40,23 @@ public class Floral implements ModInitializer {
 
 
 		LOGGER.info("Adding blocks to StrippableBlockRegistry");
-		StrippableBlockRegistry.register(ModBlocks.STEM_LOG, ModBlocks.STRIPPED_STEM_LOG);
-		StrippableBlockRegistry.register(ModBlocks.STEM_WOOD, ModBlocks.STRIPPED_STEM_WOOD);
+		StrippableBlockRegistry.register(FloralBlocks.STEM_LOG, FloralBlocks.STRIPPED_STEM_LOG);
+		StrippableBlockRegistry.register(FloralBlocks.STEM_WOOD, FloralBlocks.STRIPPED_STEM_WOOD);
 
 		LOGGER.info("Adding blocks to FlammableBlockRegistry");
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STEM_LOG, 5, 5);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STEM_WOOD, 5, 5);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_STEM_LOG, 5, 5);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_STEM_WOOD, 5, 5);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STEM_PLANKS, 5, 20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STEM_STAIRS, 5, 20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STEM_SLAB, 5, 20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STEM_FENCE, 5, 20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STEM_FENCE_GATE, 5, 20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STEM_BUTTON, 5, 20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STEM_PRESSURE_PLATE, 5, 20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STEM_TRAPDOOR, 5, 20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STEM_DOOR, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(FloralBlocks.STEM_LOG, 5, 5);
+		FlammableBlockRegistry.getDefaultInstance().add(FloralBlocks.STEM_WOOD, 5, 5);
+		FlammableBlockRegistry.getDefaultInstance().add(FloralBlocks.STRIPPED_STEM_LOG, 5, 5);
+		FlammableBlockRegistry.getDefaultInstance().add(FloralBlocks.STRIPPED_STEM_WOOD, 5, 5);
+		FlammableBlockRegistry.getDefaultInstance().add(FloralBlocks.STEM_PLANKS, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(FloralBlocks.STEM_STAIRS, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(FloralBlocks.STEM_SLAB, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(FloralBlocks.STEM_FENCE, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(FloralBlocks.STEM_FENCE_GATE, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(FloralBlocks.STEM_BUTTON, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(FloralBlocks.STEM_PRESSURE_PLATE, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(FloralBlocks.STEM_TRAPDOOR, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(FloralBlocks.STEM_DOOR, 5, 20);
 	}
 
 }

@@ -1,6 +1,6 @@
 package mcacejr.floral.datagen;
 
-import mcacejr.floral.block.ModBlocks;
+import mcacejr.floral.block.FloralBlocks;
 import mcacejr.floral.item.FloralItems;
 import mcacejr.floral.util.FloralTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -42,70 +42,70 @@ public class FloralItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(FloralItems.BONES_BANE_PETAL);
 
         getOrCreateTagBuilder(ItemTags.FLOWERS)
-                .add(ModBlocks.BLACK_PETUNIA.asItem())
-                .add(ModBlocks.RED_PETUNIA.asItem())
+                .add(FloralBlocks.BLACK_PETUNIA.asItem())
+                .add(FloralBlocks.RED_PETUNIA.asItem())
                 .add(Items.SPORE_BLOSSOM)
-                .add(ModBlocks.PURPLE_BELLFLOWER.asItem())
-                .add(ModBlocks.PURPLE_CHIMNEY_BELLFLOWER.asItem())
-                .add(ModBlocks.GREEN_CONEFLOWER.asItem())
-                .add(ModBlocks.BLUE_AUBRIETAS.asItem())
-                .add(ModBlocks.PINK_ALCEA.asItem())
-                .add(ModBlocks.LIGHT_GRAY_TULIP.asItem())
-                .add(ModBlocks.GRAY_TULIP.asItem())
-                .add(ModBlocks.BLACK_TULIP.asItem())
-                .add(ModBlocks.BROWN_TULIP.asItem())
-                .add(ModBlocks.YELLOW_TULIP.asItem())
-                .add(ModBlocks.LIME_TULIP.asItem())
-                .add(ModBlocks.GREEN_TULIP.asItem())
-                .add(ModBlocks.CYAN_TULIP.asItem())
-                .add(ModBlocks.LIGHT_BLUE_TULIP.asItem())
-                .add(ModBlocks.BLUE_TULIP.asItem())
-                .add(ModBlocks.PURPLE_TULIP.asItem())
-                .add(ModBlocks.MAGENTA_TULIP.asItem())
-                .add(ModBlocks.WEEPING_ROOTS.asItem())
-                .add(ModBlocks.TWISTING_ROOTS.asItem())
-                .add(ModBlocks.WARDEN_PRIMROSE.asItem())
-                .add(ModBlocks.ROCKY_SEDUM.asItem())
-                .add(ModBlocks.STEM_LILY.asItem())
-                .add(ModBlocks.BONES_BANE.asItem())
-                .add(ModBlocks.GREEN_DAHLIA.asItem())
-                .add(ModBlocks.MAGENTA_CABARET.asItem())
-                .add(ModBlocks.LIME_BELLFLOWER.asItem())
-                .add(ModBlocks.LIME_CHIMNEY_BELLFLOWER.asItem())
-                .add(ModBlocks.PURPLE_WOLFSBANE.asItem());
+                .add(FloralBlocks.PURPLE_BELLFLOWER.asItem())
+                .add(FloralBlocks.PURPLE_CHIMNEY_BELLFLOWER.asItem())
+                .add(FloralBlocks.GREEN_CONEFLOWER.asItem())
+                .add(FloralBlocks.BLUE_AUBRIETAS.asItem())
+                .add(FloralBlocks.PINK_ALCEA.asItem())
+                .add(FloralBlocks.LIGHT_GRAY_TULIP.asItem())
+                .add(FloralBlocks.GRAY_TULIP.asItem())
+                .add(FloralBlocks.BLACK_TULIP.asItem())
+                .add(FloralBlocks.BROWN_TULIP.asItem())
+                .add(FloralBlocks.YELLOW_TULIP.asItem())
+                .add(FloralBlocks.LIME_TULIP.asItem())
+                .add(FloralBlocks.GREEN_TULIP.asItem())
+                .add(FloralBlocks.CYAN_TULIP.asItem())
+                .add(FloralBlocks.LIGHT_BLUE_TULIP.asItem())
+                .add(FloralBlocks.BLUE_TULIP.asItem())
+                .add(FloralBlocks.PURPLE_TULIP.asItem())
+                .add(FloralBlocks.MAGENTA_TULIP.asItem())
+                .add(FloralBlocks.WEEPING_ROOTS.asItem())
+                .add(FloralBlocks.TWISTING_ROOTS.asItem())
+                .add(FloralBlocks.WARDEN_PRIMROSE.asItem())
+                .add(FloralBlocks.ROCKY_SEDUM.asItem())
+                .add(FloralBlocks.STEM_LILY.asItem())
+                .add(FloralBlocks.BONES_BANE.asItem())
+                .add(FloralBlocks.GREEN_DAHLIA.asItem())
+                .add(FloralBlocks.MAGENTA_CABARET.asItem())
+                .add(FloralBlocks.LIME_BELLFLOWER.asItem())
+                .add(FloralBlocks.LIME_CHIMNEY_BELLFLOWER.asItem())
+                .add(FloralBlocks.PURPLE_WOLFSBANE.asItem());
 
         getOrCreateTagBuilder(ItemTags.SMALL_FLOWERS)
-                .add(ModBlocks.BLUE_AUBRIETAS.asItem())
-                .add(ModBlocks.GREEN_CONEFLOWER.asItem())
-                .add(ModBlocks.BLACK_PETUNIA.asItem())
-                .add(ModBlocks.RED_PETUNIA.asItem())
-                .add(ModBlocks.PURPLE_BELLFLOWER.asItem())
-                .add(ModBlocks.LIGHT_GRAY_TULIP.asItem())
-                .add(ModBlocks.GRAY_TULIP.asItem())
-                .add(ModBlocks.BLACK_TULIP.asItem())
-                .add(ModBlocks.BROWN_TULIP.asItem())
-                .add(ModBlocks.YELLOW_TULIP.asItem())
-                .add(ModBlocks.LIME_TULIP.asItem())
-                .add(ModBlocks.GREEN_TULIP.asItem())
-                .add(ModBlocks.CYAN_TULIP.asItem())
-                .add(ModBlocks.LIGHT_BLUE_TULIP.asItem())
-                .add(ModBlocks.BLUE_TULIP.asItem())
-                .add(ModBlocks.PURPLE_TULIP.asItem())
-                .add(ModBlocks.MAGENTA_TULIP.asItem())
-                .add(ModBlocks.WEEPING_ROOTS.asItem())
-                .add(ModBlocks.TWISTING_ROOTS.asItem())
-                .add(ModBlocks.WARDEN_PRIMROSE.asItem())
-                .add(ModBlocks.ROCKY_SEDUM.asItem())
-                .add(ModBlocks.STEM_LILY.asItem())
-                .add(ModBlocks.GREEN_DAHLIA.asItem())
-                .add(ModBlocks.MAGENTA_CABARET.asItem())
-                .add(ModBlocks.LIME_BELLFLOWER.asItem())
-                .add(ModBlocks.PURPLE_WOLFSBANE.asItem());
+                .add(FloralBlocks.BLUE_AUBRIETAS.asItem())
+                .add(FloralBlocks.GREEN_CONEFLOWER.asItem())
+                .add(FloralBlocks.BLACK_PETUNIA.asItem())
+                .add(FloralBlocks.RED_PETUNIA.asItem())
+                .add(FloralBlocks.PURPLE_BELLFLOWER.asItem())
+                .add(FloralBlocks.LIGHT_GRAY_TULIP.asItem())
+                .add(FloralBlocks.GRAY_TULIP.asItem())
+                .add(FloralBlocks.BLACK_TULIP.asItem())
+                .add(FloralBlocks.BROWN_TULIP.asItem())
+                .add(FloralBlocks.YELLOW_TULIP.asItem())
+                .add(FloralBlocks.LIME_TULIP.asItem())
+                .add(FloralBlocks.GREEN_TULIP.asItem())
+                .add(FloralBlocks.CYAN_TULIP.asItem())
+                .add(FloralBlocks.LIGHT_BLUE_TULIP.asItem())
+                .add(FloralBlocks.BLUE_TULIP.asItem())
+                .add(FloralBlocks.PURPLE_TULIP.asItem())
+                .add(FloralBlocks.MAGENTA_TULIP.asItem())
+                .add(FloralBlocks.WEEPING_ROOTS.asItem())
+                .add(FloralBlocks.TWISTING_ROOTS.asItem())
+                .add(FloralBlocks.WARDEN_PRIMROSE.asItem())
+                .add(FloralBlocks.ROCKY_SEDUM.asItem())
+                .add(FloralBlocks.STEM_LILY.asItem())
+                .add(FloralBlocks.GREEN_DAHLIA.asItem())
+                .add(FloralBlocks.MAGENTA_CABARET.asItem())
+                .add(FloralBlocks.LIME_BELLFLOWER.asItem())
+                .add(FloralBlocks.PURPLE_WOLFSBANE.asItem());
 
         getOrCreateTagBuilder(ItemTags.TALL_FLOWERS)
-                .add(ModBlocks.PINK_ALCEA.asItem())
-                .add(ModBlocks.PURPLE_CHIMNEY_BELLFLOWER.asItem())
-                .add(ModBlocks.LIME_CHIMNEY_BELLFLOWER.asItem());
+                .add(FloralBlocks.PINK_ALCEA.asItem())
+                .add(FloralBlocks.PURPLE_CHIMNEY_BELLFLOWER.asItem())
+                .add(FloralBlocks.LIME_CHIMNEY_BELLFLOWER.asItem());
 
         getOrCreateTagBuilder(ItemTags.SWORDS)
                 .add(FloralItems.PETUNIA_LANCE)
@@ -124,54 +124,54 @@ public class FloralItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(FloralTags.Items.LIGHT_GRAY_FLOWERS)
                 .add(Blocks.AZURE_BLUET.asItem())
                 .add(Blocks.OXEYE_DAISY.asItem())
-                .add(ModBlocks.LIGHT_GRAY_TULIP.asItem());
+                .add(FloralBlocks.LIGHT_GRAY_TULIP.asItem());
         getOrCreateTagBuilder(FloralTags.Items.GRAY_FLOWERS)
-                .add(ModBlocks.GRAY_TULIP.asItem());
+                .add(FloralBlocks.GRAY_TULIP.asItem());
         getOrCreateTagBuilder(FloralTags.Items.BLACK_FLOWERS)
-                .add(ModBlocks.BLACK_TULIP.asItem())
-                .add(ModBlocks.WARDEN_PRIMROSE.asItem())
-                .add(ModBlocks.BLACK_PETUNIA.asItem());
+                .add(FloralBlocks.BLACK_TULIP.asItem())
+                .add(FloralBlocks.WARDEN_PRIMROSE.asItem())
+                .add(FloralBlocks.BLACK_PETUNIA.asItem());
         getOrCreateTagBuilder(FloralTags.Items.RED_FLOWERS)
-                .add(ModBlocks.RED_PETUNIA.asItem())
+                .add(FloralBlocks.RED_PETUNIA.asItem())
                 .add(Blocks.POPPY.asItem())
                 .add(Blocks.RED_TULIP.asItem());
         getOrCreateTagBuilder(FloralTags.Items.ORANGE_FLOWERS)
                 .add(Blocks.ORANGE_TULIP.asItem())
-                .add(ModBlocks.ROCKY_SEDUM.asItem())
+                .add(FloralBlocks.ROCKY_SEDUM.asItem())
                 .add(Blocks.TORCHFLOWER.asItem());
         getOrCreateTagBuilder(FloralTags.Items.BROWN_FLOWERS)
-                .add(ModBlocks.WEEPING_ROOTS.asItem())
-                .add(ModBlocks.TWISTING_ROOTS.asItem())
-                .add(ModBlocks.BROWN_TULIP.asItem());
+                .add(FloralBlocks.WEEPING_ROOTS.asItem())
+                .add(FloralBlocks.TWISTING_ROOTS.asItem())
+                .add(FloralBlocks.BROWN_TULIP.asItem());
         getOrCreateTagBuilder(FloralTags.Items.YELLOW_FLOWERS)
-                .add(ModBlocks.YELLOW_TULIP.asItem())
+                .add(FloralBlocks.YELLOW_TULIP.asItem())
                 .add(Blocks.DANDELION.asItem());
         getOrCreateTagBuilder(FloralTags.Items.LIME_FLOWERS)
-                .add(ModBlocks.LIME_TULIP.asItem())
-                .add(ModBlocks.LIME_BELLFLOWER.asItem());
+                .add(FloralBlocks.LIME_TULIP.asItem())
+                .add(FloralBlocks.LIME_BELLFLOWER.asItem());
         getOrCreateTagBuilder(FloralTags.Items.GREEN_FLOWERS)
-                .add(ModBlocks.GREEN_TULIP.asItem())
-                .add(ModBlocks.GREEN_DAHLIA.asItem())
-                .add(ModBlocks.STEM_LILY.asItem())
-                .add(ModBlocks.GREEN_CONEFLOWER.asItem());
+                .add(FloralBlocks.GREEN_TULIP.asItem())
+                .add(FloralBlocks.GREEN_DAHLIA.asItem())
+                .add(FloralBlocks.STEM_LILY.asItem())
+                .add(FloralBlocks.GREEN_CONEFLOWER.asItem());
         getOrCreateTagBuilder(FloralTags.Items.CYAN_FLOWERS)
-                .add(ModBlocks.CYAN_TULIP.asItem());
+                .add(FloralBlocks.CYAN_TULIP.asItem());
         getOrCreateTagBuilder(FloralTags.Items.LIGHT_BLUE_FLOWERS)
-                .add(ModBlocks.LIGHT_BLUE_TULIP.asItem())
+                .add(FloralBlocks.LIGHT_BLUE_TULIP.asItem())
                 .add(Blocks.BLUE_ORCHID.asItem());
         getOrCreateTagBuilder(FloralTags.Items.BLUE_FLOWERS)
-                .add(ModBlocks.BLUE_TULIP.asItem())
+                .add(FloralBlocks.BLUE_TULIP.asItem())
                 .add(Blocks.CORNFLOWER.asItem());
         getOrCreateTagBuilder(FloralTags.Items.PURPLE_FLOWERS)
-                .add(ModBlocks.PURPLE_WOLFSBANE.asItem())
-                .add(ModBlocks.PURPLE_TULIP.asItem())
-                .add(ModBlocks.PURPLE_BELLFLOWER.asItem());
+                .add(FloralBlocks.PURPLE_WOLFSBANE.asItem())
+                .add(FloralBlocks.PURPLE_TULIP.asItem())
+                .add(FloralBlocks.PURPLE_BELLFLOWER.asItem());
         getOrCreateTagBuilder(FloralTags.Items.MAGENTA_FLOWERS)
-                .add(ModBlocks.MAGENTA_TULIP.asItem())
-                .add(ModBlocks.MAGENTA_CABARET.asItem())
+                .add(FloralBlocks.MAGENTA_TULIP.asItem())
+                .add(FloralBlocks.MAGENTA_CABARET.asItem())
                 .add(Blocks.ALLIUM.asItem());
         getOrCreateTagBuilder(FloralTags.Items.PINK_FLOWERS)
-                .add(ModBlocks.PINK_ALCEA.asItem())
+                .add(FloralBlocks.PINK_ALCEA.asItem())
                 .add(Blocks.PINK_TULIP.asItem());
 
         getOrCreateTagBuilder(FloralTags.Items.TALL_WHITE_FLOWERS);
@@ -185,52 +185,52 @@ public class FloralItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(FloralTags.Items.TALL_YELLOW_FLOWERS)
                 .add(Blocks.SUNFLOWER.asItem());
         getOrCreateTagBuilder(FloralTags.Items.TALL_LIME_FLOWERS)
-                .add(ModBlocks.LIME_CHIMNEY_BELLFLOWER.asItem());
+                .add(FloralBlocks.LIME_CHIMNEY_BELLFLOWER.asItem());
         getOrCreateTagBuilder(FloralTags.Items.TALL_GREEN_FLOWERS);
         getOrCreateTagBuilder(FloralTags.Items.TALL_CYAN_FLOWERS);
         getOrCreateTagBuilder(FloralTags.Items.TALL_LIGHT_BLUE_FLOWERS);
         getOrCreateTagBuilder(FloralTags.Items.TALL_BLUE_FLOWERS);
         getOrCreateTagBuilder(FloralTags.Items.TALL_PURPLE_FLOWERS)
-                .add(ModBlocks.PURPLE_CHIMNEY_BELLFLOWER.asItem());
+                .add(FloralBlocks.PURPLE_CHIMNEY_BELLFLOWER.asItem());
         getOrCreateTagBuilder(FloralTags.Items.TALL_MAGENTA_FLOWERS)
                 .add(Blocks.LILAC.asItem());
         getOrCreateTagBuilder(FloralTags.Items.TALL_PINK_FLOWERS)
                 .add(Blocks.PEONY.asItem());
 
         getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.STEM_STAIRS.asItem())
-                .add(ModBlocks.FLORAL_STONE_STAIRS.asItem())
-                .add(ModBlocks.FLORAL_STONE_BRICK_STAIRS.asItem())
-                .add(ModBlocks.COBBLED_FLORAL_STONE_STAIRS.asItem());
+                .add(FloralBlocks.STEM_STAIRS.asItem())
+                .add(FloralBlocks.FLORAL_STONE_STAIRS.asItem())
+                .add(FloralBlocks.FLORAL_STONE_BRICK_STAIRS.asItem())
+                .add(FloralBlocks.COBBLED_FLORAL_STONE_STAIRS.asItem());
         getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.FLORAL_STONE_SLAB.asItem())
-                .add(ModBlocks.FLORAL_STONE_BRICK_SLAB.asItem())
-                .add(ModBlocks.COBBLED_FLORAL_STONE_SLAB.asItem());
+                .add(FloralBlocks.FLORAL_STONE_SLAB.asItem())
+                .add(FloralBlocks.FLORAL_STONE_BRICK_SLAB.asItem())
+                .add(FloralBlocks.COBBLED_FLORAL_STONE_SLAB.asItem());
         getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.FLORAL_STONE_WALL.asItem())
-                .add(ModBlocks.FLORAL_STONE_BRICK_WALL.asItem())
-                .add(ModBlocks.COBBLED_FLORAL_STONE_WALL.asItem());
+                .add(FloralBlocks.FLORAL_STONE_WALL.asItem())
+                .add(FloralBlocks.FLORAL_STONE_BRICK_WALL.asItem())
+                .add(FloralBlocks.COBBLED_FLORAL_STONE_WALL.asItem());
 
         getOrCreateTagBuilder(ItemTags.PLANKS)
-                .add(ModBlocks.STEM_PLANKS.asItem());
+                .add(FloralBlocks.STEM_PLANKS.asItem());
 
         getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
-                .add(ModBlocks.STEM_LOG.asItem())
-                .add(ModBlocks.STEM_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_STEM_LOG.asItem())
-                .add(ModBlocks.STRIPPED_STEM_WOOD.asItem());
+                .add(FloralBlocks.STEM_LOG.asItem())
+                .add(FloralBlocks.STEM_WOOD.asItem())
+                .add(FloralBlocks.STRIPPED_STEM_LOG.asItem())
+                .add(FloralBlocks.STRIPPED_STEM_WOOD.asItem());
 
         getOrCreateTagBuilder(ItemTags.LOGS)
-                .add(ModBlocks.STEM_LOG.asItem())
-                .add(ModBlocks.STEM_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_STEM_LOG.asItem())
-                .add(ModBlocks.STRIPPED_STEM_WOOD.asItem());
+                .add(FloralBlocks.STEM_LOG.asItem())
+                .add(FloralBlocks.STEM_WOOD.asItem())
+                .add(FloralBlocks.STRIPPED_STEM_LOG.asItem())
+                .add(FloralBlocks.STRIPPED_STEM_WOOD.asItem());
 
         getOrCreateTagBuilder(FloralTags.Items.STEM_LOGS)
-                .add(ModBlocks.STEM_LOG.asItem())
-                .add(ModBlocks.STEM_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_STEM_LOG.asItem())
-                .add(ModBlocks.STRIPPED_STEM_WOOD.asItem());
+                .add(FloralBlocks.STEM_LOG.asItem())
+                .add(FloralBlocks.STEM_WOOD.asItem())
+                .add(FloralBlocks.STRIPPED_STEM_LOG.asItem())
+                .add(FloralBlocks.STRIPPED_STEM_WOOD.asItem());
 
     }
 

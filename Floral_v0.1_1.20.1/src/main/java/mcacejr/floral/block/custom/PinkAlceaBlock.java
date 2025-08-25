@@ -1,6 +1,6 @@
 package mcacejr.floral.block.custom;
 
-import mcacejr.floral.block.ModBlocks;
+import mcacejr.floral.block.FloralBlocks;
 import net.minecraft.block.AbstractPlantStemBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -24,7 +24,7 @@ public class PinkAlceaBlock extends AbstractPlantStemBlock{
 
     @Override
     protected Block getPlant() {
-        return ModBlocks.PINK_ALCEA_PLANT;
+        return FloralBlocks.PINK_ALCEA_PLANT;
     }
 
     @Override

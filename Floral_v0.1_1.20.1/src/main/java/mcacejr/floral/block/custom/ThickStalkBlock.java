@@ -1,6 +1,6 @@
 package mcacejr.floral.block.custom;
 
-import mcacejr.floral.block.ModBlocks;
+import mcacejr.floral.block.FloralBlocks;
 import net.minecraft.block.*;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
@@ -21,7 +21,7 @@ public class ThickStalkBlock extends AbstractPlantStemBlock{
 
     @Override
     protected Block getPlant() {
-        return ModBlocks.THICK_STALK_PLANT;
+        return FloralBlocks.THICK_STALK_PLANT;
     }
 
     @Override

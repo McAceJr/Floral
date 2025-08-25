@@ -1,23 +1,15 @@
 package mcacejr.floral.item.custom;
 
-import mcacejr.floral.block.ModBlocks;
+import mcacejr.floral.block.FloralBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.client.world.ClientWorld;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
-import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Direction;
-import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
-import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldEvents;
 
 public class FlowerBlendItem extends Item {
@@ -40,10 +32,10 @@ public class FlowerBlendItem extends Item {
             if (selectedBlockState.isIn(BlockTags.FLOWERS))
             {
 
-                if (selectedBlockState.isOf(ModBlocks.PINK_ALCEA_PLANT))
+                if (selectedBlockState.isOf(FloralBlocks.PINK_ALCEA_PLANT))
                 {
 
-                    Block.dropStack(context.getWorld(), context.getBlockPos(), new ItemStack(ModBlocks.PINK_ALCEA));
+                    Block.dropStack(context.getWorld(), context.getBlockPos(), new ItemStack(FloralBlocks.PINK_ALCEA));
 
                 } else {
 

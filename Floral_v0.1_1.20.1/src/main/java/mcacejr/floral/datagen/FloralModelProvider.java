@@ -1,6 +1,6 @@
 package mcacejr.floral.datagen;
 
-import mcacejr.floral.block.ModBlocks;
+import mcacejr.floral.block.FloralBlocks;
 import mcacejr.floral.item.FloralItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -40,115 +40,115 @@ public class FloralModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
 
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.BLACK_PETUNIA, ModBlocks.POTTED_BLACK_PETUNIA,
+        blockStateModelGenerator.registerFlowerPotPlant(FloralBlocks.BLACK_PETUNIA, FloralBlocks.POTTED_BLACK_PETUNIA,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.RED_PETUNIA, ModBlocks.POTTED_RED_PETUNIA,
+        blockStateModelGenerator.registerFlowerPotPlant(FloralBlocks.RED_PETUNIA, FloralBlocks.POTTED_RED_PETUNIA,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.PURPLE_BELLFLOWER, ModBlocks.POTTED_PURPLE_BELLFLOWER,
+        blockStateModelGenerator.registerFlowerPotPlant(FloralBlocks.PURPLE_BELLFLOWER, FloralBlocks.POTTED_PURPLE_BELLFLOWER,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.GREEN_CONEFLOWER, ModBlocks.POTTED_GREEN_CONEFLOWER,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
-
-        blockStateModelGenerator.registerDoubleBlock(ModBlocks.PURPLE_CHIMNEY_BELLFLOWER,
+        blockStateModelGenerator.registerFlowerPotPlant(FloralBlocks.GREEN_CONEFLOWER, FloralBlocks.POTTED_GREEN_CONEFLOWER,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
 
-        blockStateModelGenerator.registerFlowerbed(ModBlocks.BLUE_AUBRIETAS);
-
-        blockStateModelGenerator.registerPlantPart(ModBlocks.THICK_STALK,
-                ModBlocks.THICK_STALK_PLANT, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerItemModel(ModBlocks.THICK_STALK, "_plant");
-        blockStateModelGenerator.excludeFromSimpleItemModelGeneration(ModBlocks.THICK_STALK_PLANT);
-
-        blockStateModelGenerator.registerPlantPart(ModBlocks.THICK_VINES,
-                ModBlocks.THICK_VINES_PLANT, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerItemModel(ModBlocks.THICK_VINES, "_plant");
-        blockStateModelGenerator.excludeFromSimpleItemModelGeneration(ModBlocks.THICK_VINES_PLANT);
-
-        blockStateModelGenerator.registerPlantPart(ModBlocks.PINK_ALCEA,
-                ModBlocks.PINK_ALCEA_PLANT, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerItemModel(ModBlocks.PINK_ALCEA, "_plant");
-        blockStateModelGenerator.excludeFromSimpleItemModelGeneration(ModBlocks.PINK_ALCEA_PLANT);
-
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.LIGHT_GRAY_TULIP, ModBlocks.POTTED_LIGHT_GRAY_TULIP,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.GRAY_TULIP, ModBlocks.POTTED_GRAY_TULIP,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.BLACK_TULIP, ModBlocks.POTTED_BLACK_TULIP,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.BROWN_TULIP, ModBlocks.POTTED_BROWN_TULIP,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.YELLOW_TULIP, ModBlocks.POTTED_YELLOW_TULIP,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.LIME_TULIP, ModBlocks.POTTED_LIME_TULIP,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.GREEN_TULIP, ModBlocks.POTTED_GREEN_TULIP,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.CYAN_TULIP, ModBlocks.POTTED_CYAN_TULIP,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.LIGHT_BLUE_TULIP, ModBlocks.POTTED_LIGHT_BLUE_TULIP,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.BLUE_TULIP, ModBlocks.POTTED_BLUE_TULIP,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.PURPLE_TULIP, ModBlocks.POTTED_PURPLE_TULIP,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.MAGENTA_TULIP, ModBlocks.POTTED_MAGENTA_TULIP,
+        blockStateModelGenerator.registerDoubleBlock(FloralBlocks.PURPLE_CHIMNEY_BELLFLOWER,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
 
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.GREEN_DAHLIA, ModBlocks.POTTED_GREEN_DAHLIA,
+        blockStateModelGenerator.registerFlowerbed(FloralBlocks.BLUE_AUBRIETAS);
+
+        blockStateModelGenerator.registerPlantPart(FloralBlocks.THICK_STALK,
+                FloralBlocks.THICK_STALK_PLANT, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerItemModel(FloralBlocks.THICK_STALK, "_plant");
+        blockStateModelGenerator.excludeFromSimpleItemModelGeneration(FloralBlocks.THICK_STALK_PLANT);
+
+        blockStateModelGenerator.registerPlantPart(FloralBlocks.THICK_VINES,
+                FloralBlocks.THICK_VINES_PLANT, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerItemModel(FloralBlocks.THICK_VINES, "_plant");
+        blockStateModelGenerator.excludeFromSimpleItemModelGeneration(FloralBlocks.THICK_VINES_PLANT);
+
+        blockStateModelGenerator.registerPlantPart(FloralBlocks.PINK_ALCEA,
+                FloralBlocks.PINK_ALCEA_PLANT, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerItemModel(FloralBlocks.PINK_ALCEA, "_plant");
+        blockStateModelGenerator.excludeFromSimpleItemModelGeneration(FloralBlocks.PINK_ALCEA_PLANT);
+
+        blockStateModelGenerator.registerFlowerPotPlant(FloralBlocks.LIGHT_GRAY_TULIP, FloralBlocks.POTTED_LIGHT_GRAY_TULIP,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.MAGENTA_CABARET, ModBlocks.POTTED_MAGENTA_CABARET,
+        blockStateModelGenerator.registerFlowerPotPlant(FloralBlocks.GRAY_TULIP, FloralBlocks.POTTED_GRAY_TULIP,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.LIME_BELLFLOWER, ModBlocks.POTTED_LIME_BELLFLOWER,
+        blockStateModelGenerator.registerFlowerPotPlant(FloralBlocks.BLACK_TULIP, FloralBlocks.POTTED_BLACK_TULIP,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.PURPLE_WOLFSBANE, ModBlocks.POTTED_PURPLE_WOLFSBANE,
+        blockStateModelGenerator.registerFlowerPotPlant(FloralBlocks.BROWN_TULIP, FloralBlocks.POTTED_BROWN_TULIP,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(FloralBlocks.YELLOW_TULIP, FloralBlocks.POTTED_YELLOW_TULIP,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(FloralBlocks.LIME_TULIP, FloralBlocks.POTTED_LIME_TULIP,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(FloralBlocks.GREEN_TULIP, FloralBlocks.POTTED_GREEN_TULIP,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(FloralBlocks.CYAN_TULIP, FloralBlocks.POTTED_CYAN_TULIP,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(FloralBlocks.LIGHT_BLUE_TULIP, FloralBlocks.POTTED_LIGHT_BLUE_TULIP,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(FloralBlocks.BLUE_TULIP, FloralBlocks.POTTED_BLUE_TULIP,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(FloralBlocks.PURPLE_TULIP, FloralBlocks.POTTED_PURPLE_TULIP,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(FloralBlocks.MAGENTA_TULIP, FloralBlocks.POTTED_MAGENTA_TULIP,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
 
-        blockStateModelGenerator.registerDoubleBlock(ModBlocks.LIME_CHIMNEY_BELLFLOWER,
+        blockStateModelGenerator.registerFlowerPotPlant(FloralBlocks.GREEN_DAHLIA, FloralBlocks.POTTED_GREEN_DAHLIA,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(FloralBlocks.MAGENTA_CABARET, FloralBlocks.POTTED_MAGENTA_CABARET,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(FloralBlocks.LIME_BELLFLOWER, FloralBlocks.POTTED_LIME_BELLFLOWER,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(FloralBlocks.PURPLE_WOLFSBANE, FloralBlocks.POTTED_PURPLE_WOLFSBANE,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
 
-        registerThreeStageFlower(blockStateModelGenerator, ModBlocks.WEEPING_ROOTS);
-        registerThreeStageFlower(blockStateModelGenerator, ModBlocks.TWISTING_ROOTS);
-        registerThreeStageFlower(blockStateModelGenerator, ModBlocks.WARDEN_PRIMROSE);
-        registerThreeStageFlower(blockStateModelGenerator, ModBlocks.ROCKY_SEDUM);
-        registerThreeStageFlower(blockStateModelGenerator, ModBlocks.STEM_LILY);
-        registerThreeStageFlower(blockStateModelGenerator, ModBlocks.BONES_BANE);
-        registerThreeStageFlower(blockStateModelGenerator, ModBlocks.CHORUS_TULIP);
-        registerThreeStageFlower(blockStateModelGenerator, ModBlocks.WHITE_OVERFLOWING_BELLFLOWER);
+        blockStateModelGenerator.registerDoubleBlock(FloralBlocks.LIME_CHIMNEY_BELLFLOWER,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        registerThreeStageFlower(blockStateModelGenerator, FloralBlocks.WEEPING_ROOTS);
+        registerThreeStageFlower(blockStateModelGenerator, FloralBlocks.TWISTING_ROOTS);
+        registerThreeStageFlower(blockStateModelGenerator, FloralBlocks.WARDEN_PRIMROSE);
+        registerThreeStageFlower(blockStateModelGenerator, FloralBlocks.ROCKY_SEDUM);
+        registerThreeStageFlower(blockStateModelGenerator, FloralBlocks.STEM_LILY);
+        registerThreeStageFlower(blockStateModelGenerator, FloralBlocks.BONES_BANE);
+        registerThreeStageFlower(blockStateModelGenerator, FloralBlocks.CHORUS_TULIP);
+        registerThreeStageFlower(blockStateModelGenerator, FloralBlocks.WHITE_OVERFLOWING_BELLFLOWER);
 
         BlockStateModelGenerator.BlockTexturePool floralstonepool = blockStateModelGenerator
-                .registerCubeAllModelTexturePool(ModBlocks.FLORAL_STONE);
-        floralstonepool.stairs(ModBlocks.FLORAL_STONE_STAIRS);
-        floralstonepool.slab(ModBlocks.FLORAL_STONE_SLAB);
-        floralstonepool.wall(ModBlocks.FLORAL_STONE_WALL);
+                .registerCubeAllModelTexturePool(FloralBlocks.FLORAL_STONE);
+        floralstonepool.stairs(FloralBlocks.FLORAL_STONE_STAIRS);
+        floralstonepool.slab(FloralBlocks.FLORAL_STONE_SLAB);
+        floralstonepool.wall(FloralBlocks.FLORAL_STONE_WALL);
 
         BlockStateModelGenerator.BlockTexturePool floralstonebrickpool = blockStateModelGenerator
-                .registerCubeAllModelTexturePool(ModBlocks.FLORAL_STONE_BRICKS);
-        floralstonebrickpool.stairs(ModBlocks.FLORAL_STONE_BRICK_STAIRS);
-        floralstonebrickpool.slab(ModBlocks.FLORAL_STONE_BRICK_SLAB);
-        floralstonebrickpool.wall(ModBlocks.FLORAL_STONE_BRICK_WALL);
+                .registerCubeAllModelTexturePool(FloralBlocks.FLORAL_STONE_BRICKS);
+        floralstonebrickpool.stairs(FloralBlocks.FLORAL_STONE_BRICK_STAIRS);
+        floralstonebrickpool.slab(FloralBlocks.FLORAL_STONE_BRICK_SLAB);
+        floralstonebrickpool.wall(FloralBlocks.FLORAL_STONE_BRICK_WALL);
 
         BlockStateModelGenerator.BlockTexturePool cobbledfloralstonepool = blockStateModelGenerator
-                .registerCubeAllModelTexturePool(ModBlocks.COBBLED_FLORAL_STONE);
-        cobbledfloralstonepool.stairs(ModBlocks.COBBLED_FLORAL_STONE_STAIRS);
-        cobbledfloralstonepool.slab(ModBlocks.COBBLED_FLORAL_STONE_SLAB);
-        cobbledfloralstonepool.wall(ModBlocks.COBBLED_FLORAL_STONE_WALL);
+                .registerCubeAllModelTexturePool(FloralBlocks.COBBLED_FLORAL_STONE);
+        cobbledfloralstonepool.stairs(FloralBlocks.COBBLED_FLORAL_STONE_STAIRS);
+        cobbledfloralstonepool.slab(FloralBlocks.COBBLED_FLORAL_STONE_SLAB);
+        cobbledfloralstonepool.wall(FloralBlocks.COBBLED_FLORAL_STONE_WALL);
 
-        blockStateModelGenerator.registerLog(ModBlocks.STEM_LOG)
-                .log(ModBlocks.STEM_LOG).wood(ModBlocks.STEM_WOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_STEM_LOG)
-                .log(ModBlocks.STRIPPED_STEM_LOG).wood(ModBlocks.STRIPPED_STEM_WOOD);
+        blockStateModelGenerator.registerLog(FloralBlocks.STEM_LOG)
+                .log(FloralBlocks.STEM_LOG).wood(FloralBlocks.STEM_WOOD);
+        blockStateModelGenerator.registerLog(FloralBlocks.STRIPPED_STEM_LOG)
+                .log(FloralBlocks.STRIPPED_STEM_LOG).wood(FloralBlocks.STRIPPED_STEM_WOOD);
 
         BlockStateModelGenerator.BlockTexturePool stemplankpool= blockStateModelGenerator
-                .registerCubeAllModelTexturePool(ModBlocks.STEM_PLANKS);
-        stemplankpool.stairs(ModBlocks.STEM_STAIRS);
-        stemplankpool.slab(ModBlocks.STEM_SLAB);
-        stemplankpool.fence(ModBlocks.STEM_FENCE);
-        stemplankpool.fenceGate(ModBlocks.STEM_FENCE_GATE);
-        stemplankpool.button(ModBlocks.STEM_BUTTON);
-        stemplankpool.pressurePlate(ModBlocks.STEM_PRESSURE_PLATE);
+                .registerCubeAllModelTexturePool(FloralBlocks.STEM_PLANKS);
+        stemplankpool.stairs(FloralBlocks.STEM_STAIRS);
+        stemplankpool.slab(FloralBlocks.STEM_SLAB);
+        stemplankpool.fence(FloralBlocks.STEM_FENCE);
+        stemplankpool.fenceGate(FloralBlocks.STEM_FENCE_GATE);
+        stemplankpool.button(FloralBlocks.STEM_BUTTON);
+        stemplankpool.pressurePlate(FloralBlocks.STEM_PRESSURE_PLATE);
 
-        blockStateModelGenerator.registerDoor(ModBlocks.STEM_DOOR);
-        blockStateModelGenerator.registerTrapdoor(ModBlocks.STEM_TRAPDOOR);
+        blockStateModelGenerator.registerDoor(FloralBlocks.STEM_DOOR);
+        blockStateModelGenerator.registerTrapdoor(FloralBlocks.STEM_TRAPDOOR);
 
     }
 

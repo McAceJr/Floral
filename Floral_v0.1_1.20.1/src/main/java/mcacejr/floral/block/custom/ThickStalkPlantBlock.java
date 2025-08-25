@@ -1,6 +1,6 @@
 package mcacejr.floral.block.custom;
 
-import mcacejr.floral.block.ModBlocks;
+import mcacejr.floral.block.FloralBlocks;
 import net.minecraft.block.*;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
@@ -15,7 +15,7 @@ public class ThickStalkPlantBlock extends AbstractPlantBlock {
 
     @Override
     protected AbstractPlantStemBlock getStem() {
-        return (AbstractPlantStemBlock) ModBlocks.THICK_STALK;
+        return (AbstractPlantStemBlock) FloralBlocks.THICK_STALK;
     }
 
 }

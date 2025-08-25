@@ -1,7 +1,7 @@
 package mcacejr.floral.world;
 
 import mcacejr.floral.Floral;
-import mcacejr.floral.block.ModBlocks;
+import mcacejr.floral.block.FloralBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
@@ -58,7 +58,7 @@ public class FloralConfiguredFeatures {
                 Feature.FLOWER,
                 createRandomPatchFeatureConfig(
                         new WeightedBlockStateProvider(DataPool.<BlockState>builder()
-                                .add(ModBlocks.BLACK_PETUNIA.getDefaultState(), 1)),
+                                .add(FloralBlocks.BLACK_PETUNIA.getDefaultState(), 1)),
                         16
                 )
         );
@@ -68,7 +68,7 @@ public class FloralConfiguredFeatures {
                 Feature.FLOWER,
                 createRandomPatchFeatureConfig(
                         new WeightedBlockStateProvider(DataPool.<BlockState>builder()
-                                .add(ModBlocks.RED_PETUNIA.getDefaultState(), 1)),
+                                .add(FloralBlocks.RED_PETUNIA.getDefaultState(), 1)),
                         16
                 )
         );
@@ -78,8 +78,8 @@ public class FloralConfiguredFeatures {
                 Feature.FLOWER,
                 createRandomPatchFeatureConfig(
                         new WeightedBlockStateProvider(DataPool.<BlockState>builder()
-                                .add(ModBlocks.RED_PETUNIA.getDefaultState(), 1)
-                                .add(ModBlocks.BLACK_PETUNIA.getDefaultState(), 2)),
+                                .add(FloralBlocks.RED_PETUNIA.getDefaultState(), 1)
+                                .add(FloralBlocks.BLACK_PETUNIA.getDefaultState(), 2)),
                         16
                 )
         );
@@ -89,7 +89,7 @@ public class FloralConfiguredFeatures {
                 Feature.FLOWER,
                 createRandomPatchFeatureConfig(
                         new WeightedBlockStateProvider(DataPool.<BlockState>builder()
-                                .add(ModBlocks.PURPLE_BELLFLOWER.getDefaultState(), 1)),
+                                .add(FloralBlocks.PURPLE_BELLFLOWER.getDefaultState(), 1)),
                         16
                 )
         );
@@ -99,7 +99,7 @@ public class FloralConfiguredFeatures {
                 Feature.FLOWER,
                 createRandomPatchFeatureConfig(
                         new WeightedBlockStateProvider(DataPool.<BlockState>builder()
-                                .add(ModBlocks.LIME_BELLFLOWER.getDefaultState(), 1)),
+                                .add(FloralBlocks.LIME_BELLFLOWER.getDefaultState(), 1)),
                         16
                 )
         );
@@ -109,7 +109,7 @@ public class FloralConfiguredFeatures {
                 Feature.FLOWER,
                 createRandomPatchFeatureConfig(
                         new WeightedBlockStateProvider(DataPool.<BlockState>builder()
-                                .add(ModBlocks.PURPLE_CHIMNEY_BELLFLOWER.getDefaultState(), 1)),
+                                .add(FloralBlocks.PURPLE_CHIMNEY_BELLFLOWER.getDefaultState(), 1)),
                         16
                 )
         );
@@ -119,7 +119,7 @@ public class FloralConfiguredFeatures {
                 Feature.FLOWER,
                 createRandomPatchFeatureConfig(
                         new WeightedBlockStateProvider(DataPool.<BlockState>builder()
-                                .add(ModBlocks.LIME_CHIMNEY_BELLFLOWER.getDefaultState(), 1)),
+                                .add(FloralBlocks.LIME_CHIMNEY_BELLFLOWER.getDefaultState(), 1)),
                         16
                 )
         );
@@ -129,10 +129,10 @@ public class FloralConfiguredFeatures {
                 Feature.FLOWER,
                 createRandomPatchFeatureConfig(
                         new WeightedBlockStateProvider(DataPool.<BlockState>builder()
-                                .add(ModBlocks.LIME_BELLFLOWER.getDefaultState(), 2)
-                                .add(ModBlocks.LIME_CHIMNEY_BELLFLOWER.getDefaultState(), 1)
-                                .add(ModBlocks.PURPLE_BELLFLOWER.getDefaultState(), 2)
-                                .add(ModBlocks.PURPLE_CHIMNEY_BELLFLOWER.getDefaultState(), 1)),
+                                .add(FloralBlocks.LIME_BELLFLOWER.getDefaultState(), 2)
+                                .add(FloralBlocks.LIME_CHIMNEY_BELLFLOWER.getDefaultState(), 1)
+                                .add(FloralBlocks.PURPLE_BELLFLOWER.getDefaultState(), 2)
+                                .add(FloralBlocks.PURPLE_CHIMNEY_BELLFLOWER.getDefaultState(), 1)),
                         32
                 )
         );
@@ -142,7 +142,7 @@ public class FloralConfiguredFeatures {
                 Feature.FLOWER,
                 createRandomPatchFeatureConfig(
                         new WeightedBlockStateProvider(DataPool.<BlockState>builder()
-                                .add(ModBlocks.GREEN_CONEFLOWER.getDefaultState(), 1)),
+                                .add(FloralBlocks.GREEN_CONEFLOWER.getDefaultState(), 1)),
                         16
                 )
         );
@@ -153,20 +153,20 @@ public class FloralConfiguredFeatures {
                 createRandomPatchFeatureConfig(
                         new WeightedBlockStateProvider(DataPool.<BlockState>builder()
                                 .add(Blocks.WHITE_TULIP.getDefaultState(), 1)
-                                .add(ModBlocks.LIGHT_GRAY_TULIP.getDefaultState(), 1)
-                                .add(ModBlocks.GRAY_TULIP.getDefaultState(), 1)
-                                .add(ModBlocks.BLACK_TULIP.getDefaultState(), 1)
+                                .add(FloralBlocks.LIGHT_GRAY_TULIP.getDefaultState(), 1)
+                                .add(FloralBlocks.GRAY_TULIP.getDefaultState(), 1)
+                                .add(FloralBlocks.BLACK_TULIP.getDefaultState(), 1)
                                 .add(Blocks.RED_TULIP.getDefaultState(), 1)
-                                .add(ModBlocks.BROWN_TULIP.getDefaultState(), 1)
+                                .add(FloralBlocks.BROWN_TULIP.getDefaultState(), 1)
                                 .add(Blocks.ORANGE_TULIP.getDefaultState(), 1)
-                                .add(ModBlocks.YELLOW_TULIP.getDefaultState(), 1)
-                                .add(ModBlocks.LIME_TULIP.getDefaultState(), 1)
-                                .add(ModBlocks.GREEN_TULIP.getDefaultState(), 1)
-                                .add(ModBlocks.CYAN_TULIP.getDefaultState(), 1)
-                                .add(ModBlocks.LIGHT_BLUE_TULIP.getDefaultState(), 1)
-                                .add(ModBlocks.BLUE_TULIP.getDefaultState(), 1)
-                                .add(ModBlocks.PURPLE_TULIP.getDefaultState(), 1)
-                                .add(ModBlocks.MAGENTA_TULIP.getDefaultState(), 1)
+                                .add(FloralBlocks.YELLOW_TULIP.getDefaultState(), 1)
+                                .add(FloralBlocks.LIME_TULIP.getDefaultState(), 1)
+                                .add(FloralBlocks.GREEN_TULIP.getDefaultState(), 1)
+                                .add(FloralBlocks.CYAN_TULIP.getDefaultState(), 1)
+                                .add(FloralBlocks.LIGHT_BLUE_TULIP.getDefaultState(), 1)
+                                .add(FloralBlocks.BLUE_TULIP.getDefaultState(), 1)
+                                .add(FloralBlocks.PURPLE_TULIP.getDefaultState(), 1)
+                                .add(FloralBlocks.MAGENTA_TULIP.getDefaultState(), 1)
                                 .add(Blocks.PINK_TULIP.getDefaultState(), 1)),
                         36
                 )
@@ -178,9 +178,9 @@ public class FloralConfiguredFeatures {
                 createRandomPatchFeatureConfig(
                         new WeightedBlockStateProvider(DataPool.<BlockState>builder()
                                 .add(Blocks.WHITE_TULIP.getDefaultState(), 1)
-                                .add(ModBlocks.LIGHT_GRAY_TULIP.getDefaultState(), 1)
-                                .add(ModBlocks.GRAY_TULIP.getDefaultState(), 1)
-                                .add(ModBlocks.BLACK_TULIP.getDefaultState(), 1)),
+                                .add(FloralBlocks.LIGHT_GRAY_TULIP.getDefaultState(), 1)
+                                .add(FloralBlocks.GRAY_TULIP.getDefaultState(), 1)
+                                .add(FloralBlocks.BLACK_TULIP.getDefaultState(), 1)),
                         32
                 )
         );
@@ -191,9 +191,9 @@ public class FloralConfiguredFeatures {
                 createRandomPatchFeatureConfig(
                         new WeightedBlockStateProvider(DataPool.<BlockState>builder()
                                 .add(Blocks.RED_TULIP.getDefaultState(), 1)
-                                .add(ModBlocks.BROWN_TULIP.getDefaultState(), 1)
+                                .add(FloralBlocks.BROWN_TULIP.getDefaultState(), 1)
                                 .add(Blocks.ORANGE_TULIP.getDefaultState(), 1)
-                                .add(ModBlocks.YELLOW_TULIP.getDefaultState(), 1)),
+                                .add(FloralBlocks.YELLOW_TULIP.getDefaultState(), 1)),
                         32
                 )
         );
@@ -203,9 +203,9 @@ public class FloralConfiguredFeatures {
                 Feature.FLOWER,
                 createRandomPatchFeatureConfig(
                         new WeightedBlockStateProvider(DataPool.<BlockState>builder()
-                                .add(ModBlocks.BLUE_TULIP.getDefaultState(), 1)
-                                .add(ModBlocks.LIGHT_BLUE_TULIP.getDefaultState(), 1)
-                                .add(ModBlocks.CYAN_TULIP.getDefaultState(), 1)),
+                                .add(FloralBlocks.BLUE_TULIP.getDefaultState(), 1)
+                                .add(FloralBlocks.LIGHT_BLUE_TULIP.getDefaultState(), 1)
+                                .add(FloralBlocks.CYAN_TULIP.getDefaultState(), 1)),
                         24
                 )
         );
@@ -215,8 +215,8 @@ public class FloralConfiguredFeatures {
                 Feature.FLOWER,
                 createRandomPatchFeatureConfig(
                         new WeightedBlockStateProvider(DataPool.<BlockState>builder()
-                                .add(ModBlocks.PURPLE_TULIP.getDefaultState(), 1)
-                                .add(ModBlocks.MAGENTA_TULIP.getDefaultState(), 1)
+                                .add(FloralBlocks.PURPLE_TULIP.getDefaultState(), 1)
+                                .add(FloralBlocks.MAGENTA_TULIP.getDefaultState(), 1)
                                 .add(Blocks.PINK_TULIP.getDefaultState(), 1)),
                         24
                 )
@@ -227,8 +227,8 @@ public class FloralConfiguredFeatures {
                 Feature.FLOWER,
                 createRandomPatchFeatureConfig(
                         new WeightedBlockStateProvider(DataPool.<BlockState>builder()
-                                .add(ModBlocks.LIME_TULIP.getDefaultState(), 1)
-                                .add(ModBlocks.GREEN_TULIP.getDefaultState(), 1)),
+                                .add(FloralBlocks.LIME_TULIP.getDefaultState(), 1)
+                                .add(FloralBlocks.GREEN_TULIP.getDefaultState(), 1)),
                         20
                 )
         );
@@ -238,7 +238,7 @@ public class FloralConfiguredFeatures {
                 Feature.FLOWER,
                 createRandomPatchFeatureConfig(
                         new WeightedBlockStateProvider(DataPool.<BlockState>builder()
-                                .add(ModBlocks.MAGENTA_CABARET.getDefaultState(), 1)),
+                                .add(FloralBlocks.MAGENTA_CABARET.getDefaultState(), 1)),
                         16
                 )
         );
@@ -248,7 +248,7 @@ public class FloralConfiguredFeatures {
                 Feature.FLOWER,
                 createRandomPatchFeatureConfig(
                         new WeightedBlockStateProvider(DataPool.<BlockState>builder()
-                                .add(ModBlocks.GREEN_DAHLIA.getDefaultState(), 1)),
+                                .add(FloralBlocks.GREEN_DAHLIA.getDefaultState(), 1)),
                         16
                 )
         );
@@ -258,7 +258,7 @@ public class FloralConfiguredFeatures {
                 Feature.FLOWER,
                 createRandomPatchFeatureConfig(
                         new WeightedBlockStateProvider(DataPool.<BlockState>builder()
-                                .add(ModBlocks.PURPLE_WOLFSBANE.getDefaultState(), 1)),
+                                .add(FloralBlocks.PURPLE_WOLFSBANE.getDefaultState(), 1)),
                         16
                 )
         );

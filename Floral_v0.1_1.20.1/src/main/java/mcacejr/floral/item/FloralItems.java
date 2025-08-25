@@ -72,10 +72,10 @@ public class FloralItems {
             new Item(new FabricItemSettings()));
 
 //    public static final Item STEM_SIGN = registerItem("stem_sign",
-//            new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.STANDING_STEM_SIGN,
-//                    ModBlocks.WALL_STEM_SIGN));
+//            new SignItem(new FabricItemSettings().maxCount(16), FloralBlocks.STANDING_STEM_SIGN,
+//                    FloralBlocks.WALL_STEM_SIGN));
 //    public static final Item STEM_HANGING_SIGN = registerItem("stem_hanging_sign",
-//            new HangingSignItem(ModBlocks.HANGING_STEM_SIGN, ModBlocks.WALL_HANGING_STEM_SIGN,
+//            new HangingSignItem(FloralBlocks.HANGING_STEM_SIGN, FloralBlocks.WALL_HANGING_STEM_SIGN,
 //                    new FabricItemSettings().maxCount(16)));
 
     private static Item registerItem(String name, Item item) {

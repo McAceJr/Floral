@@ -1,6 +1,6 @@
 package mcacejr.floral.datagen;
 
-import mcacejr.floral.block.ModBlocks;
+import mcacejr.floral.block.FloralBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.block.Blocks;
@@ -19,97 +19,97 @@ public class FloralBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
 
         getOrCreateTagBuilder(BlockTags.FLOWERS)
-                .add(ModBlocks.BLACK_PETUNIA)
-                .add(ModBlocks.RED_PETUNIA)
+                .add(FloralBlocks.BLACK_PETUNIA)
+                .add(FloralBlocks.RED_PETUNIA)
                 .add(Blocks.SPORE_BLOSSOM)
-                .add(ModBlocks.PURPLE_BELLFLOWER)
-                .add(ModBlocks.GREEN_CONEFLOWER)
-                .add(ModBlocks.PURPLE_CHIMNEY_BELLFLOWER)
-                .add(ModBlocks.BLUE_AUBRIETAS)
-                .add(ModBlocks.PINK_ALCEA)
-                .add(ModBlocks.PINK_ALCEA_PLANT)
-                .add(ModBlocks.LIGHT_GRAY_TULIP)
-                .add(ModBlocks.GRAY_TULIP)
-                .add(ModBlocks.BLACK_TULIP)
-                .add(ModBlocks.BROWN_TULIP)
-                .add(ModBlocks.YELLOW_TULIP)
-                .add(ModBlocks.LIME_TULIP)
-                .add(ModBlocks.GREEN_TULIP)
-                .add(ModBlocks.CYAN_TULIP)
-                .add(ModBlocks.LIGHT_BLUE_TULIP)
-                .add(ModBlocks.BLUE_TULIP)
-                .add(ModBlocks.PURPLE_TULIP)
-                .add(ModBlocks.MAGENTA_TULIP)
-                .add(ModBlocks.WEEPING_ROOTS)
-                .add(ModBlocks.TWISTING_ROOTS)
-                .add(ModBlocks.WARDEN_PRIMROSE)
-                .add(ModBlocks.ROCKY_SEDUM)
-                .add(ModBlocks.STEM_LILY)
-                .add(ModBlocks.BONES_BANE)
-                .add(ModBlocks.GREEN_DAHLIA)
-                .add(ModBlocks.MAGENTA_CABARET)
-                .add(ModBlocks.LIME_BELLFLOWER)
-                .add(ModBlocks.LIME_CHIMNEY_BELLFLOWER)
-                .add(ModBlocks.PURPLE_WOLFSBANE);
+                .add(FloralBlocks.PURPLE_BELLFLOWER)
+                .add(FloralBlocks.GREEN_CONEFLOWER)
+                .add(FloralBlocks.PURPLE_CHIMNEY_BELLFLOWER)
+                .add(FloralBlocks.BLUE_AUBRIETAS)
+                .add(FloralBlocks.PINK_ALCEA)
+                .add(FloralBlocks.PINK_ALCEA_PLANT)
+                .add(FloralBlocks.LIGHT_GRAY_TULIP)
+                .add(FloralBlocks.GRAY_TULIP)
+                .add(FloralBlocks.BLACK_TULIP)
+                .add(FloralBlocks.BROWN_TULIP)
+                .add(FloralBlocks.YELLOW_TULIP)
+                .add(FloralBlocks.LIME_TULIP)
+                .add(FloralBlocks.GREEN_TULIP)
+                .add(FloralBlocks.CYAN_TULIP)
+                .add(FloralBlocks.LIGHT_BLUE_TULIP)
+                .add(FloralBlocks.BLUE_TULIP)
+                .add(FloralBlocks.PURPLE_TULIP)
+                .add(FloralBlocks.MAGENTA_TULIP)
+                .add(FloralBlocks.WEEPING_ROOTS)
+                .add(FloralBlocks.TWISTING_ROOTS)
+                .add(FloralBlocks.WARDEN_PRIMROSE)
+                .add(FloralBlocks.ROCKY_SEDUM)
+                .add(FloralBlocks.STEM_LILY)
+                .add(FloralBlocks.BONES_BANE)
+                .add(FloralBlocks.GREEN_DAHLIA)
+                .add(FloralBlocks.MAGENTA_CABARET)
+                .add(FloralBlocks.LIME_BELLFLOWER)
+                .add(FloralBlocks.LIME_CHIMNEY_BELLFLOWER)
+                .add(FloralBlocks.PURPLE_WOLFSBANE);
 
         getOrCreateTagBuilder(BlockTags.TALL_FLOWERS)
-                .add(ModBlocks.PURPLE_CHIMNEY_BELLFLOWER)
-                .add(ModBlocks.LIME_CHIMNEY_BELLFLOWER)
-                .add(ModBlocks.PINK_ALCEA);
+                .add(FloralBlocks.PURPLE_CHIMNEY_BELLFLOWER)
+                .add(FloralBlocks.LIME_CHIMNEY_BELLFLOWER)
+                .add(FloralBlocks.PINK_ALCEA);
 
         getOrCreateTagBuilder(BlockTags.CLIMBABLE)
-                .add(ModBlocks.THICK_STALK)
-                .add(ModBlocks.THICK_STALK_PLANT)
-                .add(ModBlocks.THICK_VINES)
-                .add(ModBlocks.THICK_VINES_PLANT);
+                .add(FloralBlocks.THICK_STALK)
+                .add(FloralBlocks.THICK_STALK_PLANT)
+                .add(FloralBlocks.THICK_VINES)
+                .add(FloralBlocks.THICK_VINES_PLANT);
 
         getOrCreateTagBuilder(BlockTags.FLOWER_POTS)
-                .add(ModBlocks.POTTED_BLACK_PETUNIA)
-                .add(ModBlocks.POTTED_RED_PETUNIA)
-                .add(ModBlocks.POTTED_PURPLE_BELLFLOWER)
-                .add(ModBlocks.POTTED_GREEN_CONEFLOWER)
-                .add(ModBlocks.POTTED_LIGHT_GRAY_TULIP)
-                .add(ModBlocks.POTTED_GRAY_TULIP)
-                .add(ModBlocks.POTTED_BLACK_TULIP)
-                .add(ModBlocks.POTTED_BROWN_TULIP)
-                .add(ModBlocks.POTTED_YELLOW_TULIP)
-                .add(ModBlocks.POTTED_LIME_TULIP)
-                .add(ModBlocks.POTTED_GREEN_TULIP)
-                .add(ModBlocks.POTTED_CYAN_TULIP)
-                .add(ModBlocks.POTTED_LIGHT_BLUE_TULIP)
-                .add(ModBlocks.POTTED_BLUE_TULIP)
-                .add(ModBlocks.POTTED_PURPLE_TULIP)
-                .add(ModBlocks.POTTED_MAGENTA_TULIP)
-                .add(ModBlocks.POTTED_GREEN_DAHLIA)
-                .add(ModBlocks.POTTED_MAGENTA_CABARET)
-                .add(ModBlocks.POTTED_LIME_BELLFLOWER)
-                .add(ModBlocks.POTTED_PURPLE_WOLFSBANE);
+                .add(FloralBlocks.POTTED_BLACK_PETUNIA)
+                .add(FloralBlocks.POTTED_RED_PETUNIA)
+                .add(FloralBlocks.POTTED_PURPLE_BELLFLOWER)
+                .add(FloralBlocks.POTTED_GREEN_CONEFLOWER)
+                .add(FloralBlocks.POTTED_LIGHT_GRAY_TULIP)
+                .add(FloralBlocks.POTTED_GRAY_TULIP)
+                .add(FloralBlocks.POTTED_BLACK_TULIP)
+                .add(FloralBlocks.POTTED_BROWN_TULIP)
+                .add(FloralBlocks.POTTED_YELLOW_TULIP)
+                .add(FloralBlocks.POTTED_LIME_TULIP)
+                .add(FloralBlocks.POTTED_GREEN_TULIP)
+                .add(FloralBlocks.POTTED_CYAN_TULIP)
+                .add(FloralBlocks.POTTED_LIGHT_BLUE_TULIP)
+                .add(FloralBlocks.POTTED_BLUE_TULIP)
+                .add(FloralBlocks.POTTED_PURPLE_TULIP)
+                .add(FloralBlocks.POTTED_MAGENTA_TULIP)
+                .add(FloralBlocks.POTTED_GREEN_DAHLIA)
+                .add(FloralBlocks.POTTED_MAGENTA_CABARET)
+                .add(FloralBlocks.POTTED_LIME_BELLFLOWER)
+                .add(FloralBlocks.POTTED_PURPLE_WOLFSBANE);
 
         getOrCreateTagBuilder(BlockTags.STAIRS)
-                .add(ModBlocks.STEM_STAIRS)
-                .add(ModBlocks.FLORAL_STONE_STAIRS)
-                .add(ModBlocks.FLORAL_STONE_BRICK_STAIRS)
-                .add(ModBlocks.COBBLED_FLORAL_STONE_STAIRS);
+                .add(FloralBlocks.STEM_STAIRS)
+                .add(FloralBlocks.FLORAL_STONE_STAIRS)
+                .add(FloralBlocks.FLORAL_STONE_BRICK_STAIRS)
+                .add(FloralBlocks.COBBLED_FLORAL_STONE_STAIRS);
         getOrCreateTagBuilder(BlockTags.SLABS)
-                .add(ModBlocks.FLORAL_STONE_SLAB)
-                .add(ModBlocks.FLORAL_STONE_BRICK_SLAB)
-                .add(ModBlocks.COBBLED_FLORAL_STONE_SLAB);
+                .add(FloralBlocks.FLORAL_STONE_SLAB)
+                .add(FloralBlocks.FLORAL_STONE_BRICK_SLAB)
+                .add(FloralBlocks.COBBLED_FLORAL_STONE_SLAB);
         getOrCreateTagBuilder(BlockTags.WALLS)
-                .add(ModBlocks.FLORAL_STONE_WALL)
-                .add(ModBlocks.FLORAL_STONE_BRICK_WALL)
-                .add(ModBlocks.COBBLED_FLORAL_STONE_WALL);
+                .add(FloralBlocks.FLORAL_STONE_WALL)
+                .add(FloralBlocks.FLORAL_STONE_BRICK_WALL)
+                .add(FloralBlocks.COBBLED_FLORAL_STONE_WALL);
 
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
-                .add(ModBlocks.STEM_LOG)
-                .add(ModBlocks.STEM_WOOD)
-                .add(ModBlocks.STRIPPED_STEM_LOG)
-                .add(ModBlocks.STRIPPED_STEM_WOOD);
+                .add(FloralBlocks.STEM_LOG)
+                .add(FloralBlocks.STEM_WOOD)
+                .add(FloralBlocks.STRIPPED_STEM_LOG)
+                .add(FloralBlocks.STRIPPED_STEM_WOOD);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
-                .add(ModBlocks.STEM_FENCE);
+                .add(FloralBlocks.STEM_FENCE);
 
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
-                .add(ModBlocks.STEM_FENCE_GATE);
+                .add(FloralBlocks.STEM_FENCE_GATE);
 
     }
 

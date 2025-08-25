@@ -1,7 +1,7 @@
 package mcacejr.floral.datagen;
 
 import mcacejr.floral.Floral;
-import mcacejr.floral.block.ModBlocks;
+import mcacejr.floral.block.FloralBlocks;
 import mcacejr.floral.item.FloralItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricAdvancementProvider;
@@ -20,29 +20,29 @@ import java.util.stream.Stream;
 
 public class FloralAdvancementProvider extends FabricAdvancementProvider {
     public static final List<Block> FLOWERS = List.of(
-            ModBlocks.BLACK_PETUNIA,
-            ModBlocks.RED_PETUNIA,
+            FloralBlocks.BLACK_PETUNIA,
+            FloralBlocks.RED_PETUNIA,
             Blocks.SPORE_BLOSSOM,
-            ModBlocks.PURPLE_BELLFLOWER,
-            ModBlocks.PURPLE_CHIMNEY_BELLFLOWER,
-            ModBlocks.GREEN_CONEFLOWER,
-            ModBlocks.LIGHT_GRAY_TULIP,
-            ModBlocks.GRAY_TULIP,
-            ModBlocks.BLACK_TULIP,
-            ModBlocks.BROWN_TULIP,
-            ModBlocks.YELLOW_TULIP,
-            ModBlocks.LIME_TULIP,
-            ModBlocks.GREEN_TULIP,
-            ModBlocks.CYAN_TULIP,
-            ModBlocks.LIGHT_BLUE_TULIP,
-            ModBlocks.BLUE_TULIP,
-            ModBlocks.PURPLE_TULIP,
-            ModBlocks.MAGENTA_TULIP,
-            ModBlocks.GREEN_DAHLIA,
-            ModBlocks.MAGENTA_CABARET,
-            ModBlocks.LIME_BELLFLOWER,
-            ModBlocks.LIME_CHIMNEY_BELLFLOWER,
-            ModBlocks.PURPLE_WOLFSBANE,
+            FloralBlocks.PURPLE_BELLFLOWER,
+            FloralBlocks.PURPLE_CHIMNEY_BELLFLOWER,
+            FloralBlocks.GREEN_CONEFLOWER,
+            FloralBlocks.LIGHT_GRAY_TULIP,
+            FloralBlocks.GRAY_TULIP,
+            FloralBlocks.BLACK_TULIP,
+            FloralBlocks.BROWN_TULIP,
+            FloralBlocks.YELLOW_TULIP,
+            FloralBlocks.LIME_TULIP,
+            FloralBlocks.GREEN_TULIP,
+            FloralBlocks.CYAN_TULIP,
+            FloralBlocks.LIGHT_BLUE_TULIP,
+            FloralBlocks.BLUE_TULIP,
+            FloralBlocks.PURPLE_TULIP,
+            FloralBlocks.MAGENTA_TULIP,
+            FloralBlocks.GREEN_DAHLIA,
+            FloralBlocks.MAGENTA_CABARET,
+            FloralBlocks.LIME_BELLFLOWER,
+            FloralBlocks.LIME_CHIMNEY_BELLFLOWER,
+            FloralBlocks.PURPLE_WOLFSBANE,
             Blocks.PINK_PETALS,
             Blocks.SUNFLOWER,
             Blocks.LILAC,

@@ -1,6 +1,6 @@
 package mcacejr.floral.item;
 
-import mcacejr.floral.block.ModBlocks;
+import mcacejr.floral.block.FloralBlocks;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 
 public enum FloralToolMaterials implements ToolMaterial {
     PETUNIA(0, 150, 2.0f, 0.0f, 15,
-            () -> Ingredient.ofItems(ModBlocks.BLACK_PETUNIA, ModBlocks.RED_PETUNIA)),
+            () -> Ingredient.ofItems(FloralBlocks.BLACK_PETUNIA, FloralBlocks.RED_PETUNIA)),
     DEADHEADER(4, 1540, 6.0f, 4.0f, 15,
             () -> Ingredient.ofItems(Items.IRON_INGOT));
 
