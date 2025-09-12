@@ -160,14 +160,14 @@ public class FloralBlocks {
             new FlowerPotBlock(GREEN_DAHLIA, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
 
     public static final Block MAGENTA_CABARET = registerBlock("magenta_cabaret",
-            new FlowerBlock(StatusEffects.SATURATION, 7, FabricBlockSettings.copyOf(Blocks.ALLIUM)
+            new FlowerBlock(StatusEffects.INSTANT_HEALTH, 7, FabricBlockSettings.copyOf(Blocks.ALLIUM)
                     .nonOpaque().noCollision()));
     public static final Block POTTED_MAGENTA_CABARET = Registry.register(Registries.BLOCK,
             new Identifier(Floral.MOD_ID, "potted_magenta_cabaret"),
             new FlowerPotBlock(MAGENTA_CABARET, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
 
     public static final Block LIME_BELLFLOWER = registerBlock("lime_bellflower",
-            new FlowerBlock(StatusEffects.SATURATION, 7, FabricBlockSettings.copyOf(Blocks.ALLIUM)
+            new FlowerBlock(StatusEffects.POISON, 7, FabricBlockSettings.copyOf(Blocks.ALLIUM)
                     .nonOpaque().noCollision()));
     public static final Block POTTED_LIME_BELLFLOWER = Registry.register(Registries.BLOCK,
             new Identifier(Floral.MOD_ID, "potted_lime_bellflower"),
@@ -258,6 +258,49 @@ public class FloralBlocks {
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.CHORUS_FRUIT));
     public static final Block WHITE_OVERFLOWING_BELLFLOWER = registerBlock("white_overflowing_bellflower",
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.BONE_MEAL));
+    public static final Block LIGHT_BLUE_LIFE_LILY = registerBlock("light_blue_life+lily",
+            new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.HONEYCOMB));
+
+    public static final Block VITALIC_TUBE_CORAL_BLOCK = registerBlock("vitalic_tube_coral_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.TUBE_CORAL_BLOCK)));
+    public static final Block VITALIC_BRAIN_CORAL_BLOCK = registerBlock("vitalic_brain_coral_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.BRAIN_CORAL_BLOCK)));
+    public static final Block VITALIC_BUBBLE_CORAL_BLOCK = registerBlock("vitalic_bubble_coral_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.BUBBLE_CORAL_BLOCK)));
+    public static final Block VITALIC_FIRE_CORAL_BLOCK = registerBlock("vitalic_fire_coral_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.FIRE_CORAL_BLOCK)));
+    public static final Block VITALIC_HORN_CORAL_BLOCK = registerBlock("vitalic_horn_coral_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.HORN_CORAL_BLOCK)));
+    public static final Block VITALIC_TUBE_CORAL = registerBlock("vitalic_tube_coral",
+            new DeadCoralBlock(FabricBlockSettings.copyOf(Blocks.DEAD_TUBE_CORAL)));
+    public static final Block VITALIC_BRAIN_CORAL = registerBlock("vitalic_brain_coral",
+            new DeadCoralBlock(FabricBlockSettings.copyOf(Blocks.DEAD_BRAIN_CORAL)));
+    public static final Block VITALIC_BUBBLE_CORAL = registerBlock("vitalic_bubble_coral",
+            new DeadCoralBlock(FabricBlockSettings.copyOf(Blocks.DEAD_BUBBLE_CORAL)));
+    public static final Block VITALIC_FIRE_CORAL = registerBlock("vitalic_fire_coral",
+            new DeadCoralBlock(FabricBlockSettings.copyOf(Blocks.DEAD_FIRE_CORAL)));
+    public static final Block VITALIC_HORN_CORAL = registerBlock("vitalic_horn_coral",
+            new DeadCoralBlock(FabricBlockSettings.copyOf(Blocks.DEAD_HORN_CORAL)));
+    public static final Block VITALIC_TUBE_CORAL_FAN = registerBlock("vitalic_tube_coral_fan",
+            new DeadCoralFanBlock(FabricBlockSettings.copyOf(Blocks.DEAD_TUBE_CORAL_FAN)));
+    public static final Block VITALIC_BRAIN_CORAL_FAN = registerBlock("vitalic_brain_coral_fan",
+            new DeadCoralFanBlock(FabricBlockSettings.copyOf(Blocks.DEAD_BRAIN_CORAL_FAN)));
+    public static final Block VITALIC_BUBBLE_CORAL_FAN = registerBlock("vitalic_bubble_coral_fan",
+            new DeadCoralFanBlock(FabricBlockSettings.copyOf(Blocks.DEAD_BUBBLE_CORAL_FAN)));
+    public static final Block VITALIC_FIRE_CORAL_FAN = registerBlock("vitalic_fire_coral_fan",
+            new DeadCoralFanBlock(FabricBlockSettings.copyOf(Blocks.DEAD_FIRE_CORAL_FAN)));
+    public static final Block VITALIC_HORN_CORAL_FAN = registerBlock("vitalic_horn_coral_fan",
+            new DeadCoralFanBlock(FabricBlockSettings.copyOf(Blocks.DEAD_HORN_CORAL_FAN)));
+    public static final Block VITALIC_TUBE_CORAL_WALL_FAN = registerBlock("vitalic_tube_coral_wall_fan",
+            new DeadCoralWallFanBlock(FabricBlockSettings.copyOf(Blocks.DEAD_TUBE_CORAL_WALL_FAN)));
+    public static final Block VITALIC_BRAIN_CORAL_WALL_FAN = registerBlock("vitalic_brain_coral_wall_fan",
+            new DeadCoralWallFanBlock(FabricBlockSettings.copyOf(Blocks.DEAD_BRAIN_CORAL_WALL_FAN)));
+    public static final Block VITALIC_BUBBLE_CORAL_WALL_FAN = registerBlock("vitalic_bubble_coral_wall_fan",
+            new DeadCoralWallFanBlock(FabricBlockSettings.copyOf(Blocks.DEAD_BUBBLE_CORAL_WALL_FAN)));
+    public static final Block VITALIC_FIRE_CORAL_WALL_FAN = registerBlock("vitalic_fire_coral_wall_fan",
+            new DeadCoralWallFanBlock(FabricBlockSettings.copyOf(Blocks.DEAD_FIRE_CORAL_WALL_FAN)));
+    public static final Block VITALIC_HORN_CORAL_WALL_FAN = registerBlock("vitalic_horn_coral_wall_fan",
+            new DeadCoralWallFanBlock(FabricBlockSettings.copyOf(Blocks.DEAD_HORN_CORAL_WALL_FAN)));
 
 
     private static Block registerBlock(String name, Block block) {
