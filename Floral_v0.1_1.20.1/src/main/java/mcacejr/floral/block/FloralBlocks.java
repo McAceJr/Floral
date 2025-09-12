@@ -258,7 +258,7 @@ public class FloralBlocks {
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.CHORUS_FRUIT));
     public static final Block WHITE_OVERFLOWING_BELLFLOWER = registerBlock("white_overflowing_bellflower",
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.BONE_MEAL));
-    public static final Block LIGHT_BLUE_LIFE_LILY = registerBlock("light_blue_life+lily",
+    public static final Block LIGHT_BLUE_LIFE_LILY = registerBlock("light_blue_life_lily",
             new FloralHarvestableBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH), Items.HONEYCOMB));
 
     public static final Block VITALIC_TUBE_CORAL_BLOCK = registerBlock("vitalic_tube_coral_block",
